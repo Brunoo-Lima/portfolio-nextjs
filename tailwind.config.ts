@@ -12,13 +12,14 @@ const config: Config = {
         'primary-black': '#000000',
         'second-black': '#0A0908',
         'primary-gray': '#333533',
+        'second-gray': '#92A5B0',
         'primary-white': '#ffffff',
         'primary-green': '#43ea80',
         'second-green': '#38f8d4',
         'tertiary-green': '#0EAD69',
       },
       borderRadius: {
-        section_home: '30% 70% 76% 24% / 69% 45% 55% 31% ',
+        section_hero: '30% 70% 76% 24% / 69% 45% 55% 31% ',
       },
       animation: {
         'spin-slow': 'spin 50s alternate infinite',

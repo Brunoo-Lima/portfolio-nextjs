@@ -11,7 +11,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 export function SectionHero() {
   return (
-    <section className="py-20">
+    <section className="py-20" id="initial">
       <div className="relative flex items-center justify-between">
         <div className="relative grid grid-cols-1 gap-2 items-center">
           <h1 className="md:text-5xl text-3xl md:text-start text-center leading-tight">

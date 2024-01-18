@@ -1,3 +1,4 @@
+import { About } from '@/components/About';
 import { Navbar } from '@/components/Navbar';
 import { SectionHero } from '@/components/SectionHero';
 
@@ -8,6 +9,7 @@ export default function Home() {
 
       <div className="container mt-24 px-12 py-4 mx-auto">
         <SectionHero />
+        <About/>
       </div>
     </main>
   );

@@ -3,9 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Background from '@/assets/background.png';
-import Linkedin from '@/assets/network/linkedin.svg';
-import Github from '@/assets/network/github.svg';
+import Background from '../../public/assets/background.png';
 
 import { TypeAnimation } from 'react-type-animation';
 
@@ -25,7 +23,7 @@ export function SectionHero() {
                 1000,
                 'Web Developer',
                 1000,
-                'Backend Developer',
+                'FullStack Developer',
                 1000,
               ]}
               wrapper="span"

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import Me from '@/assets/me.jpg';
+import Me from '../../public/assets/me.jpg';
 import Link from 'next/link';
 
 export function About() {
@@ -24,7 +24,7 @@ export function About() {
           </h1>
 
           <h3 className="text-lg text-primary-white mb-4">
-            Frontend Developer
+            FullStack Developer
           </h3>
 
           <p className="text-base text-second-gray text-justify leading-snug mb-6 max-md:px-5">

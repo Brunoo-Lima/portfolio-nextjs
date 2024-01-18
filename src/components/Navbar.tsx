@@ -5,8 +5,8 @@ import { NavLink } from './NavLink';
 import { useState } from 'react';
 import Image from 'next/image';
 
-import Open from '@/assets/menu.svg';
-import Close from '@/assets/close.svg';
+import Open from '../../public/assets/menu.svg';
+import Close from '../../public/assets/close.svg';
 import { MenuOverlay } from './MenuOverlay';
 
 export type NavLinksProps = {

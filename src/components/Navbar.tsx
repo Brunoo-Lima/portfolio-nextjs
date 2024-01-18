@@ -7,8 +7,14 @@ import Image from 'next/image';
 
 import Open from '@/assets/menu.svg';
 import Close from '@/assets/close.svg';
+import { MenuOverlay } from './MenuOverlay';
 
-const navLinks = [
+export type NavLinksProps = {
+  title: string;
+  path: string;
+};
+
+const navLinks: NavLinksProps[] = [
   {
     title: 'Início',
     path: '#initial',
@@ -30,7 +36,7 @@ const navLinks = [
 export function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-primary-black bg-opacity-50 border-b border-primary-gray">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-primary-black bg-opacity-100 border-b border-primary-gray">
       <div className="flex fle-wrap items-center justify-between mx-auto p-8">
         <Link
           href={'/'}
@@ -67,6 +73,7 @@ export function Navbar() {
           </ul>
         </div>
       </div>
+      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
 }

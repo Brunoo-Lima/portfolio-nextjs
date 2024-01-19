@@ -22,7 +22,7 @@ const config: Config = {
         section_hero: '30% 70% 76% 24% / 69% 45% 55% 31% ',
       },
       animation: {
-        'spin-slow': 'spin 50s alternate infinite',
+        'spin-slow': 'spin 30s alternate infinite',
       },
       blur: {
         xxxl: '100px',

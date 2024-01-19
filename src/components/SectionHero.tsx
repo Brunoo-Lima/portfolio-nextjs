@@ -12,7 +12,7 @@ export function SectionHero() {
     <section className="py-40" id="initial">
       <div className="relative flex items-center justify-between">
         <div className="relative grid grid-cols-1 gap-2 items-center">
-          <h1 className="md:text-7xl text-3xl md:text-start text-center leading-tight">
+          <h1 className="md:text-7xl text-4xl md:text-start text-center leading-tight">
             <span className="text-transparent bg-gradient-to-r from-primary-green via-second-green to-tertiary-green bg-clip-text font-bold">
               Olá, eu sou{' '}
             </span>
@@ -32,7 +32,7 @@ export function SectionHero() {
             />
           </h1>
 
-          <p className="md:text-3xl text-2xl md:text-start text-center leading-tight mb-8 text-second-gray">
+          <p className="md:text-3xl text-xl md:text-start text-center leading-tight mb-8 text-second-gray">
             Um apaixonado pela área de desenvolvimento.
           </p>
 

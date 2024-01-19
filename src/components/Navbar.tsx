@@ -47,24 +47,18 @@ export function Navbar() {
 
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
-            <button
-              onClick={() => setNavbarOpen(true)}
-              className="border-2 rounded-md border-primary-white bg-primary-black hover:bg-tertiary-green"
-            >
+            <button onClick={() => setNavbarOpen(true)}>
               <Image src={Open} alt="Icone aberto" className="w-8 h-8" />
             </button>
           ) : (
-            <button
-              onClick={() => setNavbarOpen(false)}
-              className="border-2 rounded-md border-primary-white bg-primary-black hover:bg-tertiary-green"
-            >
+            <button onClick={() => setNavbarOpen(false)}>
               <Image src={Close} alt="Icone aberto" className="w-8 h-8" />
             </button>
           )}
         </div>
 
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex gap-4 items-center md:flex-row md:space-x-8 mt-0">
+          <ul className="flex gap-4 items-center md:flex-row md:space-x-6 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />

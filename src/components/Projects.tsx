@@ -82,7 +82,7 @@ export function Projects() {
         </h1>
       </div>
 
-      <div className="flex flex-wrap md:flex-row justify-center lg:gap-6 gap-2 ">
+      <div className="flex flex-wrap md:flex-row justify-center lg:gap-6 gap-2">
         {projectCard.map((project) => (
           <ProjectCard
             key={project.id}

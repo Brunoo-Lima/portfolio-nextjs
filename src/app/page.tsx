@@ -3,6 +3,7 @@ import { Navbar } from '@/components/Navbar';
 import { Projects } from '@/components/Projects';
 import { SectionHero } from '@/components/SectionHero';
 import { Skills } from '@/components/Skills';
+import { Footer } from './../components/Footer';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Skills />
         <Projects />
       </div>
+      <Footer />
     </main>
   );
 }

@@ -88,7 +88,7 @@ export function Skills() {
           Conhecimentos
         </h1>
       </div>
-      <div className="lg:w-[1000px] lg:mx-auto mt-12">
+      <div className="lg:w-[900px] lg:mx-auto mt-12">
         <ul className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-2 gap-4">
           {skillsList.map((icon) => (
             <SkillsCard key={icon.id} imgUrl={icon.image} altText={icon.alt} />

@@ -28,8 +28,8 @@ export function ProjectCard({
         backgroundPosition: 'top center',
       }}
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black via-black/75 to-black/35 bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500"></div>
-      <aside className="absolute bottom-0 w-full p-4 invisible group-hover:visible transition hover:duration-1000">
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black via-black/75 to-black/35 bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 group-hover:transition-all group-hover:duration-[2s]"></div>
+      <aside className="absolute bottom-0 w-full p-4 invisible group-hover:visible">
         <span className="bg-gradient-to-r from-primary-green to-tertiary-green px-2 rounded-lg text-sm">
           {type}
         </span>

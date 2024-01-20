@@ -18,7 +18,7 @@ export function Footer() {
             <Image
               src={UpArrow}
               alt="Icone para voltar ao topo"
-              className="w-9 h-9 animate-bounce transition duration-500 bg-primary-black border border-gray-800 rounded-full p-1"
+              className="w-9 h-9 animate-bounce transition duration-300 bg-primary-black border border-gray-800 rounded-full p-1"
             />
           </Link>
         </div>

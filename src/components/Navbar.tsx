@@ -48,11 +48,19 @@ export function Navbar() {
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button onClick={() => setNavbarOpen(true)}>
-              <Image src={Open} alt="Icone aberto" className="w-8 h-8" />
+              <Image
+                src={Open}
+                alt="Icone aberto"
+                className="w-8 h-8 outline-none rounded-md transition duration-200 hover:outline-1 hover:outline-white"
+              />
             </button>
           ) : (
             <button onClick={() => setNavbarOpen(false)}>
-              <Image src={Close} alt="Icone aberto" className="w-8 h-8" />
+              <Image
+                src={Close}
+                alt="Icone aberto"
+                className="w-8 h-8 outline-none rounded-md transition duration-200 hover:outline-1 hover:outline-white"
+              />
             </button>
           )}
         </div>

@@ -7,7 +7,7 @@ type MenuOverlayProps = {
 
 export function MenuOverlay({ links }: MenuOverlayProps) {
   return (
-    <ul className="flex flex-col py-4 text-center px-3">
+    <ul className="flex flex-col py-4 text-center px-3 transition duration-300">
       {links.map((link, index) => (
         <li
           key={index}

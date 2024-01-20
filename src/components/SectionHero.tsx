@@ -4,8 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import Background from '../../public/assets/background.png';
+import Linkedin from '../../public/assets/network/linkedin.svg';
+import Github from '../../public/assets/network/github.svg';
 
 import { TypeAnimation } from 'react-type-animation';
+import { Button } from '@/utilities/Button';
 
 export function SectionHero() {
   return (
@@ -36,15 +39,24 @@ export function SectionHero() {
             Um apaixonado pela área de desenvolvimento.
           </p>
 
-          <div className="flex sm:flex-row flex-col md:justify-start justify-center gap-4">
-            <button className="border px-6 py-3 sm:w-40 w-full rounded-3xl bg-primary-black transition hover:border-opacity-75">
-              <Link href="https://www.linkedin.com/in/bruno-lima-8a2407173/">
-                Linkedin
+          <div className="flex md:justify-start justify-center gap-6">
+            <button className="hover:bg-primary-gray/45 px-4 py-2 rounded-lg transition duration-300 border border-transparent hover:border hover:border-primary-gray">
+              <Link
+                href="https://www.linkedin.com/in/bruno-lima-8a2407173/"
+                target="blank"
+              >
+                <Image
+                  src={Linkedin}
+                  alt="Icone do linkedIn"
+                  className="w-8 h-8"
+                />
               </Link>
             </button>
 
-            <button className="border px-6 py-3 sm:w-40 w-full rounded-3xl bg-primary-black transition hover:border-opacity-75">
-              <Link href="https://github.com/Brunoo-Lima">Github</Link>
+            <button className="hover:bg-primary-gray/45 px-4 py-2 rounded-lg transition duration-300 border border-transparent  hover:border hover:border-primary-gray">
+              <Link href="https://github.com/Brunoo-Lima" target="blank">
+                <Image src={Github} alt="Icone do github" className="w-8 h-8" />
+              </Link>
             </button>
           </div>
         </div>

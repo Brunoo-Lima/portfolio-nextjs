@@ -36,7 +36,7 @@ const navLinks: NavLinksProps[] = [
 export function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 mx-auto bg-primary-black bg-opacity-100 border-b border-gray-800">
+    <nav className="fixed top-0 left-0 right-0 z-30 mx-auto bg-primary-black bg-opacity-100 border-b border-gray-800">
       <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
         <Link
           href={'/'}

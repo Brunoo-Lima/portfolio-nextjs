@@ -9,9 +9,9 @@ import { TypeAnimation } from 'react-type-animation';
 
 export function SectionHero() {
   return (
-    <section className="py-40" id="initial">
-      <div className="relative flex items-center justify-between">
-        <div className="relative grid grid-cols-1 gap-2 items-center">
+    <section className="md:py-40 py-20" id="initial">
+      <div className="relative flex items-center md:justify-between justify-center">
+        <div className="relative grid grid-cols-1 gap-2 items-center z-10">
           <h1 className="md:text-7xl text-4xl md:text-start text-center leading-tight">
             <span className="text-transparent bg-gradient-to-r from-primary-green via-second-green to-tertiary-green bg-clip-text font-bold">
               Olá, eu sou{' '}
@@ -52,7 +52,7 @@ export function SectionHero() {
         <Image
           src={Background}
           alt="Imagem para efeito na parte direita da introdução"
-          className="absolute md:right-28 right-0 top-0 block rounded-section_hero max-w-full md:w-[350px] md:h-[350px] w-[80px] h-[80px] animate-spin-slow blur-xxxl sm:opacity-30 opacity-95"
+          className="absolute md:right-24 right-0 -top-10 block rounded-section_hero max-w-full md:w-[500px] md:h-[500px] w-[140px] h-[120px] animate-spin-slow md:blur-xxxl blur-2xl md:opacity-25 opacity-65"
         />
       </div>
     </section>

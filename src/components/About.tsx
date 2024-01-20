@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export function About() {
   return (
-    <section className="py-20" id="about">
+    <section className="md:py-20 py-8" id="about">
       <div className="flex md:justify-around justify-center md:flex-row flex-col md:gap-6 gap-4 bg-second-black border border-gray-800 rounded-md md:p-6 py-4">
         <div className="md:w-5/12 w-11/12 mx-auto">
           <Image
@@ -37,7 +37,7 @@ export function About() {
             na área.
           </p>
 
-          <div className="flex md:gap-6 gap-3 sm:flex-row flex-col md:p-0 px-5">
+          <div className="flex md:gap-6 gap-3 md:justify-start justify-center sm:flex-row flex-col md:p-0 px-5">
             <button className="border px-6 py-3 sm:w-40 w-full rounded-3xl bg-primary-black transition hover:border-opacity-75">
               <Link href={''}>Email</Link>
             </button>

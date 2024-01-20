@@ -75,8 +75,8 @@ const projectCard: ProjectCardProps[] = [
 
 export function Projects() {
   return (
-    <section className="py-20" id="projects">
-      <div className="flex justify-center mb-12">
+    <section className="md:py-20 py-8" id="projects">
+      <div className="flex justify-center lg:mb-12 mb-4">
         <h1 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text">
           Projetos
         </h1>

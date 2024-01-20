@@ -21,7 +21,7 @@ export function ProjectCard({
     <Link
       href={href}
       target="blank"
-      className="lg:w-[450px] w-full h-[350px] group relative rounded-md border border-gray-800"
+      className="lg:w-[450px] w-full lg:h-[350px] h-[250px] bg-contain group relative rounded-md border border-gray-800 lg:mt-0 mt-4"
       style={{
         background: `url(${imgUrl})`,
         backgroundSize: 'cover',

@@ -8,7 +8,6 @@ import Linkedin from '../../public/assets/network/linkedin.svg';
 import Github from '../../public/assets/network/github.svg';
 
 import { TypeAnimation } from 'react-type-animation';
-import { Button } from '@/utilities/Button';
 
 export function SectionHero() {
   return (

@@ -1,13 +1,8 @@
 'use client';
 
-import Link from 'next/link';
+import Image from 'next/image';
 import { NavLink } from './NavLink';
 import { useState } from 'react';
-import Image from 'next/image';
-
-import Open from '../../public/assets/menu.svg';
-import Close from '../../public/assets/close.svg';
-import { MenuOverlay } from './MenuOverlay';
 
 import { motion } from 'framer-motion';
 import {
@@ -15,7 +10,10 @@ import {
   slideFromRight,
   visibleFromOpacityZero,
 } from '@/utils/motion';
-import { slideFromTop } from './../utils/motion';
+
+import Open from '../../public/assets/menu.svg';
+import Close from '../../public/assets/close.svg';
+import { MenuOverlay } from './MenuOverlay';
 
 export type NavLinksProps = {
   title: string;

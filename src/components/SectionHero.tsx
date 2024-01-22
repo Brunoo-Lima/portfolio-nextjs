@@ -3,23 +3,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { TypeAnimation } from 'react-type-animation';
+
 import { motion } from 'framer-motion';
+import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
+import { slideFromTop } from './../utils/motion';
 
 import Background from '../../public/assets/background.png';
 import Linkedin from '../../public/assets/network/linkedin.svg';
 import Github from '../../public/assets/network/github.svg';
 
-import { TypeAnimation } from 'react-type-animation';
-import {
-  slideFromBottom,
-  slideFromLeft,
-  visibleFromOpacityZero,
-} from '@/utils/motion';
-import { slideFromTop } from './../utils/motion';
-
 export function SectionHero() {
   return (
-    <section className="md:py-40 py-20" id="initial">
+    <section className="md:mt-12 md:mb-56 py-20" id="initial">
       <motion.div
         initial="hidden"
         animate="visible"

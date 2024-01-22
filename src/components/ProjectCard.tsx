@@ -20,7 +20,7 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div
-      className="lg:w-[450px] w-full lg:h-[350px] md:h-[400px] h-[300px] bg-contain group relative rounded-md border border-gray-800 md:mt-0 mt-4"
+      className="lg:w-[450px] w-full lg:h-[350px] md:h-[400px] h-[250px]  group relative rounded-md border border-gray-800 md:mt-0 mt-4"
       style={{
         background: `url(${imgUrl})`,
         backgroundSize: 'cover',

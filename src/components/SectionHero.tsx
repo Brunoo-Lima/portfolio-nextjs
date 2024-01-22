@@ -63,7 +63,7 @@ export function SectionHero() {
         <Image
           src={Background}
           alt="Imagem para efeito na parte direita da introdução"
-          className="absolute md:right-24 right-0 -top-10 block rounded-section_hero max-w-full md:w-[500px] md:h-[500px] w-[140px] h-[120px] animate-spin-slow md:blur-xxxl blur-2xl md:opacity-25 opacity-65"
+          className="absolute lg:right-20 right-0 md:-top-20 -top-10 block rounded-section_hero max-w-full md:w-[500px] md:h-[500px] w-[140px] h-[120px] animate-spin-slow md:blur-xxxl blur-2xl md:opacity-25 opacity-65"
         />
       </div>
     </section>

@@ -10,7 +10,11 @@ import Close from '../../public/assets/close.svg';
 import { MenuOverlay } from './MenuOverlay';
 
 import { motion } from 'framer-motion';
-import { slideFromLeft, slideFromRight } from '@/utils/motion';
+import {
+  slideFromLeft,
+  slideFromRight,
+  visibleFromOpacityZero,
+} from '@/utils/motion';
 import { slideFromTop } from './../utils/motion';
 
 export type NavLinksProps = {
@@ -44,15 +48,15 @@ export function Navbar() {
       <motion.div
         initial="hidden"
         animate="visible"
-        variants={slideFromTop}
+        variants={visibleFromOpacityZero}
         className="flex fle-wrap items-center justify-between mx-auto p-8 container"
       >
-        <Link
-          href={'/'}
+        <motion.h1
+          variants={slideFromLeft(0.2)}
           className="text-3xl md:text-4xl font-semibold inline-block text-transparent bg-gradient-to-r from-primary-green to-second-green bg-clip-text"
         >
           ❮BL/❯
-        </Link>
+        </motion.h1>
 
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -75,13 +79,16 @@ export function Navbar() {
         </div>
 
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex gap-4 items-center md:flex-row md:space-x-6 mt-0">
+          <motion.ul
+            variants={slideFromRight(0.2)}
+            className="flex gap-4 items-center md:flex-row md:space-x-6 mt-0"
+          >
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
       </motion.div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}

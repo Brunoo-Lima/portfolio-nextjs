@@ -19,7 +19,7 @@ const config: Config = {
         'tertiary-green': '#0EAD69',
       },
       borderRadius: {
-        section_hero: '30% 70% 76% 24% / 69% 45% 55% 31% ',
+        section_hero: '51% 49% 45% 55% / 50% 49% 51% 50%',
       },
       animation: {
         'spin-slow': 'spin 30s alternate infinite',

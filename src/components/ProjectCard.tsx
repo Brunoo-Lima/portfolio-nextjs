@@ -18,10 +18,8 @@ export function ProjectCard({
   technologies,
 }: ProjectCardProps) {
   return (
-    <Link
-      href={href}
-      target="blank"
-      className="lg:w-[450px] w-full md:h-[350px] h-[250px] bg-contain group relative rounded-md border border-gray-800 lg:mt-0 mt-4"
+    <div
+      className="lg:w-[450px] w-full lg:h-[350px] md:h-[400px] h-[300px] bg-contain group relative rounded-md border border-gray-800 md:mt-0 mt-4"
       style={{
         background: `url(${imgUrl})`,
         backgroundSize: 'cover',
@@ -39,6 +37,6 @@ export function ProjectCard({
           Tecnologias: {technologies}
         </p>
       </aside>
-    </Link>
+    </div>
   );
 }

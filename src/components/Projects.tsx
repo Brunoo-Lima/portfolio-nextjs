@@ -1,4 +1,10 @@
+'use client';
+
+import { motion, useInView } from 'framer-motion';
+
 import { ProjectCard } from './ProjectCard';
+import { useRef } from 'react';
+import { slideFromLeft } from '@/utils/motion';
 
 type ProjectCardProps = {
   id: number;
@@ -30,7 +36,7 @@ const projectCard: ProjectCardProps[] = [
     description:
       'Aplicação fullstack, baseado em criação e autenticação, faz a requisição no backend e verifica as informações.',
     technologies:
-      'React, Typescript, CSS modules, React router, Nodejs, JwtWebToken.',
+      'React, Typescript, CSS modules, React router, Nodejs, Jsonwebtoken.',
   },
   {
     id: 3,
@@ -74,27 +80,51 @@ const projectCard: ProjectCardProps[] = [
 ];
 
 export function Projects() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const projectVariants = {
+    initial: { y: -50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   return (
     <section className="md:py-20 py-8" id="projects">
       <div className="flex justify-center lg:mb-12 mb-4">
-        <h1 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text">
+        <motion.h1
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'}
+          variants={slideFromLeft(0.2)}
+          ref={ref}
+          className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text"
+        >
           Projetos
-        </h1>
+        </motion.h1>
       </div>
 
-      <div className="flex flex-wrap md:flex-row justify-center lg:gap-6 gap-2">
-        {projectCard.map((project) => (
-          <ProjectCard
+      <ul
+        className="flex flex-wrap lg:flex-row flex-col justify-center lg:gap-4 gap-2"
+        ref={ref}
+      >
+        {projectCard.map((project, index) => (
+          <motion.li
             key={project.id}
-            imgUrl={project.image}
-            href={project.href}
-            type={project.type}
-            title={project.title}
-            description={project.description}
-            technologies={project.technologies}
-          />
+            initial="initial"
+            animate={isInView ? 'animate' : 'initial'}
+            variants={projectVariants}
+            transition={{ duration: 0.5, delay: index * 0.6 }}
+          >
+            <ProjectCard
+              imgUrl={project.image}
+              href={project.href}
+              type={project.type}
+              title={project.title}
+              description={project.description}
+              technologies={project.technologies}
+            />
+          </motion.li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

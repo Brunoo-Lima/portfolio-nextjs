@@ -80,7 +80,7 @@ export function About() {
 
           <motion.div
             initial="hidden"
-            animate="visible"
+            animate={isInView ? 'visible' : 'hidden'}
             variants={slideFromLeft(1)}
             className="flex sm:flex-row flex-col md:justify-start justify-center md:gap-4 gap-4 md:p-0 p-4"
           >

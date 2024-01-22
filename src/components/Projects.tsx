@@ -13,7 +13,6 @@ type ProjectCardProps = {
   type: string;
   title: string;
   description: string;
-  technologies: string;
 };
 
 const projectCard: ProjectCardProps[] = [
@@ -25,7 +24,6 @@ const projectCard: ProjectCardProps[] = [
     title: 'Pokedex',
     description:
       'Projeto no qual trabalhei com manipulação da api pokeApi, paginação, pesquisa de pokémon por id ou nome.',
-    technologies: 'ReactJs, Bootstrap',
   },
   {
     id: 2,
@@ -35,8 +33,6 @@ const projectCard: ProjectCardProps[] = [
     title: 'Sistema de Login',
     description:
       'Aplicação fullstack, baseado em criação e autenticação, faz a requisição no backend e verifica as informações.',
-    technologies:
-      'React, Typescript, CSS modules, React router, Nodejs, Jsonwebtoken.',
   },
   {
     id: 3,
@@ -46,7 +42,6 @@ const projectCard: ProjectCardProps[] = [
     title: 'To-do List',
     description:
       'Todolist onde podemos adicionar, excluir e finalizar a tarefa, sistema de busca enquanto digita e vai filtrando e filtragem das tarefas.',
-    technologies: 'React, Javascript, Styled-Components.',
   },
   {
     id: 4,
@@ -56,7 +51,6 @@ const projectCard: ProjectCardProps[] = [
     title: 'Primeiro Portfólio',
     description:
       'Primeiro portfólio que construir para começar a apresentar meus projetos.',
-    technologies: 'HTML, Scss e Javascript',
   },
   {
     id: 5,
@@ -65,7 +59,6 @@ const projectCard: ProjectCardProps[] = [
     type: 'Website',
     title: 'God of War - Ragnarok',
     description: 'Projeto de uma landing page de quando o jogo foi lançado.',
-    technologies: 'HTML, Scss e Javascript',
   },
   {
     id: 6,
@@ -75,7 +68,6 @@ const projectCard: ProjectCardProps[] = [
     title: 'Bikcraft',
     description:
       'Projeto de uma e-commerce de bicicletas, foi um dos primeiros projetos grandes no qual desenvolvi.',
-    technologies: 'HTML, Scss e Javascript',
   },
 ];
 
@@ -120,7 +112,6 @@ export function Projects() {
               type={project.type}
               title={project.title}
               description={project.description}
-              technologies={project.technologies}
             />
           </motion.li>
         ))}

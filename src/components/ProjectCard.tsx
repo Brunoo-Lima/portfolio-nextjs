@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+import External from '../../public/assets/network/external.svg';
 
 type ProjectCardProps = {
   imgUrl: string;
@@ -6,7 +9,6 @@ type ProjectCardProps = {
   type: string;
   title: string;
   description: string;
-  technologies: string;
 };
 
 export function ProjectCard({
@@ -15,7 +17,6 @@ export function ProjectCard({
   type,
   title,
   description,
-  technologies,
 }: ProjectCardProps) {
   return (
     <div
@@ -33,9 +34,21 @@ export function ProjectCard({
         </span>
         <h1 className="text-lg font-bold text-primary-white mb-1">{title}</h1>
         <p className="text-sm text-primary-white mb-2">{description}</p>
-        <p className="text-sm font-bold bg-gradient-to-r text-transparent from-primary-green via-second-green to-tertiary-green bg-clip-text inline-block">
-          Tecnologias: {technologies}
-        </p>
+
+        <button className="bg-primary-white py-2 px-3 rounded-sm border-none hover:scale-105 transition duration-300">
+          <Link
+            href={href}
+            target="blank"
+            className="text-sm text-primary-black flex gap-1 items-center"
+          >
+            Visualizar
+            <Image
+              src={External}
+              alt="Icone de link externo"
+              className="w-4 h-4"
+            />
+          </Link>
+        </button>
       </aside>
     </div>
   );

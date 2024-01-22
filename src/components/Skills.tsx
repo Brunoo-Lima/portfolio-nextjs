@@ -1,4 +1,14 @@
+'use client';
+
+import { motion, useInView } from 'framer-motion';
+
 import { SkillsCard } from './SkillsCard';
+import { useRef } from 'react';
+import {
+  slideFromLeft,
+  slideFromTop,
+  visibleFromOpacityZero,
+} from '@/utils/motion';
 
 export type SkillsListProps = {
   id: number;
@@ -81,17 +91,39 @@ const skillsList: SkillsListProps[] = [
 ];
 
 export function Skills() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const cardVariants = {
+    initial: { y: -50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   return (
     <section className="md:py-20 py-8" id="skills">
       <div className="flex justify-center">
-        <h1 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text">
+        <motion.h1
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'}
+          variants={slideFromLeft(0.2)}
+          ref={ref}
+          className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text"
+        >
           Conhecimentos
-        </h1>
+        </motion.h1>
       </div>
-      <div className="lg:w-[900px] lg:mx-auto mt-12">
+      <div className="lg:w-[900px] lg:mx-auto mt-12" ref={ref}>
         <ul className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-2 gap-4">
-          {skillsList.map((icon) => (
-            <SkillsCard key={icon.id} imgUrl={icon.image} altText={icon.alt} />
+          {skillsList.map((icon, index) => (
+            <motion.li
+              initial="initial"
+              animate={isInView ? 'animate' : 'initial'}
+              variants={cardVariants}
+              transition={{ duration: 0.5, delay: index * 0.5 }}
+              key={icon.id}
+            >
+              <SkillsCard imgUrl={icon.image} altText={icon.alt} />
+            </motion.li>
           ))}
         </ul>
       </div>

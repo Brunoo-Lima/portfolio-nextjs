@@ -9,6 +9,10 @@ import Open from '../../public/assets/menu.svg';
 import Close from '../../public/assets/close.svg';
 import { MenuOverlay } from './MenuOverlay';
 
+import { motion } from 'framer-motion';
+import { slideFromLeft, slideFromRight } from '@/utils/motion';
+import { slideFromTop } from './../utils/motion';
+
 export type NavLinksProps = {
   title: string;
   path: string;
@@ -37,7 +41,12 @@ export function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <nav className="fixed top-0 left-0 right-0 z-30 mx-auto bg-primary-black bg-opacity-100 border-b border-gray-800">
-      <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={slideFromTop}
+        className="flex fle-wrap items-center justify-between mx-auto p-8 container"
+      >
         <Link
           href={'/'}
           className="text-3xl md:text-4xl font-semibold inline-block text-transparent bg-gradient-to-r from-primary-green to-second-green bg-clip-text"
@@ -74,7 +83,7 @@ export function Navbar() {
             ))}
           </ul>
         </div>
-      </div>
+      </motion.div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );

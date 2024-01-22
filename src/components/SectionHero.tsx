@@ -3,18 +3,29 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { motion } from 'framer-motion';
+
 import Background from '../../public/assets/background.png';
 import Linkedin from '../../public/assets/network/linkedin.svg';
 import Github from '../../public/assets/network/github.svg';
 
 import { TypeAnimation } from 'react-type-animation';
+import { slideFromBottom, slideFromLeft } from '@/utils/motion';
+import { slideFromTop } from './../utils/motion';
 
 export function SectionHero() {
   return (
     <section className="md:py-40 py-20" id="initial">
       <div className="relative flex items-center md:justify-between justify-center">
-        <div className="relative grid grid-cols-1 gap-2 items-center z-10">
-          <h1 className="md:text-7xl text-4xl md:text-start text-center leading-tight">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          className="relative grid grid-cols-1 gap-2 items-center z-10"
+        >
+          <motion.h1
+            variants={slideFromLeft(0.5)}
+            className="md:text-7xl text-4xl md:text-start text-center leading-tight"
+          >
             <span className="text-transparent bg-gradient-to-r from-primary-green via-second-green to-tertiary-green bg-clip-text font-bold">
               Olá, eu sou{' '}
             </span>
@@ -32,13 +43,21 @@ export function SectionHero() {
               speed={50}
               repeat={Infinity}
             />
-          </h1>
+          </motion.h1>
 
-          <p className="md:text-3xl text-xl md:text-start text-center leading-tight mb-8 text-second-gray">
+          <motion.p
+            variants={slideFromLeft(0.8)}
+            className="md:text-3xl text-xl md:text-start text-center leading-tight mb-8 text-second-gray"
+          >
             Um apaixonado pela área de desenvolvimento.
-          </p>
+          </motion.p>
 
-          <div className="flex md:justify-start justify-center gap-6">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={slideFromTop}
+            className="flex md:justify-start justify-center gap-6"
+          >
             <button className="hover:bg-primary-gray/45 px-4 py-2 rounded-lg transition duration-300 border border-transparent hover:border hover:border-primary-gray">
               <Link
                 href="https://www.linkedin.com/in/bruno-lima-8a2407173/"
@@ -57,8 +76,8 @@ export function SectionHero() {
                 <Image src={Github} alt="Icone do github" className="w-8 h-8" />
               </Link>
             </button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         <Image
           src={Background}

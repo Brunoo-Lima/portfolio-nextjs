@@ -4,7 +4,8 @@ import { motion, useInView } from 'framer-motion';
 
 import { ProjectCard } from './ProjectCard';
 import { useRef } from 'react';
-import { slideFromLeft } from '@/utils/motion';
+import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
+import { Reveal } from '@/utils/Reveal';
 
 type ProjectCardProps = {
   id: number;
@@ -82,40 +83,38 @@ export function Projects() {
 
   return (
     <section className="md:py-20 py-8" id="projects">
-      <div className="flex justify-center lg:mb-12 mb-4">
-        <motion.h1
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
-          variants={slideFromLeft(0.1)}
-          ref={ref}
-          className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text"
-        >
-          Projetos
-        </motion.h1>
-      </div>
+      <Reveal variants={visibleFromOpacityZero}>
+        <div className="flex justify-center lg:mb-12 mb-4">
+          <Reveal variants={slideFromLeft(0.1)}>
+            <h1 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text">
+              Projetos
+            </h1>
+          </Reveal>
+        </div>
 
-      <ul
-        className="flex flex-wrap lg:flex-row flex-col justify-center lg:gap-4 gap-2"
-        ref={ref}
-      >
-        {projectCard.map((project, index) => (
-          <motion.li
-            key={project.id}
-            initial="initial"
-            animate={isInView ? 'animate' : 'initial'}
-            variants={projectVariants}
-            transition={{ duration: 0.8, delay: index * 0.6 }}
-          >
-            <ProjectCard
-              imgUrl={project.image}
-              href={project.href}
-              type={project.type}
-              title={project.title}
-              description={project.description}
-            />
-          </motion.li>
-        ))}
-      </ul>
+        <ul
+          className="flex flex-wrap lg:flex-row flex-col justify-center lg:gap-4 gap-2"
+          ref={ref}
+        >
+          {projectCard.map((project, index) => (
+            <motion.li
+              key={project.id}
+              initial="initial"
+              animate={isInView ? 'animate' : 'initial'}
+              variants={projectVariants}
+              transition={{ duration: 0.8, delay: index * 0.6 }}
+            >
+              <ProjectCard
+                imgUrl={project.image}
+                href={project.href}
+                type={project.type}
+                title={project.title}
+                description={project.description}
+              />
+            </motion.li>
+          ))}
+        </ul>
+      </Reveal>
     </section>
   );
 }

@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-
       <div className="container mt-24 md:px-12 px-8 py-4 mx-auto">
         <SectionHero />
         <About />

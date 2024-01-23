@@ -4,11 +4,9 @@ import { motion, useInView } from 'framer-motion';
 
 import { SkillsCard } from './SkillsCard';
 import { useRef } from 'react';
-import {
-  slideFromLeft,
-  slideFromTop,
-  visibleFromOpacityZero,
-} from '@/utils/motion';
+
+import { Reveal } from '@/utils/Reveal';
+import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
 
 export type SkillsListProps = {
   id: number;
@@ -101,32 +99,30 @@ export function Skills() {
 
   return (
     <section className="md:py-20 py-8" id="skills">
-      <div className="flex justify-center">
-        <motion.h1
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
-          variants={slideFromLeft(0.1)}
-          ref={ref}
-          className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text"
-        >
-          Conhecimentos
-        </motion.h1>
-      </div>
-      <div className="lg:w-[900px] lg:mx-auto mt-12" ref={ref}>
-        <ul className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-2 gap-4">
-          {skillsList.map((icon, index) => (
-            <motion.li
-              initial="initial"
-              animate={isInView ? 'animate' : 'initial'}
-              variants={cardVariants}
-              transition={{ duration: 0.8, delay: index * 0.5 }}
-              key={icon.id}
-            >
-              <SkillsCard imgUrl={icon.image} altText={icon.alt} />
-            </motion.li>
-          ))}
-        </ul>
-      </div>
+      <Reveal variants={visibleFromOpacityZero}>
+        <div className="flex justify-center">
+          <Reveal variants={slideFromLeft(0.1)}>
+            <h1 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text">
+              Conhecimentos
+            </h1>
+          </Reveal>
+        </div>
+        <div className="lg:w-[900px] lg:mx-auto mt-12" ref={ref}>
+          <ul className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-2 gap-4">
+            {skillsList.map((icon, index) => (
+              <motion.li
+                initial="initial"
+                animate={isInView ? 'animate' : 'initial'}
+                variants={cardVariants}
+                transition={{ duration: 0.8, delay: index * 0.5 }}
+                key={icon.id}
+              >
+                <SkillsCard imgUrl={icon.image} altText={icon.alt} />
+              </motion.li>
+            ))}
+          </ul>
+        </div>
+      </Reveal>
     </section>
   );
 }

@@ -45,7 +45,6 @@ export function SectionHero() {
                 1000,
               ]}
               wrapper="span"
-              speed={50}
               repeat={Infinity}
             />
           </motion.h1>

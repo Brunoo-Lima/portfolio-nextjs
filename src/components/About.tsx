@@ -81,7 +81,7 @@ export function About() {
           <motion.div
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
-            variants={slideFromLeft(1)}
+            variants={slideFromTop}
             className="flex sm:flex-row flex-col md:justify-start justify-center md:gap-4 gap-4 md:p-0 p-4"
           >
             <button className="bg-gradient-to-br from-primary-green via-second-green to-tertiary-green text-primary-black font-semibold px-1 py-1 sm:w-40 md:h-full h-12 w-full rounded-full transition duration-300 hover:from-tertiary-green hover:via-second-green hover:to-primary-green">

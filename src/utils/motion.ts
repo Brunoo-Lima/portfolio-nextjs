@@ -6,7 +6,7 @@ export function slideFromLeft(delay: number) {
       opacity: 1,
       transition: {
         delay: delay,
-        duration: 0.5,
+        duration: 0.8,
       },
     },
   };
@@ -20,7 +20,7 @@ export function slideFromRight(delay: number) {
       opacity: 1,
       transition: {
         delay: delay,
-        duration: 0.5,
+        duration: 0.8,
       },
     },
   };
@@ -33,7 +33,7 @@ export const slideFromTop = {
     opacity: 1,
     transition: {
       delay: 0.5,
-      duration: 0.5,
+      duration: 0.8,
     },
   },
 };
@@ -45,7 +45,7 @@ export const slideFromBottom = {
     opacity: 1,
     transition: {
       delay: 0.5,
-      duration: 0.5,
+      duration: 0.8,
     },
   },
 };
@@ -56,7 +56,7 @@ export const visibleFromOpacityZero = {
     opacity: 1,
     transition: {
       delay: 0.5,
-      duration: 0.5,
+      duration: 0.8,
     },
   },
 };

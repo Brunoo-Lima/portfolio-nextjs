@@ -76,7 +76,7 @@ export function Projects() {
   const isInView = useInView(ref, { once: true });
 
   const projectVariants = {
-    initial: { y: -50, opacity: 0 },
+    initial: { y: -30, opacity: 0 },
     animate: { y: 0, opacity: 1 },
   };
 
@@ -86,7 +86,7 @@ export function Projects() {
         <motion.h1
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          variants={slideFromLeft(0.2)}
+          variants={slideFromLeft(0.1)}
           ref={ref}
           className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text"
         >
@@ -104,7 +104,7 @@ export function Projects() {
             initial="initial"
             animate={isInView ? 'animate' : 'initial'}
             variants={projectVariants}
-            transition={{ duration: 0.5, delay: index * 0.6 }}
+            transition={{ duration: 0.8, delay: index * 0.6 }}
           >
             <ProjectCard
               imgUrl={project.image}

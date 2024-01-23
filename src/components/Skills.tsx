@@ -105,7 +105,7 @@ export function Skills() {
         <motion.h1
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          variants={slideFromLeft(0.2)}
+          variants={slideFromLeft(0.1)}
           ref={ref}
           className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text"
         >
@@ -119,7 +119,7 @@ export function Skills() {
               initial="initial"
               animate={isInView ? 'animate' : 'initial'}
               variants={cardVariants}
-              transition={{ duration: 0.5, delay: index * 0.5 }}
+              transition={{ duration: 0.8, delay: index * 0.5 }}
               key={icon.id}
             >
               <SkillsCard imgUrl={icon.image} altText={icon.alt} />

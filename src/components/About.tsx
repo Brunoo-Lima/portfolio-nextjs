@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,13 +7,6 @@ import Me from '../../public/assets/me.jpg';
 import { Reveal } from '@/utils/Reveal';
 
 export function About() {
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/assets/devFullStack.pdf';
-    link.download = 'curriculo_Bruno.pdf';
-    link.click();
-  };
-
   return (
     <section className="md:py-20 py-8" id="about">
       <div className="flex md:justify-around justify-center md:flex-row flex-col md:gap-6 gap-4 bg-second-black border border-gray-800 rounded-md md:p-6 py-4">
@@ -71,12 +62,13 @@ export function About() {
                 </Link>
               </button>
               <button className="bg-gradient-to-br from-primary-green via-second-green to-tertiary-green text-primary-black font-semibold px-1 py-1 sm:w-40 w-full rounded-full transition duration-300">
-                <span
+                <Link
+                  href="/assets/devFullStack.pdf"
+                  target="blank"
                   className="bg-primary-black text-primary-white block px-5 py-2 rounded-full hover:bg-primary-black/80"
-                  onClick={handleDownload}
                 >
                   Download CV
-                </span>
+                </Link>
               </button>
             </div>
           </Reveal>

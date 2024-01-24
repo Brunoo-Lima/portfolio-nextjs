@@ -1,8 +1,8 @@
-import { About } from '@/components/About';
 import { Navbar } from '@/components/Navbar';
-import { Projects } from '@/components/Projects';
 import { SectionHero } from '@/components/SectionHero';
+import { About } from '@/components/About';
 import { Skills } from '@/components/Skills';
+import { Projects } from '@/components/Projects';
 import { Footer } from './../components/Footer';
 
 export default function Home() {

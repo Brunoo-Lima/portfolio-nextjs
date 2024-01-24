@@ -8,7 +8,7 @@ import { Reveal } from '@/utils/Reveal';
 
 export function About() {
   return (
-    <section className="md:py-20 py-8" id="about">
+    <section className="md:py-20 py-8" id="Sobre">
       <div className="flex md:justify-around justify-center md:flex-row flex-col md:gap-6 gap-4 bg-second-black border border-gray-800 rounded-md md:p-6 py-4">
         <div className="md:w-5/12 w-11/12 mx-auto">
           <Reveal variants={slideFromTop}>

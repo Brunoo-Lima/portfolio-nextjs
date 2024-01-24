@@ -13,7 +13,7 @@ export function MenuOverlay({ links }: MenuOverlayProps) {
           key={index}
           className="hover:bg-primary-gray/35 rounded-sm transition duration-300"
         >
-          <NavLink href={link.path} title={link.title} />
+          <NavLink targetId={link.id} title={link.title} />
         </li>
       ))}
     </ul>

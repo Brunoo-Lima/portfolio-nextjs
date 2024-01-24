@@ -16,7 +16,7 @@ import { Reveal } from '@/utils/Reveal';
 
 export function SectionHero() {
   return (
-    <section className="md:mt-12 md:mb-56 pt-20 pb-24" id="initial">
+    <section className="md:mt-12 md:mb-56 pt-20 pb-24" id="Início">
       <Reveal variants={visibleFromOpacityZero}>
         <div className="relative flex items-center md:justify-between justify-center">
           <Reveal>

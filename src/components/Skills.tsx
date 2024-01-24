@@ -98,7 +98,7 @@ export function Skills() {
   };
 
   return (
-    <section className="md:py-20 py-8" id="skills">
+    <section className="md:py-20 py-8" id="Conhecimento">
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex justify-center">
           <Reveal variants={slideFromLeft(0.1)}>

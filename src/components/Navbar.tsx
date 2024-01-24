@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { NavLink } from './NavLink';
 import { useState } from 'react';
-
 import { Reveal } from '@/utils/Reveal';
 
 import {
@@ -18,25 +17,25 @@ import { MenuOverlay } from './MenuOverlay';
 
 export type NavLinksProps = {
   title: string;
-  path: string;
+  id: number;
 };
 
 const navLinks: NavLinksProps[] = [
   {
+    id: 1,
     title: 'Início',
-    path: '#initial',
   },
   {
+    id: 2,
     title: 'Sobre',
-    path: '#about',
   },
   {
+    id: 3,
     title: 'Conhecimento',
-    path: '#skills',
   },
   {
+    id: 4,
     title: 'Projetos',
-    path: '#projects',
   },
 ];
 
@@ -77,7 +76,7 @@ export function Navbar() {
               <ul className="flex gap-4 items-center md:flex-row md:space-x-6 mt-0">
                 {navLinks.map((link, index) => (
                   <li key={index}>
-                    <NavLink href={link.path} title={link.title} />
+                    <NavLink targetId={link.id} title={link.title} />
                   </li>
                 ))}
               </ul>

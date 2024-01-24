@@ -1,9 +1,14 @@
-import Link from 'next/link';
+'use client';
+
 import Image from 'next/image';
 
 import UpArrow from '../../public/assets/upArrow.svg';
 
 export function Footer() {
+  const scrollTopTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="border-t border-t-gray-800">
       <div className="container px-12 py-8 mx-auto  ">
@@ -13,14 +18,17 @@ export function Footer() {
             <span className="text-gray-500">Todos os direitos reservados.</span>
           </p>
 
-          <Link href={''} className="flex items-center gap-2">
+          <div
+            className="flex items-center gap-2 hover:cursor-pointer"
+            onClick={scrollTopTop}
+          >
             <p className="md:hidden block">Voltar ao topo</p>
             <Image
               src={UpArrow}
               alt="Icone para voltar ao topo"
               className="w-9 h-9 animate-bounce transition duration-300 bg-primary-black border border-gray-800 rounded-full p-1"
             />
-          </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@ export function Footer() {
             <span className="text-gray-500">Todos os direitos reservados.</span>
           </p>
 
-          <div
+          <button
             className="flex items-center gap-2 hover:cursor-pointer"
             onClick={scrollTopTop}
           >
@@ -28,7 +28,7 @@ export function Footer() {
               alt="Icone para voltar ao topo"
               className="w-9 h-9 animate-bounce transition duration-300 bg-primary-black border border-gray-800 rounded-full p-1"
             />
-          </div>
+          </button>
         </div>
       </div>
     </div>

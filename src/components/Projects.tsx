@@ -19,7 +19,7 @@ type ProjectCardProps = {
 const projectCard: ProjectCardProps[] = [
   {
     id: 1,
-    image: '/assets/projects/pokedex.png',
+    image: '/assets/projects/pokedex.WebP',
     href: 'https://pokedexblima.netlify.app/',
     type: 'Website',
     title: 'Pokedex',
@@ -28,7 +28,7 @@ const projectCard: ProjectCardProps[] = [
   },
   {
     id: 2,
-    image: '/assets/projects/authenticationUser.png',
+    image: '/assets/projects/authenticationUser.WebP',
     href: 'https://github.com/Brunoo-Lima/authentication-user',
     type: 'Website',
     title: 'Sistema de Login',
@@ -37,7 +37,7 @@ const projectCard: ProjectCardProps[] = [
   },
   {
     id: 3,
-    image: '/assets/projects/todolist.png',
+    image: '/assets/projects/todolist.WebP',
     href: 'https://todolist-blima.netlify.app/',
     type: 'Website',
     title: 'To-do List',
@@ -46,7 +46,7 @@ const projectCard: ProjectCardProps[] = [
   },
   {
     id: 4,
-    image: '/assets/projects/portfolio.png',
+    image: '/assets/projects/portfolio.WebP',
     href: 'https://pokedexblima.netlify.app/',
     type: 'Website',
     title: 'Primeiro Portfólio',
@@ -55,7 +55,7 @@ const projectCard: ProjectCardProps[] = [
   },
   {
     id: 5,
-    image: '/assets/projects/gow.png',
+    image: '/assets/projects/gow.WebP',
     href: 'https://gow-ragnarok.netlify.app/',
     type: 'Website',
     title: 'God of War - Ragnarok',
@@ -63,7 +63,7 @@ const projectCard: ProjectCardProps[] = [
   },
   {
     id: 6,
-    image: '/assets/projects/bikcraft.png',
+    image: '/assets/projects/bikcraft.WebP',
     href: 'https://brunoo-lima.github.io/bikcraft/',
     type: 'Website',
     title: 'Bikcraft',

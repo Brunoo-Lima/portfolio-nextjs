@@ -10,13 +10,15 @@ export function About() {
   return (
     <section className="md:py-20 py-8" id="Sobre">
       <div className="flex md:justify-around justify-center md:flex-row flex-col md:gap-6 gap-4 bg-second-black border border-gray-800 rounded-md md:p-6 py-4">
-        <div className="md:w-5/12 w-11/12 mx-auto">
+        <div className="md:w-5/12 w-10/12 mx-auto">
           <Reveal variants={slideFromTop}>
             <div className="relative group">
               <Image
                 src={Me}
                 alt="Minha foto"
                 className="block max-w-full rounded-md relative "
+                width={600}
+                height={500}
               />
               <div className="absolute invisible group-hover:visible bg-gradient-to-t from-primary-green via-second-green to-tertiary-green h-full w-2 top-0 left-0 rounded-tl-md rounded-bl-md transition-all hover:duration-300"></div>
             </div>
@@ -35,9 +37,9 @@ export function About() {
             </h1>
           </Reveal>
           <Reveal variants={slideFromLeft(0.6)}>
-            <h3 className="text-lg text-primary-white mb-4">
+            <h2 className="text-lg text-primary-white mb-4">
               FullStack Developer
-            </h3>
+            </h2>
           </Reveal>
 
           <Reveal variants={slideFromLeft(0.8)}>

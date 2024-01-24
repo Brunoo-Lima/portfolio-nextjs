@@ -1,13 +1,10 @@
-'use client';
-
-import { animateScroll, Link } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 type NavLinkProps = {
   title: string;
-  targetId: number;
 };
 
-export function NavLink({ targetId, title }: NavLinkProps) {
+export function NavLink({ title }: NavLinkProps) {
   return (
     <Link
       to={title}

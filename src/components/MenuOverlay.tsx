@@ -7,11 +7,11 @@ type MenuOverlayProps = {
 
 export function MenuOverlay({ links }: MenuOverlayProps) {
   return (
-    <ul className="flex flex-col py-4 text-center px-3 transition duration-300">
+    <ul className="md:hidden flex flex-col pt-16 px-4 text-center transition-all duration-500 ease-in-out absolute bg-[#181818] h-screen w-screen z-50 ">
       {links.map((link) => (
         <li
           key={link.id}
-          className="hover:bg-primary-gray/35 rounded-sm transition duration-300"
+          className="text-2xl mb-4 rounded-sm transition-all duration-300"
         >
           <NavLink title={link.title} />
         </li>

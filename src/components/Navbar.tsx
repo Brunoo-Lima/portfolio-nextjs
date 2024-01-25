@@ -96,7 +96,7 @@ export function Navbar() {
             </button>
           </div>
 
-          <div className="menu hidden md:block md:w-auto" id="navbar">
+          <div className="hidden md:block md:w-auto" id="navbar">
             <Reveal variants={slideFromRight(0.2)}>
               <ul className="flex gap-4 items-center md:flex-row md:space-x-6 mt-0">
                 {navLinks.map((link) => (

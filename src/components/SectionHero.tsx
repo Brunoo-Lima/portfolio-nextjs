@@ -5,10 +5,15 @@ import Link from 'next/link';
 
 import { TypeAnimation } from 'react-type-animation';
 
-import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
+import {
+  slideFromLeft,
+  slideFromRight,
+  visibleFromOpacityZero,
+} from '@/utils/motion';
 import { slideFromTop } from './../utils/motion';
 
 import Background from '../../public/assets/background.png';
+import Background2 from '../../public/assets/main.svg';
 import Linkedin from '../../public/assets/network/linkedin.svg';
 import Github from '../../public/assets/network/github.svg';
 
@@ -16,7 +21,7 @@ import { Reveal } from '@/utils/Reveal';
 
 export function SectionHero() {
   return (
-    <section className="md:mt-12 md:mb-56 pt-20 pb-24" id="Início">
+    <section className="md:mt-9 md:mb-36 pt-20 pb-24" id="Início">
       <Reveal variants={visibleFromOpacityZero}>
         <div className="relative flex items-center md:justify-between justify-center">
           <Reveal>
@@ -80,10 +85,20 @@ export function SectionHero() {
           <Image
             src={Background}
             alt="Imagem para efeito na parte direita da introdução"
-            className="absolute lg:right-20 right-0 md:-top-20 -top-10 block rounded-section_hero max-w-full md:w-[500px] md:h-[500px] w-[140px] h-[120px] animate-spin-slow md:blur-xxxl blur-2xl md:opacity-25 opacity-65"
+            className="md:hidden absolute lg:right-20 right-0 md:-top-20 -top-10 block rounded-section_hero max-w-full md:w-[500px] md:h-[500px] w-[140px] h-[120px] animate-spin-slow md:blur-xxxl blur-2xl md:opacity-25 opacity-65"
             width={500}
             height={500}
           />
+
+          <Reveal variants={slideFromRight(0.8)}>
+            <Image
+              src={Background2}
+              alt="Imagem para efeito na parte direita da introdução"
+              className="md:block hidden max-w-full lg:w-[500px] lg:h-[500px]  max-h-fit "
+              width={400}
+              height={400}
+            />
+          </Reveal>
         </div>
       </Reveal>
     </section>

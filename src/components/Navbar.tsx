@@ -79,19 +79,21 @@ export function Navbar() {
           </Reveal>
 
           <div className="block md:hidden" id="mobile-menu">
-            <button onClick={handleClick}>
+            <button
+              onClick={handleClick}
+              className="group flex p-2 cursor-pointer items-center justify-center"
+            >
               {!navbarOpen ? (
-                <Image
-                  src={Open}
-                  alt="Icone aberto"
-                  className="w-8 h-8 outline-none rounded-md transition duration-200 hover:outline-1 hover:outline-white"
-                />
+                <div className="space-y-2">
+                  <span className="block h-[1px] w-8 origin-center rounded-full bg-primary-white transition-transform ease-in-out -translate-y-1.0 duration-500 "></span>
+                  <span className="block h-[1px] w-8 origin-center rounded-full bg-primary-white transition-transform ease-in-out translate-y-1.0 duration-500 group-active:invisible"></span>
+                  <span className="block h-[1px] w-8 origin-center rounded-full bg-primary-white transition-transform ease-in-out translate-y-1.0 duration-500"></span>
+                </div>
               ) : (
-                <Image
-                  src={Close}
-                  alt="Icone aberto"
-                  className="w-8 h-8 outline-none rounded-md transition duration-200 hover:outline-1 hover:outline-white"
-                />
+                <div className="space-y-2">
+                  <span className="block h-[1px] w-8 bg-primary-white transition-transform ease-in-out translate-y-0.5 -rotate-45 duration-500"></span>
+                  <span className="block h-[1px] w-8 bg-primary-white transition-transform ease-in-out -translate-y-1.5 rotate-45 duration-500"></span>
+                </div>
               )}
             </button>
           </div>

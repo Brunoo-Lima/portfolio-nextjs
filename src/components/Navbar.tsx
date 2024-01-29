@@ -83,18 +83,27 @@ export function Navbar() {
               onClick={handleClick}
               className="group flex p-2 cursor-pointer items-center justify-center"
             >
-              {!navbarOpen ? (
-                <div className="space-y-2">
-                  <span className="block h-[1px] w-8 origin-center rounded-full bg-primary-white transition-transform ease-in-out -translate-y-1.0 duration-500 "></span>
-                  <span className="block h-[1px] w-8 origin-center rounded-full bg-primary-white transition-transform ease-in-out translate-y-1.0 duration-500 group-active:invisible"></span>
-                  <span className="block h-[1px] w-8 origin-center rounded-full bg-primary-white transition-transform ease-in-out translate-y-1.0 duration-500"></span>
-                </div>
-              ) : (
-                <div className="space-y-2">
-                  <span className="block h-[1px] w-8 bg-primary-white transition-transform ease-in-out translate-y-0.5 -rotate-45 duration-500"></span>
-                  <span className="block h-[1px] w-8 bg-primary-white transition-transform ease-in-out -translate-y-1.5 rotate-45 duration-500"></span>
-                </div>
-              )}
+              <div className="space-y-2">
+                <span
+                  className={`block h-[1px] w-8 rounded-full bg-primary-white transition-transform ease-in-out duration-500 ${
+                    !navbarOpen
+                      ? '-translate-y-1.0'
+                      : 'transition-transform ease-in-out translate-y-2 -rotate-45'
+                  }`}
+                ></span>
+                <span
+                  className={`block h-[1px] w-8 rounded-full bg-primary-white transition-opacity ease-in-out duration-500 ${
+                    navbarOpen ? 'opacity-0' : 'translate-y-1.0 opacity-100'
+                  } `}
+                ></span>
+                <span
+                  className={`block h-[1px] w-8 rounded-full bg-primary-white transition-transform ease-in-out duration-500 ${
+                    !navbarOpen
+                      ? 'translate-y-1.0'
+                      : 'transition-transform ease-in-out -translate-y-2 rotate-45'
+                  }`}
+                ></span>
+              </div>
             </button>
           </div>
 

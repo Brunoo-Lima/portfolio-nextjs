@@ -38,19 +38,20 @@ export function About() {
           </Reveal>
           <Reveal variants={slideFromLeft(0.6)}>
             <h2 className="text-lg text-primary-white mb-4">
-              FullStack Developer
+              Front End Developer
             </h2>
           </Reveal>
 
           <Reveal variants={slideFromLeft(0.8)}>
             <p className="text-base text-second-gray text-justify leading-snug mb-6 max-md:px-5">
               Meu nome é Bruno Lima, atualmente estou cursando Análise e
-              Desenvolvimento de Sistemas - Fatec. Sou desenvolvedor fullStack
+              Desenvolvimento de Sistemas - Fatec. Sou desenvolvedor front end
               atualmente, gosto das duas áreas de atuação, tanto backend, quanto
-              frontend. Estou migrando de área, no momento ainda não consegui
-              uma vaga como dev, mas continuo me aprofundando na área e fazendo
-              projetos pessoais para estar preparado para a minha primeira
-              chance na área.
+              frontend, planejo no futuro se tornar um desenvolvedor FullStack.
+              No momento, estou migrando de área, ainda não consegui uma vaga
+              como dev, mas continuo me aprofundando na área e fazendo projetos
+              pessoais para estar preparado para a minha primeira chance na
+              área.
             </p>
           </Reveal>
           <Reveal variants={slideFromTop}>
@@ -65,7 +66,7 @@ export function About() {
               </button>
               <button className="bg-gradient-to-br from-primary-green via-second-green to-tertiary-green text-primary-black font-semibold px-1 py-1 sm:w-40 w-full rounded-full transition duration-300">
                 <Link
-                  href="/assets/devFullStack.pdf"
+                  href="/assets/devFront.pdf"
                   target="blank"
                   className="bg-primary-black text-primary-white block px-5 py-2 rounded-full hover:bg-primary-black/80"
                 >

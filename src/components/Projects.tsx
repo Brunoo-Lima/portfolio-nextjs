@@ -19,6 +19,24 @@ type ProjectCardProps = {
 const projectCard: ProjectCardProps[] = [
   {
     id: 1,
+    image: '/assets/projects/coffee.WebP',
+    href: 'https://coffee-blima.netlify.app/',
+    type: 'Website',
+    title: 'Coffee Delivery',
+    description:
+      'Coffee Delivery é uma página web de catálogo e compra de cafés.',
+  },
+  {
+    id: 2,
+    image: '/assets/projects/shop2.0.WebP',
+    href: 'https://github.com/Brunoo-Lima/shop2',
+    type: 'Website',
+    title: 'Shop 2.0',
+    description:
+      'Projeto utilizando pela primeira vez a biblioteca Redux, é uma página web de catálogo de camisas, com um slide básico, adiciona o item ao carrinho e finalização de compra.',
+  },
+  {
+    id: 3,
     image: '/assets/projects/pokedex.WebP',
     href: 'https://pokedexblima.netlify.app/',
     type: 'Website',
@@ -27,7 +45,7 @@ const projectCard: ProjectCardProps[] = [
       'Projeto no qual trabalhei com manipulação da api pokeApi, paginação, pesquisa de pokémon por id ou nome.',
   },
   {
-    id: 2,
+    id: 4,
     image: '/assets/projects/authenticationUser.WebP',
     href: 'https://github.com/Brunoo-Lima/authentication-user',
     type: 'Website',
@@ -36,16 +54,16 @@ const projectCard: ProjectCardProps[] = [
       'Aplicação fullstack, baseado em criação e autenticação, faz a requisição no backend e verifica as informações.',
   },
   {
-    id: 3,
+    id: 5,
     image: '/assets/projects/todolist.WebP',
     href: 'https://todolist-blima.netlify.app/',
     type: 'Website',
     title: 'To-do List',
     description:
-      'Todolist onde podemos adicionar, excluir e finalizar a tarefa, sistema de busca enquanto digita e vai filtrando e filtragem das tarefas.',
+      'Todolist onde podemos adicionar, excluir e finalizar a tarefa, sistema de busca enquanto digita e filtragem das tarefas.',
   },
   {
-    id: 4,
+    id: 6,
     image: '/assets/projects/portfolio.WebP',
     href: 'https://pokedexblima.netlify.app/',
     type: 'Website',
@@ -54,7 +72,7 @@ const projectCard: ProjectCardProps[] = [
       'Primeiro portfólio que construir para começar a apresentar meus projetos.',
   },
   {
-    id: 5,
+    id: 7,
     image: '/assets/projects/gow.WebP',
     href: 'https://gow-ragnarok.netlify.app/',
     type: 'Website',
@@ -62,13 +80,13 @@ const projectCard: ProjectCardProps[] = [
     description: 'Projeto de uma landing page de quando o jogo foi lançado.',
   },
   {
-    id: 6,
+    id: 8,
     image: '/assets/projects/bikcraft.WebP',
     href: 'https://brunoo-lima.github.io/bikcraft/',
     type: 'Website',
     title: 'Bikcraft',
     description:
-      'Projeto de uma e-commerce de bicicletas, foi um dos primeiros projetos grandes no qual desenvolvi.',
+      'Projeto de um e-commerce de bicicletas, foi um dos primeiros projetos grandes no qual desenvolvi.',
   },
 ];
 

@@ -38,7 +38,7 @@ export function SectionHero() {
                       1000,
                       'Web Developer',
                       1000,
-                      'FullStack Developer',
+                      'Front End Developer',
                       1000,
                     ]}
                     wrapper="span"

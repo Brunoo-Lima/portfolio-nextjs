@@ -29,7 +29,7 @@ const projectCard: ProjectCardProps[] = [
   {
     id: 2,
     image: '/assets/projects/shop2.0.WebP',
-    href: 'https://github.com/Brunoo-Lima/shop2',
+    href: 'https://shop-blima.netlify.app/',
     type: 'Website',
     title: 'Shop 2.0',
     description:

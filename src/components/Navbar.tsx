@@ -78,6 +78,7 @@ export function Navbar() {
 
           <div className="block md:hidden" id="mobile-menu">
             <button
+              type="button"
               onClick={handleClick}
               className="group flex p-2 cursor-pointer items-center justify-center"
             >

@@ -15,7 +15,9 @@ export function Footer() {
         <div className="flex justify-between items-center md:flex-row flex-col">
           <p className="md:order-none order-last md:mt-0 mt-4">
             © 2024 <strong>Bruno Lima. </strong>{' '}
-            <span className="text-gray-500">Todos os direitos reservados.</span>
+            <span className="text-second-gray">
+              Todos os direitos reservados.
+            </span>
           </p>
 
           <button

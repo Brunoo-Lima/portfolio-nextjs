@@ -12,15 +12,14 @@ export function About() {
       <div className="flex md:justify-around justify-center items-center md:flex-row flex-col flex-wrap sm:gap-6 gap-4 bg-second-black border border-gray-800 rounded-md md:p-6 py-4 md:max-w-[1200px] lg:h-[520px] mx-auto">
         <div className=" mx-auto">
           <Reveal variants={slideFromTop}>
-            <figure className="sm:w-[383px] sm:h-[480px] min-w-[250px] min-h-[380px]">
+            <figure>
               <Image
                 src="/assets/me.webp"
                 alt="Minha foto"
                 className="block sm:w-[383px] sm:h-[480px] w-[320px] h-[400px] rounded-lg"
                 width={600}
                 height={500}
-                loading="lazy"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 600px"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
               />
             </figure>
           </Reveal>

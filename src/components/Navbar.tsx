@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { NavLink } from './NavLink';
 import { useEffect, useState } from 'react';
 import { Reveal } from '@/utils/Reveal';
@@ -11,8 +10,6 @@ import {
   visibleFromOpacityZero,
 } from '@/utils/motion';
 
-import Open from '../../public/assets/menu.svg';
-import Close from '../../public/assets/close.svg';
 import { MenuOverlay } from './MenuOverlay';
 
 export type NavLinksProps = {
@@ -68,6 +65,7 @@ export function Navbar() {
   function handleClick() {
     setNavbarOpen(!navbarOpen);
   }
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-30 mx-auto bg-primary-black bg-opacity-100 border-b border-gray-800">
       <Reveal variants={visibleFromOpacityZero}>

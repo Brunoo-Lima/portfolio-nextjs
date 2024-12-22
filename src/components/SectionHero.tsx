@@ -1,10 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
-
 import { TypeAnimation } from 'react-type-animation';
-
 import {
   slideFromLeft,
   slideFromRight,
@@ -12,16 +9,17 @@ import {
 } from '@/utils/motion';
 import { slideFromTop } from './../utils/motion';
 
-import Background from '../../public/assets/background.png';
-import Background2 from '../../public/assets/main.svg';
-import Linkedin from '../../public/assets/network/linkedin.svg';
-import Github from '../../public/assets/network/github.svg';
-
 import { Reveal } from '@/utils/Reveal';
+import { LinkButton } from './ui/button/LinkButton';
+import { LinkedinIcon } from './icons/LinkedinIcon';
+import { GithubIcon } from './icons/GithubIcon';
 
 export function SectionHero() {
   return (
-    <section className="md:mt-9 md:mb-36 pt-20 pb-24" id="Início">
+    <section
+      className="md:mt-9 md:mb-36 pt-20 pb-24 overflow-hidden"
+      id="Início"
+    >
       <Reveal variants={visibleFromOpacityZero}>
         <div className="relative flex items-center md:justify-between justify-center">
           <Reveal>
@@ -55,48 +53,36 @@ export function SectionHero() {
 
               <Reveal variants={slideFromTop}>
                 <div className="flex md:justify-start justify-center gap-6">
-                  <button className="hover:bg-primary-gray/45 px-4 py-2 rounded-lg transition duration-300 border border-transparent hover:border hover:border-primary-gray">
-                    <Link
-                      href="https://www.linkedin.com/in/bruno-lima-8a2407173/"
-                      target="blank"
-                    >
-                      <Image
-                        src={Linkedin}
-                        alt="Icone do linkedIn"
-                        className="w-8 h-8"
-                      />
-                    </Link>
-                  </button>
+                  <LinkButton
+                    icon={<LinkedinIcon />}
+                    href="https://www.linkedin.com/in/bruno-lima-8a2407173/"
+                  />
 
-                  <button className="hover:bg-primary-gray/45 px-4 py-2 rounded-lg transition duration-300 border border-transparent  hover:border hover:border-primary-gray">
-                    <Link href="https://github.com/Brunoo-Lima" target="blank">
-                      <Image
-                        src={Github}
-                        alt="Icone do github"
-                        className="w-8 h-8"
-                      />
-                    </Link>
-                  </button>
+                  <LinkButton
+                    icon={<GithubIcon />}
+                    href="https://github.com/Brunoo-Lima"
+                  />
                 </div>
               </Reveal>
             </div>
           </Reveal>
 
           <Image
-            src={Background}
+            src={'/assets/background.webp'}
             alt="Imagem para efeito na parte direita da introdução"
-            className="md:hidden absolute lg:right-20 right-0 md:-top-20 -top-10 block rounded-section_hero max-w-full md:w-[500px] md:h-[500px] w-[140px] h-[120px] animate-spin-slow md:blur-xxxl blur-2xl md:opacity-25 opacity-65"
+            className="md:hidden absolute lg:right-20 right-0 md:-top-20 -top-10 block rounded-section_hero max-w-full md:w-[500px] md:h-[500px] w-[140px] h-[120px] animate-spin-slow md:blur-xxxl blur-2xl md:opacity-25 opacity-65 "
             width={500}
             height={500}
           />
 
           <Reveal variants={slideFromRight(0.8)}>
             <Image
-              src={Background2}
-              alt="Imagem para efeito na parte direita da introdução"
-              className="md:block hidden max-w-full lg:w-[500px] lg:h-[500px]  max-h-fit "
+              src={'/assets/main.webp'}
+              alt="Imagem de background na direita da introdução"
+              className="md:block hidden max-w-full lg:w-[500px] lg:h-[500px] max-h-fit "
               width={400}
               height={400}
+              priority
             />
           </Reveal>
         </div>

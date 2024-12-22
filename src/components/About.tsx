@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 import { slideFromLeft, slideFromTop } from '@/utils/motion';
 
-import Me from '../../public/assets/me.jpg';
 import { Reveal } from '@/utils/Reveal';
+import { Button } from './ui/button/Button';
+import { ButtonDownload } from './ui/button/ButtonDownload';
 
 export function About() {
   return (
@@ -13,14 +13,17 @@ export function About() {
         <div className="md:w-5/12 w-10/12 mx-auto">
           <Reveal variants={slideFromTop}>
             <div className="relative group">
-              <Image
-                src={Me}
-                alt="Minha foto"
-                className="block max-w-full rounded-md relative "
-                width={600}
-                height={500}
-              />
-              <div className="absolute invisible group-hover:visible bg-gradient-to-t from-primary-green via-second-green to-tertiary-green h-full w-2 top-0 left-0 rounded-tl-md rounded-bl-md transition-all hover:duration-300"></div>
+              <figure>
+                <Image
+                  src="/assets/me.webp"
+                  alt="Minha foto"
+                  className="block max-w-full rounded-md relative"
+                  width={600}
+                  height={500}
+                  loading="lazy"
+                />
+              </figure>
+              <aside className="absolute opacity-0 group-hover:opacity-100 bg-gradient-to-t from-primary-green via-second-green to-tertiary-green h-full w-2 top-0 left-0 rounded-tl-md rounded-bl-md  transition-opacity duration-300"></aside>
             </div>
           </Reveal>
         </div>
@@ -56,23 +59,8 @@ export function About() {
           </Reveal>
           <Reveal variants={slideFromTop}>
             <div className="flex sm:flex-row flex-col md:justify-start justify-center md:gap-4 gap-4 md:p-0 p-4">
-              <button className="bg-gradient-to-br from-primary-green via-second-green to-tertiary-green text-primary-black font-semibold px-1 py-2 sm:w-40 w-full border-none rounded-full transition duration-300 hover:from-tertiary-green hover:via-second-green hover:to-primary-green">
-                <Link
-                  href={'mailto:bruno2.jean.lima@outlook.com.br'}
-                  target="blank"
-                >
-                  Email
-                </Link>
-              </button>
-              <button className="bg-gradient-to-br from-primary-green via-second-green to-tertiary-green text-primary-black font-semibold px-1 py-1 sm:w-40 w-full rounded-full transition duration-300">
-                <Link
-                  href="/assets/devFront.pdf"
-                  target="blank"
-                  className="bg-primary-black text-primary-white block px-5 py-2 rounded-full hover:bg-primary-black/80"
-                >
-                  Download CV
-                </Link>
-              </button>
+              <Button text="Email" />
+              <ButtonDownload href="/assets/devFront.pdf" text="Download CV" />
             </div>
           </Reveal>
         </div>

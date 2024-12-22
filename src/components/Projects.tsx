@@ -1,22 +1,14 @@
 'use client';
 
+import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 import { ProjectCard } from './ProjectCard';
-import { useRef } from 'react';
 import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
 import { Reveal } from '@/utils/Reveal';
+import { IProject } from '@/@types/IProject';
 
-type ProjectCardProps = {
-  id: number;
-  image: string;
-  href: string;
-  type: string;
-  title: string;
-  description: string;
-};
-
-const projectCard: ProjectCardProps[] = [
+const projectCard: IProject[] = [
   {
     id: 1,
     image: '/assets/projects/coffee.WebP',
@@ -122,13 +114,7 @@ export function Projects() {
               variants={projectVariants}
               transition={{ duration: 0.8, delay: index * 0.6 }}
             >
-              <ProjectCard
-                imgUrl={project.image}
-                href={project.href}
-                type={project.type}
-                title={project.title}
-                description={project.description}
-              />
+              <ProjectCard project={project} />
             </motion.li>
           ))}
         </ul>

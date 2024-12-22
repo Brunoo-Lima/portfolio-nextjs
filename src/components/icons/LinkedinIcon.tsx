@@ -9,7 +9,7 @@ export function LinkedinIcon() {
       stroke="#ffffff"
       strokeWidth="0.00024000000000000003"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
         strokeLinecap="round"

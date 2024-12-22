@@ -21,6 +21,7 @@ export function About() {
                   width={600}
                   height={500}
                   loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 600px"
                 />
               </figure>
               <aside className="absolute opacity-0 group-hover:opacity-100 bg-gradient-to-t from-primary-green via-second-green to-tertiary-green h-full w-2 top-0 left-0 rounded-tl-md rounded-bl-md  transition-opacity duration-300"></aside>

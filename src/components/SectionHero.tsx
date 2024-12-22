@@ -17,7 +17,7 @@ import { GithubIcon } from './icons/GithubIcon';
 export function SectionHero() {
   return (
     <section
-      className="md:mt-9 md:mb-36 pt-20 pb-24 overflow-hidden"
+      className="md:mt-9 md:mb-36 pt-20 pb-24 sm:overflow-hidden"
       id="Início"
     >
       <Reveal variants={visibleFromOpacityZero}>

@@ -18,7 +18,6 @@ export function GithubIcon() {
       />
 
       <g id="SVGRepo_iconCarrier">
-        <title>github [#000000]</title> <desc>Created with Sketch.</desc>
         <defs> </defs>
         <g
           id="Page-1"

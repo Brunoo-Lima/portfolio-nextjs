@@ -36,7 +36,7 @@ export function Skills() {
                 transition={{ duration: 0.8, delay: index * 0.5 }}
                 key={tech.id}
               >
-                <SkillsCard icon={tech.icon} />
+                <SkillsCard tech={tech} />
               </motion.li>
             ))}
           </ul>

@@ -2,11 +2,16 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
 
-const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Portfólio',
-  description: 'Portfólio para me conhecerem e apresentar meus projetos.',
+  description:
+    'Desenvolvedor web especializado em criar sites modernos, responsivos e otimizados para SEO. Confira meus projetos e habilidades em front-end.',
 };
 
 export default function RootLayout({

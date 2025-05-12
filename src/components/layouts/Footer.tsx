@@ -2,9 +2,11 @@
 
 import Image from 'next/image';
 
-import UpArrow from '../../public/assets/upArrow.svg';
+import UpArrow from '../../../public/assets/upArrow.svg';
 
 export function Footer() {
+  const year = new Date().getFullYear();
+
   const scrollTopTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -14,7 +16,7 @@ export function Footer() {
       <div className="container px-12 py-8 mx-auto  ">
         <div className="flex justify-between items-center md:flex-row flex-col">
           <p className="md:order-none order-last md:mt-0 mt-4">
-            © 2024 <strong>Bruno Lima. </strong>{' '}
+            © {year} <strong>Bruno Lima. </strong>{' '}
             <span className="text-second-gray">
               Todos os direitos reservados.
             </span>

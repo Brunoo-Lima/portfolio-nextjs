@@ -1,19 +1,21 @@
 import { ExternalIcon } from '@/components/icons/ExternalIcon';
-import Link from 'next/link';
 
 interface IButtonViewProps {
   href: string;
+  textTooltip: string;
 }
 
-export function ButtonView({ href }: IButtonViewProps) {
+export function ButtonView({ href, textTooltip }: IButtonViewProps) {
   return (
-    <Link
+    <a
       href={href}
       target="_blank"
+      title={textTooltip}
+      rel="noopener noreferrer nofollow"
       className="flex items-center justify-center gap-2 bg-primary-white py-2 px-3 w-28 rounded-md border-none hover:scale-105 transition duration-300"
     >
       <span className="text-sm text-primary-black font-normal">Visualizar</span>
       <ExternalIcon />
-    </Link>
+    </a>
   );
 }

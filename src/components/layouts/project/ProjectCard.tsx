@@ -1,6 +1,6 @@
 import { IProject } from '@/@types/IProject';
-import { ButtonView } from './ui/button/ButtonView';
-import { MaskCard } from './ui/MaskCard/MaskCard';
+import { ButtonView } from '@/components/ui/button/ButtonView';
+import { MaskCard } from '@/components/ui/MaskCard/MaskCard';
 
 type ProjectCardProps = {
   project: IProject;
@@ -28,7 +28,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
         <p className="text-sm text-primary-white mb-2">{project.description}</p>
 
-        <ButtonView href={project.href} />
+        <ButtonView textTooltip="Visualizar projeto" href={project.href} />
       </aside>
     </div>
   );

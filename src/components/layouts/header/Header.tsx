@@ -10,7 +10,7 @@ import {
   visibleFromOpacityZero,
 } from '@/utils/motion';
 
-import { MenuOverlay } from './MenuOverlay';
+import { MenuOverlay } from '../../MenuOverlay';
 
 export type NavLinksProps = {
   title: string;
@@ -36,7 +36,7 @@ const navLinks: NavLinksProps[] = [
   },
 ];
 
-export function Navbar() {
+export function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   useEffect(() => {
@@ -67,7 +67,7 @@ export function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-30 mx-auto bg-primary-black bg-opacity-100 border-b border-gray-800">
+    <header className="fixed top-0 left-0 right-0 z-30 mx-auto bg-primary-black bg-opacity-100 border-b border-gray-800">
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
           <Reveal variants={slideFromLeft(0.2)}>
@@ -121,6 +121,6 @@ export function Navbar() {
       </Reveal>
 
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
-    </nav>
+    </header>
   );
 }

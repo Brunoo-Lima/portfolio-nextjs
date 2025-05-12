@@ -5,7 +5,7 @@ import {
 } from '@/utils/motion';
 import { Reveal } from '@/utils/Reveal';
 import Image from 'next/image';
-import { enterprise } from './mocks/Enterprise';
+import { enterprise } from '../mocks/Enterprise';
 
 export function Experience() {
   return (

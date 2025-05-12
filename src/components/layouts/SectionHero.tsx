@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import {
@@ -7,12 +5,13 @@ import {
   slideFromRight,
   visibleFromOpacityZero,
 } from '@/utils/motion';
-import { slideFromTop } from './../utils/motion';
+import { slideFromTop } from '../../utils/motion';
 
 import { Reveal } from '@/utils/Reveal';
-import { LinkButton } from './ui/button/LinkButton';
-import { LinkedinIcon } from './icons/LinkedinIcon';
-import { GithubIcon } from './icons/GithubIcon';
+import { LinkButton } from '../ui/button/LinkButton';
+import { LinkedinIcon } from '../icons/LinkedinIcon';
+import { GithubIcon } from '../icons/GithubIcon';
+import { TitleAnimation } from '../ui/Title/Title';
 
 export function SectionHero() {
   return (
@@ -25,24 +24,7 @@ export function SectionHero() {
           <Reveal>
             <div className="relative grid grid-cols-1 gap-2 items-center z-10">
               <Reveal variants={slideFromLeft(0.5)}>
-                <h1 className="md:text-6xl text-4xl md:text-start text-center leading-tight">
-                  <span className="text-transparent bg-gradient-to-r from-primary-green via-second-green to-tertiary-green bg-clip-text font-bold">
-                    Olá, eu sou{' '}
-                  </span>
-                  <br />
-                  <TypeAnimation
-                    sequence={[
-                      'Bruno',
-                      1000,
-                      'Web Developer',
-                      1000,
-                      'Front End Developer',
-                      1000,
-                    ]}
-                    wrapper="span"
-                    repeat={Infinity}
-                  />
-                </h1>
+                <TitleAnimation />
               </Reveal>
 
               <Reveal variants={slideFromLeft(0.8)}>
@@ -54,11 +36,13 @@ export function SectionHero() {
               <Reveal variants={slideFromTop}>
                 <div className="flex md:justify-start justify-center gap-6">
                   <LinkButton
+                    textTooltip="LinkedIn"
                     icon={<LinkedinIcon />}
                     href="https://www.linkedin.com/in/bruno-lima-8a2407173/"
                   />
 
                   <LinkButton
+                    textTooltip="Github"
                     icon={<GithubIcon />}
                     href="https://github.com/Brunoo-Lima"
                   />

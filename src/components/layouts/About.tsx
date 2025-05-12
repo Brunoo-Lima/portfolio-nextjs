@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { slideFromLeft, slideFromTop } from '@/utils/motion';
 
 import { Reveal } from '@/utils/Reveal';
-import { Button } from './ui/button/Button';
-import { ButtonDownload } from './ui/button/ButtonDownload';
+import { Button } from '../ui/button/Button';
+import { ButtonDownload } from '../ui/button/ButtonDownload';
 
 export function About() {
   return (
@@ -56,8 +56,16 @@ export function About() {
           </Reveal>
           <Reveal variants={slideFromTop}>
             <div className="flex sm:flex-row flex-col lg:justify-start justify-center md:gap-4 gap-4 md:p-0 p-4">
-              <Button text="Email" />
-              <ButtonDownload href="/assets/devFront.pdf" text="Download CV" />
+              <Button
+                href="mailto:bruno2.jean.lima@outlook.com.br"
+                textTooltip="Abrir email"
+                text="Email"
+              />
+              <ButtonDownload
+                href="/curriculo-dev.pdf"
+                textTooltip="Abrir currículo"
+                text="Download CV"
+              />
             </div>
           </Reveal>
         </div>

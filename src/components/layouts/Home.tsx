@@ -1,4 +1,4 @@
-import { Skills } from '../Skills';
+import { Skills } from './Skills/Skills';
 import { About } from './About';
 import { Experience } from './Experience';
 import { Footer } from './Footer';

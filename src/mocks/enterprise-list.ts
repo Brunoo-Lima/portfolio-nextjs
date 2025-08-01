@@ -1,4 +1,4 @@
-export const enterprise = [
+export const enterpriseList = [
   {
     id: 1,
     enterprise: 'Mestres da web',

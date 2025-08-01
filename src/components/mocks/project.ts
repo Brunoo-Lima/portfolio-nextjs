@@ -39,37 +39,19 @@ export const projectCard: IProject[] = [
   },
   {
     id: 5,
-    image: '/assets/projects/todolist.WebP',
-    href: 'https://todolist-blima.netlify.app/',
-    type: 'Website',
-    title: 'To-do List',
-    description:
-      'Todolist onde podemos adicionar, excluir e finalizar a tarefa, sistema de busca enquanto digita e filtragem das tarefas.',
-  },
-  {
-    id: 6,
-    image: '/assets/projects/portfolio.WebP',
-    href: 'https://pokedexblima.netlify.app/',
-    type: 'Website',
-    title: 'Primeiro Portfólio',
-    description:
-      'Primeiro portfólio que construir para começar a apresentar meus projetos.',
-  },
-  {
-    id: 7,
-    image: '/assets/projects/gow.WebP',
-    href: 'https://gow-ragnarok.netlify.app/',
-    type: 'Website',
-    title: 'God of War - Ragnarok',
-    description: 'Projeto de uma landing page de quando o jogo foi lançado.',
-  },
-  {
-    id: 8,
     image: '/assets/projects/bikcraft.WebP',
     href: 'https://brunoo-lima.github.io/bikcraft/',
     type: 'Website',
     title: 'Bikcraft',
     description:
       'Projeto de um e-commerce de bicicletas, foi um dos primeiros projetos grandes no qual desenvolvi.',
+  },
+  {
+    id: 6,
+    image: '/assets/projects/gow.WebP',
+    href: 'https://gow-ragnarok.netlify.app/',
+    type: 'Website',
+    title: 'God of War - Ragnarok',
+    description: 'Projeto de uma landing page de quando o jogo foi lançado.',
   },
 ];

@@ -10,7 +10,7 @@ import { projectCard } from '@/mocks/project';
 
 export function Projects() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref as any, { once: true });
 
   const projectVariants = {
     initial: { y: -30, opacity: 0 },

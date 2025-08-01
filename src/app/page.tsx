@@ -2,7 +2,7 @@ import { About } from '@/components/layouts/About';
 import { Experience } from '@/components/layouts/Experience';
 import { Projects } from '@/components/layouts/project/Projects';
 import { SectionHero } from '@/components/layouts/SectionHero';
-import { Skills } from '@/components/layouts/Skills';
+import { Skills } from '@/components/Skills';
 
 export default function HomePage() {
   return (

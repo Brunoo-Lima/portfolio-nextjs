@@ -1,0 +1,107 @@
+{
+  "Header": {
+    "home": "Inicio",
+    "about": "Sobre",
+    "knowledge": "Conhecimento",
+    "projects": "Projetos",
+    "localeSwitcher": {
+      "en": "English",
+      "pt": "Português"
+    }
+  },
+  "Hero": {
+    "title": "Olá, eu sou",
+    "subtitle": "Um apaixonado pela área de programação."
+  },
+  "About": {
+    "title": "Bruno Lima",
+    "subtitle": "Desenvolvedor Front end",
+    "who_are": "Quem sou",
+    "description": "Meu nome é Bruno Lima e estou cursando Análise e Desenvolvimento de Sistemas na Fatec. Atualmente, atuo como desenvolvedor front-end, mas também tenho interesse em backend e pretendo me tornar um desenvolvedor full-stack no futuro. No momento, estou ganhando experiência prática como estagiário, aprimorando minhas habilidades e explorando novas tecnologias. Além disso, desenvolvo projetos pessoais para consolidar meu aprendizado e expandir meu portfólio.",
+    "button_download_cv": "Download CV"
+  },
+  "Experience": {
+    "title": "Experiências",
+    "area": "Estagiário - Desenvolvedor Front End",
+    "description": "Desenvolvo sites modernos e responsivos, com foco em experiência do usuário, integração de APIs, otimização de SEO e aplicação de dados estruturados para melhor visibilidade e ranqueamento nos motores de busca.",
+    "enterprise": "Mestres da web",
+    "date": "Jun 2024 - Atualmente",
+    "tech": [
+      "Nextjs",
+      "React",
+      "Typescript",
+      "JavaScript",
+      "Context API",
+      "CSS",
+      "Styled Components",
+      "Sass (SCSS)",
+      "SEO"
+    ]
+  },
+  "Knowledge": {
+    "title": "Conhecimentos",
+    "techs": [
+      "HTML",
+      "CSS",
+      "React",
+      "JavaScript",
+      "Typescript",
+      "Nextjs",
+      "Sass",
+      "Styled Components",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Nodejs",
+      "Jest",
+      "Figma"
+    ]
+  },
+  "Projects": {
+    "title": "Projetos",
+    "project": [
+      {
+        "image": "/assets/projects/coffee.WebP",
+        "href": "https://coffee-blima.netlify.app/",
+        "type": "Website",
+        "title": "Coffee Delivery",
+        "description": "Coffee Delivery é uma página web de catálogo e compra de cafés."
+      },
+      {
+        "image": "/assets/projects/shop2.0.WebP",
+        "href": "https://shop-blima.netlify.app/",
+        "type": "Website",
+        "title": "Shop 2.0",
+        "description": "Projeto utilizando pela primeira vez a biblioteca Redux, é uma página web de catálogo de camisas, com um slide básico, adiciona o item ao carrinho e finalização de compra."
+      },
+      {
+        "image": "/assets/projects/pokedex.WebP",
+        "href": "https://pokedexblima.netlify.app/",
+        "type": "Website",
+        "title": "Pokedex",
+        "description": "Projeto no qual trabalhei com manipulação da api pokeApi, paginação, pesquisa de pokémon por id ou nome."
+      },
+      {
+        "image": "/assets/projects/authenticationUser.WebP",
+        "href": "https://github.com/Brunoo-Lima/authentication-user",
+        "type": "Website",
+        "title": "Sistema de Login",
+        "description": "Aplicação fullstack, baseado em criação e autenticação, faz a requisição no backend e verifica as informações."
+      },
+      {
+        "image": "/assets/projects/gow.WebP",
+        "href": "https://gow-ragnarok.netlify.app/",
+        "type": "Website",
+        "title": "God of War - Ragnarok",
+        "description": "Projeto de uma landing page de quando o jogo foi lançado."
+      },
+      {
+        "image": "/assets/projects/bikcraft.WebP",
+        "href": "https://brunoo-lima.github.io/bikcraft/",
+        "type": "Website",
+        "title": "Bikcraft",
+        "description": "Projeto de um e-commerce de bicicletas, foi um dos primeiros projetos grandes no qual desenvolvi."
+      }
+    ]
+  },
+  "Contact": {}
+}

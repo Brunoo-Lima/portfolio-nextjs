@@ -1,6 +1,11 @@
 import { ITech } from '@/@types/ITech';
+<<<<<<<< HEAD:src/components/layouts/SkillsCard.tsx
+import { ReactNode, useState } from 'react';
 import { Tooltip } from '../ui/Tooltip/Tooltip';
+========
 import { useState } from 'react';
+import { Tooltip } from '../../ui/Tooltip/Tooltip';
+>>>>>>>> main:src/components/layouts/Skills/SkillsCard.tsx
 
 type SkillsCardProps = {
   tech: ITech;

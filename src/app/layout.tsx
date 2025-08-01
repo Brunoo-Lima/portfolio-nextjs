@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     'Desenvolvedor web especializado em criar sites modernos, responsivos e otimizados para SEO. Confira meus projetos e habilidades em front-end.',
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface IRootLayoutProps {
   children: React.ReactNode;
-}) {
+}
+
+export default async function RootLayout({ children }: IRootLayoutProps) {
   return (
     <html lang="pt-BR">
       <body

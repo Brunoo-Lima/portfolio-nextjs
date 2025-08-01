@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { TypeAnimation } from 'react-type-animation';
 import {
   slideFromLeft,
   slideFromRight,
@@ -12,8 +11,11 @@ import { LinkButton } from '../ui/button/LinkButton';
 import { LinkedinIcon } from '../icons/LinkedinIcon';
 import { GithubIcon } from '../icons/GithubIcon';
 import { TitleAnimation } from '../ui/Title/Title';
+import { useTranslations } from 'next-intl';
 
 export function SectionHero() {
+  const t = useTranslations('Hero');
+
   return (
     <section
       className="md:mt-9 md:mb-36 pt-20 pb-24 sm:overflow-hidden"
@@ -29,7 +31,7 @@ export function SectionHero() {
 
               <Reveal variants={slideFromLeft(0.8)}>
                 <p className="md:text-3xl text-xl md:text-start text-center leading-tight mb-8 text-second-gray">
-                  Um apaixonado pela área de desenvolvimento.
+                  {t('subtitle')}
                 </p>
               </Reveal>
 

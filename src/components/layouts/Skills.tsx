@@ -5,11 +5,11 @@ import { motion, useInView } from 'framer-motion';
 import { SkillsCard } from './SkillsCard';
 import { Reveal } from '@/utils/Reveal';
 import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
-import { skillsList } from './mocks/Skills';
+import { skillsList } from '@/mocks/Skills';
 
 export function Skills() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref as any, { once: true });
 
   const cardVariants = {
     initial: { y: -50, opacity: 0 },

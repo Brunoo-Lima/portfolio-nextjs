@@ -10,7 +10,7 @@ import {
   visibleFromOpacityZero,
 } from '@/utils/motion';
 
-import { MenuOverlay } from '../../MenuOverlay';
+import { MenuOverlay } from './MenuOverlay';
 
 export type NavLinksProps = {
   title: string;

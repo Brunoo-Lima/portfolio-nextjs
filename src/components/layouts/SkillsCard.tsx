@@ -1,6 +1,6 @@
 import { ITech } from '@/@types/ITech';
 import { ReactNode, useState } from 'react';
-import { Tooltip } from './ui/Tooltip/Tooltip';
+import { Tooltip } from '../ui/Tooltip/Tooltip';
 
 type SkillsCardProps = {
   tech: ITech;

@@ -6,7 +6,7 @@ import { motion, useInView } from 'framer-motion';
 import { ProjectCard } from './ProjectCard';
 import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
 import { Reveal } from '@/utils/Reveal';
-import { projectCard } from '@/components/mocks/project';
+import { projectCard } from '@/mocks/project';
 
 export function Projects() {
   const ref = useRef(null);

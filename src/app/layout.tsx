@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
-import { NextIntlClientProvider } from 'next-intl';
-import { getLocale } from 'next-intl/server';
 import { Header } from '@/components/layouts/header/Header';
 import { Footer } from '@/components/layouts/Footer';
 
@@ -23,17 +21,14 @@ interface IRootLayoutProps {
 }
 
 export default async function RootLayout({ children }: IRootLayoutProps) {
-  const locale = await getLocale();
   return (
-    <html lang={locale}>
+    <html lang="pt-BR">
       <body
         className={`${roboto.className} bg-primary-black text-primary-white antialiased scrollbar-thumb-emerald-500 scrollbar-track-primary-black scrollbar-thin`}
       >
-        <NextIntlClientProvider>
-          <Header />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

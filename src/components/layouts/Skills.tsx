@@ -2,14 +2,10 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { SkillsCard } from './SkillsCard';
 import { Reveal } from '@/utils/Reveal';
 import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
-<<<<<<<< HEAD:src/components/layouts/Skills.tsx
 import { skillsList } from '@/mocks/Skills';
-========
-import { skillsList } from '../../mocks/Skills';
->>>>>>>> main:src/components/layouts/Skills/Skills.tsx
+import { SkillsCard } from './SkillsCard';
 
 export function Skills() {
   const ref = useRef(null);

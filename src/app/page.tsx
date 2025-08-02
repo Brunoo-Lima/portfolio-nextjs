@@ -1,4 +1,5 @@
 import { AboutMe } from '@/components/layouts/about-me';
+import { Contact } from '@/components/layouts/contact/contact';
 import { Experience } from '@/components/layouts/experience';
 import { Hero } from '@/components/layouts/hero';
 import { Project } from '@/components/layouts/project/project';
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Experience />
       <Skills />
       <Project />
+      <Contact />
     </main>
   );
 }

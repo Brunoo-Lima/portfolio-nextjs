@@ -1,6 +1,6 @@
 'use client';
 
-import { NavLink } from './NavLink';
+import { NavLink } from './nav-link';
 import { useEffect, useState } from 'react';
 import { Reveal } from '@/utils/Reveal';
 
@@ -10,7 +10,9 @@ import {
   visibleFromOpacityZero,
 } from '@/utils/motion';
 
-import { MenuOverlay } from './MenuOverlay';
+import { MenuOverlay } from './menu-overlay';
+import { useLocale, useTranslations } from 'next-intl';
+import { SwitcherLanguage } from './switcher-language';
 
 export type NavLinksProps = {
   title: string;
@@ -18,26 +20,16 @@ export type NavLinksProps = {
 };
 
 const navLinks: NavLinksProps[] = [
-  {
-    id: 1,
-    title: 'Início',
-  },
-  {
-    id: 2,
-    title: 'Sobre',
-  },
-  {
-    id: 3,
-    title: 'Conhecimento',
-  },
-  {
-    id: 4,
-    title: 'Projetos',
-  },
+  { id: 1, title: 'about' },
+  { id: 2, title: 'experience' },
+  { id: 3, title: 'knowledge' },
+  { id: 4, title: 'projects' },
 ];
 
 export function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const t = useTranslations('Header');
+  const locale = useLocale();
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -67,11 +59,11 @@ export function Header() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-30 mx-auto bg-primary-black bg-opacity-100 border-b border-gray-800">
+    <header className="fixed top-0 left-0 right-0 z-30 mx-auto bg-primary-black/50 border-b border-gray-800 backdrop-blur-sm backdrop-saturate-50">
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
           <Reveal variants={slideFromLeft(0.2)}>
-            <h1 className="text-3xl md:text-4xl font-semibold inline-block text-transparent bg-gradient-to-r from-primary-green to-second-green bg-clip-text">
+            <h1 className="cursor-default text-3xl md:text-4xl font-semibold inline-block text-transparent bg-gradient-to-r from-primary-green to-second-green bg-clip-text">
               ❮BL/❯
             </h1>
           </Reveal>
@@ -106,16 +98,21 @@ export function Header() {
             </button>
           </div>
 
-          <div className="hidden md:block md:w-auto" id="navbar">
+          <div
+            className="hidden md:flex md:items-center md:space-x-6 md:w-auto"
+            id="navbar"
+          >
             <Reveal variants={slideFromRight(0.2)}>
-              <ul className="flex gap-4 items-center md:flex-row md:space-x-6 mt-0">
+              <ul className="flex gap-4 items-center md:flex-row md:space-x-3 mt-0">
                 {navLinks.map((link) => (
                   <li key={link.id}>
-                    <NavLink title={link.title} />
+                    <NavLink id={link.title} label={t(link.title)} />
                   </li>
                 ))}
               </ul>
             </Reveal>
+
+            <SwitcherLanguage defaultValue={locale} />
           </div>
         </div>
       </Reveal>

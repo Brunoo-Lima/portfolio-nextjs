@@ -1,5 +1,5 @@
-import { NavLink } from './NavLink';
-import { NavLinksProps } from './Header';
+import { NavLink } from './nav-link';
+import { NavLinksProps } from './header';
 
 type MenuOverlayProps = {
   links: Array<NavLinksProps>;

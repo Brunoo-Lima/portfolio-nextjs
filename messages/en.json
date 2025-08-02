@@ -1,23 +1,19 @@
 {
   "Header": {
-    "home": "Home",
     "about": "About",
+    "experience": "Experience",
     "knowledge": "Knowledge",
-    "projects": "Projects",
-    "localeSwitcher": {
-      "en": "English",
-      "pt": "Portuguese"
-    }
+    "projects": "Projects"
   },
   "Hero": {
     "title": "Hello, I am",
-    "subtitle": "Passionate about the programming field."
+    "subtitle": "Got an app idea? I'll make it happen."
   },
   "About": {
     "title": "Bruno Lima",
-    "subtitle": "Front-End Developer",
+    "subtitle": "Front End Developer",
     "who_are": "Who I am",
-    "description": "My name is Bruno Lima and I’m currently studying Systems Analysis and Development at Fatec. I work as a front-end developer, but I’m also interested in backend and aim to become a full-stack developer in the future. Currently, I’m gaining practical experience as an intern, improving my skills and exploring new technologies. In addition, I develop personal projects to solidify my learning and expand my portfolio.",
+    "description": "My name is Bruno, a front-end developer and Systems Analysis and Development student at Fatec. I'm currently an intern in the front-end department, where I'm gaining practical experience, honing my skills, and exploring new technologies. <br/>Alongside my internship, I also develop personal projects to consolidate my learning and expand my portfolio with real and creative solutions. <br/>I'm also open to freelance opportunities—especially for those who have a website or app idea and need someone to get it off the ground. If you'd like to discuss your project, just give me a call!",
     "button_download_cv": "Download CV"
   },
   "Experience": {
@@ -26,6 +22,7 @@
     "description": "I develop modern and responsive websites focused on user experience, API integration, SEO optimization, and structured data implementation for better visibility and ranking in search engines.",
     "enterprise": "Mestres da Web",
     "date": "Jun 2024 - Present",
+    "imgURl": "/logo/mw-logo.webp",
     "tech": [
       "Nextjs",
       "React",
@@ -39,67 +36,58 @@
     ]
   },
   "Knowledge": {
-    "title": "Knowledge",
-    "techs": [
-      "HTML",
-      "CSS",
-      "React",
-      "JavaScript",
-      "Typescript",
-      "Nextjs",
-      "Sass",
-      "Styled Components",
-      "Tailwind CSS",
-      "Bootstrap",
-      "Nodejs",
-      "Jest",
-      "Figma"
-    ]
+    "title": "Knowledge"
   },
   "Projects": {
     "title": "Projects",
     "project": [
       {
-        "image": "/assets/projects/coffee.WebP",
+        "image": "/projects/coffee.webp",
         "href": "https://coffee-blima.netlify.app/",
         "type": "Website",
         "title": "Coffee Delivery",
-        "description": "Coffee Delivery is a catalog and coffee shopping web page."
+        "description": "Coffee Delivery is a catalog and coffee shopping web page.",
+        "view": "View"
       },
       {
-        "image": "/assets/projects/shop2.0.WebP",
+        "image": "/projects/shop2.0.WebP",
         "href": "https://shop-blima.netlify.app/",
         "type": "Website",
         "title": "Shop 2.0",
-        "description": "Project using Redux for the first time. It's a shirt catalog page, featuring a basic slider, cart functionality, and checkout."
+        "description": "Project using Redux for the first time. It's a shirt catalog page, featuring a basic slider, cart functionality, and checkout.",
+        "view": "View"
       },
       {
-        "image": "/assets/projects/pokedex.WebP",
+        "image": "/projects/pokedex.WebP",
         "href": "https://pokedexblima.netlify.app/",
         "type": "Website",
         "title": "Pokedex",
-        "description": "Project involving manipulation of the PokéAPI, pagination, and Pokémon search by ID or name."
+        "description": "Project involving manipulation of the PokéAPI, pagination, and Pokémon search by ID or name.",
+        "view": "View"
       },
       {
-        "image": "/assets/projects/authenticationUser.WebP",
+        "image": "/projects/authenticationUser.WebP",
         "href": "https://github.com/Brunoo-Lima/authentication-user",
         "type": "Website",
         "title": "Login System",
-        "description": "Fullstack application based on user creation and authentication, with backend validation."
+        "description": "Fullstack application based on user creation and authentication, with backend validation.",
+        "view": "View"
       },
       {
-        "image": "/assets/projects/gow.WebP",
-        "href": "https://gow-ragnarok.netlify.app/",
-        "type": "Website",
-        "title": "God of War - Ragnarok",
-        "description": "Landing page project created at the time of the game’s launch."
-      },
-      {
-        "image": "/assets/projects/bikcraft.WebP",
+        "image": "/projects/bikcraft.WebP",
         "href": "https://brunoo-lima.github.io/bikcraft/",
         "type": "Website",
         "title": "Bikcraft",
-        "description": "An e-commerce project for bicycles. One of the first large-scale projects I developed."
+        "description": "An e-commerce project for bicycles. One of the first large-scale projects I developed.",
+        "view": "View"
+      },
+      {
+        "image": "/projects/gow.WebP",
+        "href": "https://gow-ragnarok.netlify.app/",
+        "type": "Website",
+        "title": "God of War - Ragnarok",
+        "description": "Landing page project created at the time of the game’s launch.",
+        "view": "View"
       }
     ]
   },

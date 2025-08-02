@@ -1,6 +1,6 @@
 import { IProject } from '@/@types/IProject';
-import { ButtonView } from '@/components/ui/button/ButtonView';
-import { MaskCard } from '@/components/ui/MaskCard/MaskCard';
+import { ButtonView } from '@/components/ui/button/button-view';
+import { MaskCard } from '@/components/ui/mask-card/mask-card';
 
 type ICardProjectProps = {
   project: IProject;

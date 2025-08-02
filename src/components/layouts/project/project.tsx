@@ -1,5 +1,5 @@
 import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
-import { Reveal } from '@/utils/Reveal';
+import { Reveal } from '@/utils/reveal';
 import { ProjectsList } from './projects-list';
 import { getTranslations } from 'next-intl/server';
 export const Project = async () => {

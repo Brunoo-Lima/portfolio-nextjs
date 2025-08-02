@@ -2,8 +2,8 @@ import Image from 'next/image';
 import parse from 'html-react-parser';
 import { slideFromLeft, slideFromTop } from '@/utils/motion';
 
-import { Reveal } from '@/utils/Reveal';
-import { ButtonDownload } from '../ui/button/ButtonDownload';
+import { Reveal } from '@/utils/reveal';
+import { ButtonDownload } from '../ui/button/button-download';
 import { getTranslations } from 'next-intl/server';
 
 export const AboutMe = async () => {

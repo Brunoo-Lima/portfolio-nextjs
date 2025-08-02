@@ -5,12 +5,12 @@ import {
   visibleFromOpacityZero,
 } from '@/utils/motion';
 import { slideFromTop } from '../../utils/motion';
-import { Reveal } from '@/utils/Reveal';
-import { LinkButton } from '../ui/button/LinkButton';
+import { Reveal } from '@/utils/reveal';
 import { LinkedinIcon } from '../icons/LinkedinIcon';
 import { GithubIcon } from '../icons/GithubIcon';
-import { TitleAnimation } from '../ui/Title/Title';
+import { TitleAnimation } from '../ui/title-animation/title-animation';
 import { getTranslations } from 'next-intl/server';
+import { ButtonLink } from '../ui/button/button-link';
 
 export const Hero = async () => {
   const t = await getTranslations('Hero');
@@ -36,13 +36,13 @@ export const Hero = async () => {
 
               <Reveal variants={slideFromTop}>
                 <div className="flex md:justify-start justify-center gap-6">
-                  <LinkButton
+                  <ButtonLink
                     textTooltip="LinkedIn"
                     icon={<LinkedinIcon />}
                     href="https://www.linkedin.com/in/bruno-lima-8a2407173/"
                   />
 
-                  <LinkButton
+                  <ButtonLink
                     textTooltip="Github"
                     icon={<GithubIcon />}
                     href="https://github.com/Brunoo-Lima"

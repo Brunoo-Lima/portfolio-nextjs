@@ -3,7 +3,7 @@ import {
   slideFromTop,
   visibleFromOpacityZero,
 } from '@/utils/motion';
-import { Reveal } from '@/utils/Reveal';
+import { Reveal } from '@/utils/reveal';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 
@@ -51,7 +51,7 @@ export const Experience = async () => {
                 {t('description')}
               </p>
 
-              <div className="flex gap-x-2 mt-4">
+              <div className="flex flex-wrap gap-2 mt-4">
                 {t.raw('tech').map((tech: string, index: number) => (
                   <span
                     key={index}

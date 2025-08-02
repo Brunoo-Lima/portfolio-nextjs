@@ -2,7 +2,7 @@
 
 import { NavLink } from './nav-link';
 import { useEffect, useState } from 'react';
-import { Reveal } from '@/utils/Reveal';
+import { Reveal } from '@/utils/reveal';
 
 import {
   slideFromLeft,
@@ -117,7 +117,7 @@ export function Header() {
         </div>
       </Reveal>
 
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen && <MenuOverlay links={navLinks} t={t} />}
     </header>
   );
 }

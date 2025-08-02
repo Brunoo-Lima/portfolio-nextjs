@@ -17,3 +17,24 @@
   background-color: #38f8d4;
   transition: width 0.3s ease;
 }
+
+@media screen and (max-width: 768px) {
+  .link-menu::after {
+    display: none;
+  }
+
+  .switcher-language {
+    width: 35px !important;
+    height: 22px !important;
+  }
+
+  .switcher-language img {
+    width: 35px !important;
+    height: 22px !important;
+    object-fit: cover;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

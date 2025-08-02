@@ -1,5 +1,5 @@
 import { ITech } from '@/@types/ITech';
-import { Tooltip } from '@/components/ui/Tooltip/Tooltip';
+import { Tooltip } from '@/components/ui/tooltip/tooltip';
 import { useState } from 'react';
 type ICardProps = {
   tech: ITech;

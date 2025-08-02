@@ -3,7 +3,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Card } from './card';
-import { Reveal } from '@/utils/Reveal';
+import { Reveal } from '@/utils/reveal';
 import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
 import { techList } from '@/mocks/tech-list';
 import { useTranslations } from 'next-intl';

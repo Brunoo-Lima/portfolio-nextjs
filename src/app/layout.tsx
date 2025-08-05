@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getUserLocale } from '@/actions/locale';
-import { Toaster } from 'sonner';
 import { Header } from '@/components/layouts/header/header';
 import { Footer } from '@/components/layouts/footer';
+import { Toaster } from 'sonner';
 
 const roboto = Roboto({
   subsets: ['latin'],

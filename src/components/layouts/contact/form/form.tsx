@@ -1,10 +1,13 @@
 'use client';
 
+import { IContact } from '@/@types/IContact';
 import { Input } from '@/components/ui/input/input';
 import { Textarea } from '@/components/ui/textarea/textarea';
+import { formatPhone } from '@/utils/format-phone';
 import { emailSchema, EmailSchema } from '@/validations/email-schema';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
+import { Controller, useForm } from 'react-hook-form';
+import { toast } from 'sonner';
 
 interface IFormProps {
   t: any;
@@ -15,12 +18,46 @@ export const Form = ({ t }: IFormProps) => {
     register,
     formState: { errors, isSubmitting },
     handleSubmit,
+    control,
+    reset,
   } = useForm<EmailSchema>({
     resolver: zodResolver(emailSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+    },
   });
 
-  const onSubmit = (data: EmailSchema) => {
-    console.log(data);
+  const onSubmit = async (data: EmailSchema) => {
+    const allData: IContact = {
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      message: data.message,
+    };
+
+    const sendData = {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(allData),
+    };
+
+    try {
+      const response = await fetch('/api/send-email', sendData);
+
+      if (response) {
+        toast.success('Email enviado com sucesso!');
+        reset();
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error('Ocorreu um erro tente novamente mais tarde');
+    }
   };
 
   return (
@@ -32,6 +69,7 @@ export const Form = ({ t }: IFormProps) => {
         {...register('name')}
         errors={errors.name}
       />
+
       <Input
         label={t('email')}
         placeholder={t('email')}
@@ -39,17 +77,30 @@ export const Form = ({ t }: IFormProps) => {
         {...register('email')}
         errors={errors.email}
       />
-      <Input
-        label={t('phone')}
-        placeholder={t('phone')}
-        type="text"
-        {...register('phone')}
-        errors={errors.phone}
+
+      <Controller
+        control={control}
+        name="phone"
+        render={({ field }) => (
+          <Input
+            label={t('phone')}
+            placeholder={t('phone')}
+            type="tel"
+            {...field}
+            value={formatPhone(field.value || '')}
+            onChange={(e) => field.onChange(e.target.value)}
+            inputMode="numeric"
+            maxLength={15}
+            errors={errors.phone}
+          />
+        )}
       />
+
       <Textarea
         label={t('message')}
         placeholder={t('message')}
         {...register('message')}
+        errors={errors.message}
       />
 
       <button

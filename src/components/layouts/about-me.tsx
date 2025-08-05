@@ -10,7 +10,10 @@ export const AboutMe = async () => {
   const t = await getTranslations('About');
 
   return (
-    <section className="md:py-20 py-8" id="about">
+    <section
+      className="md:py-20 py-8 md:px-12 px-8 container mx-auto"
+      id="about"
+    >
       <div className="flex md:justify-around justify-center items-center md:flex-row flex-col flex-wrap sm:gap-6 gap-4 bg-second-black border border-gray-800 rounded-md md:p-6 py-4 md:max-w-[1200px] lg:h-[520px] mx-auto">
         <div className=" mx-auto">
           <Reveal variants={slideFromTop}>

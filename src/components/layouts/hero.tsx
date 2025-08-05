@@ -17,7 +17,7 @@ export const Hero = async () => {
 
   return (
     <section
-      className="md:mt-9 md:mb-36 pt-20 pb-24 sm:overflow-hidden"
+      className="md:mt-9 md:mb-36 pt-20 pb-24 sm:overflow-hidden container mx-auto md:px-12 px-8"
       id="home"
     >
       <Reveal variants={visibleFromOpacityZero}>

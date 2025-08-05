@@ -7,7 +7,7 @@ import { Skills } from '@/components/layouts/skills/skills';
 
 export default function HomePage() {
   return (
-    <main className="container mt-24 md:px-12 px-8 py-4 mx-auto">
+    <main className="mt-24 pt-4 pb-0">
       <Hero />
       <AboutMe />
       <Experience />

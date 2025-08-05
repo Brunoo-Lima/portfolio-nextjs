@@ -19,7 +19,10 @@ export const Skills = () => {
   };
 
   return (
-    <section className="md:py-20 py-8" id="knowledge">
+    <section
+      className="md:py-20 py-8 md:px-12 px-8 container mx-auto"
+      id="knowledge"
+    >
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex justify-center">
           <Reveal variants={slideFromLeft(0.1)}>

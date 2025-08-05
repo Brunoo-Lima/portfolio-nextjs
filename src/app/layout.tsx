@@ -5,6 +5,7 @@ import { Header } from '@/components/layouts/header/header';
 import { NextIntlClientProvider } from 'next-intl';
 import { getUserLocale } from '@/actions/locale';
 import { Footer } from '@/components/layouts/footer';
+import { Toaster } from 'sonner';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -35,6 +36,8 @@ export default async function RootLayout({ children }: IRootLayoutProps) {
           {children}
           <Footer />
         </NextIntlClientProvider>
+
+        <Toaster richColors />
       </body>
     </html>
   );

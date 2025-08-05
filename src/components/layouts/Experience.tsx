@@ -11,7 +11,10 @@ export const Experience = async () => {
   const t = await getTranslations('Experience');
 
   return (
-    <section id="experience" className="md:py-20 py-8">
+    <section
+      id="experience"
+      className="md:py-20 py-8 md:px-12 px-8 container mx-auto"
+    >
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex flex-col gap-y-8 max-w-[1200px] mx-auto">
           <Reveal

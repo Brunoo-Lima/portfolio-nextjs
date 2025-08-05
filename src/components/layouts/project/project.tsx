@@ -6,7 +6,10 @@ export const Project = async () => {
   const t = await getTranslations('Projects');
 
   return (
-    <section className="md:py-20 py-8" id="projects">
+    <section
+      className="md:py-20 py-8 md:px-12 px-8 container mx-auto "
+      id="projects"
+    >
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex justify-center lg:mb-12 mb-4">
           <Reveal variants={slideFromLeft(0.1)}>

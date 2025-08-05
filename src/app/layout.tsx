@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
 import './globals.css';
+import { Roboto } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getLocale } from 'next-intl/server';
-import { Header } from '@/components/layouts/header/Header';
-import { Footer } from '@/components/layouts/Footer';
+import { getUserLocale } from '@/actions/locale';
+import { Toaster } from 'sonner';
+import { Header } from '@/components/layouts/header/header';
+import { Footer } from '@/components/layouts/footer';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -23,7 +24,8 @@ interface IRootLayoutProps {
 }
 
 export default async function RootLayout({ children }: IRootLayoutProps) {
-  const locale = await getLocale();
+  const locale = await getUserLocale();
+
   return (
     <html lang={locale}>
       <body
@@ -34,6 +36,8 @@ export default async function RootLayout({ children }: IRootLayoutProps) {
           {children}
           <Footer />
         </NextIntlClientProvider>
+
+        <Toaster richColors />
       </body>
     </html>
   );

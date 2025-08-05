@@ -1,12 +1,12 @@
 import { IProject } from '@/@types/IProject';
-import { ButtonView } from '@/components/ui/button/ButtonView';
-import { MaskCard } from '@/components/ui/MaskCard/MaskCard';
+import { ButtonView } from '@/components/ui/button/button-view';
+import { MaskCard } from '@/components/ui/mask-card/mask-card';
 
-type ProjectCardProps = {
+type ICardProjectProps = {
   project: IProject;
 };
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export const CardProject = ({ project }: ICardProjectProps) => {
   return (
     <div
       className="lg:w-[450px] w-full lg:h-[350px] md:h-[400px] h-[250px] group relative rounded-lg border border-gray-800 md:mt-0 mt-4 transition-all duration-500 overflow-hidden"
@@ -28,8 +28,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
         <p className="text-sm text-primary-white mb-2">{project.description}</p>
 
-        <ButtonView textTooltip="Visualizar projeto" href={project.href} />
+        <ButtonView
+          textTooltip={project.view}
+          text={project.view}
+          href={project.href}
+        />
       </aside>
     </div>
   );
-}
+};

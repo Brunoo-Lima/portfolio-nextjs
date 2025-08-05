@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
 
-interface ILinkButtonProps {
+interface IButtonLinkProps {
   icon: ReactNode;
   href: string;
   textTooltip: string;
 }
 
-export function LinkButton({ icon, href, textTooltip }: ILinkButtonProps) {
+export function ButtonLink({ icon, href, textTooltip }: IButtonLinkProps) {
   return (
     <a
       href={href}

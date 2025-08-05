@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { TypeAnimation } from 'react-type-animation';
 import {
   slideFromLeft,
   slideFromRight,
@@ -13,10 +12,10 @@ import { LinkedinIcon } from '../icons/LinkedinIcon';
 import { GithubIcon } from '../icons/GithubIcon';
 import { TitleAnimation } from '../ui/Title/Title';
 
-export function SectionHero() {
+export function Hero() {
   return (
     <section
-      className="md:mt-9 md:mb-36 pt-20 pb-24 sm:overflow-hidden"
+      className="md:mt-9 md:mb-36 pt-20 pb-24 sm:overflow-hidden container mx-auto md:px-12 px-8"
       id="Início"
     >
       <Reveal variants={visibleFromOpacityZero}>

@@ -3,10 +3,10 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
-import { ProjectCard } from './ProjectCard';
+import { Card } from './Card';
 import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
 import { Reveal } from '@/utils/Reveal';
-import { projectCard } from '@/components/mocks/project';
+import { projectCard } from '@/mocks/project';
 
 export function Projects() {
   const ref = useRef(null);
@@ -18,7 +18,10 @@ export function Projects() {
   };
 
   return (
-    <section className="md:py-20 py-8" id="Projetos">
+    <section
+      className="md:py-20 py-8 md:px-12 px-8 container mx-auto"
+      id="Projetos"
+    >
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex justify-center lg:mb-12 mb-4">
           <Reveal variants={slideFromLeft(0.1)}>
@@ -40,7 +43,7 @@ export function Projects() {
               variants={projectVariants}
               transition={{ duration: 0.8, delay: index * 0.6 }}
             >
-              <ProjectCard project={project} />
+              <Card project={project} />
             </motion.li>
           ))}
         </ul>

@@ -2,11 +2,11 @@ import { IProject } from '@/@types/IProject';
 import { ButtonView } from '@/components/ui/button/ButtonView';
 import { MaskCard } from '@/components/ui/MaskCard/MaskCard';
 
-type ProjectCardProps = {
+type ICardProps = {
   project: IProject;
 };
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function Card({ project }: ICardProps) {
   return (
     <div
       className="lg:w-[450px] w-full lg:h-[350px] md:h-[400px] h-[250px] group relative rounded-lg border border-gray-800 md:mt-0 mt-4 transition-all duration-500 overflow-hidden"

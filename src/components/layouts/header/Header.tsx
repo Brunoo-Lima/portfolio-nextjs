@@ -9,8 +9,7 @@ import {
   slideFromRight,
   visibleFromOpacityZero,
 } from '@/utils/motion';
-
-import { MenuOverlay } from '../../MenuOverlay';
+import { MenuMobile } from './MenuMobile';
 
 export type NavLinksProps = {
   title: string;
@@ -67,7 +66,7 @@ export function Header() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-30 mx-auto bg-primary-black bg-opacity-100 border-b border-gray-800">
+    <header className="fixed top-0 left-0 right-0 z-30 mx-auto bg-primary-black/50 border-b border-gray-800 backdrop-blur-sm backdrop-saturate-50">
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
           <Reveal variants={slideFromLeft(0.2)}>
@@ -120,7 +119,7 @@ export function Header() {
         </div>
       </Reveal>
 
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? <MenuMobile links={navLinks} /> : null}
     </header>
   );
 }

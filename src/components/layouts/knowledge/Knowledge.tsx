@@ -2,12 +2,12 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { SkillsCard } from './SkillsCard';
+import { Card } from './Card';
 import { Reveal } from '@/utils/Reveal';
 import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
-import { skillsList } from './mocks/Skills';
+import { skillsList } from '@/mocks/Skills';
 
-export function Skills() {
+export function Knowledge() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -17,7 +17,10 @@ export function Skills() {
   };
 
   return (
-    <section className="md:py-20 py-8" id="Conhecimento">
+    <section
+      className="md:py-20 py-8 md:px-12 px-8 container mx-auto"
+      id="Conhecimento"
+    >
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex justify-center">
           <Reveal variants={slideFromLeft(0.1)}>
@@ -36,7 +39,7 @@ export function Skills() {
                 transition={{ duration: 0.8, delay: index * 0.5 }}
                 key={tech.id}
               >
-                <SkillsCard tech={tech} />
+                <Card tech={tech} />
               </motion.li>
             ))}
           </ul>

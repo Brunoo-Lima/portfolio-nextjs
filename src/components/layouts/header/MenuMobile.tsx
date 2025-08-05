@@ -1,11 +1,11 @@
-import { NavLink } from './layouts/header/NavLink';
-import { NavLinksProps } from './layouts/header/Header';
+import { NavLink } from './NavLink';
+import { NavLinksProps } from './Header';
 
-type MenuOverlayProps = {
+type IMenuMobileProps = {
   links: Array<NavLinksProps>;
 };
 
-export function MenuOverlay({ links }: MenuOverlayProps) {
+export function MenuMobile({ links }: IMenuMobileProps) {
   return (
     <ul className="md:hidden flex flex-col pt-16 px-4 text-center transition-all duration-500 ease-in-out absolute bg-[#0f0f0f] h-screen w-screen z-50 ">
       {links.map((link) => (

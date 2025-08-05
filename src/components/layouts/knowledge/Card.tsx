@@ -1,12 +1,12 @@
 import { ITech } from '@/@types/ITech';
+import { Tooltip } from '@/components/ui/Tooltip/Tooltip';
 import { ReactNode, useState } from 'react';
-import { Tooltip } from './ui/Tooltip/Tooltip';
 
-type SkillsCardProps = {
+type ICardProps = {
   tech: ITech;
 };
 
-export function SkillsCard({ tech }: SkillsCardProps) {
+export function Card({ tech }: ICardProps) {
   const [tooltip, setTooltip] = useState<boolean>(false);
 
   return (

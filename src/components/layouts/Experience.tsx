@@ -5,11 +5,11 @@ import {
 } from '@/utils/motion';
 import Image from 'next/image';
 import { Reveal } from '@/utils/Reveal';
-import { enterprise } from '../mocks/Enterprise';
+import { enterprise } from '../../mocks/Enterprise';
 
 export function Experience() {
   return (
-    <section>
+    <section className="md:py-20 py-8 md:px-12 px-8 container mx-auto">
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex flex-col gap-y-8 max-w-[1200px] mx-auto">
           <Reveal

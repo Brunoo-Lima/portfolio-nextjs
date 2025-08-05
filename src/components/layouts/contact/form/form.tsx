@@ -13,7 +13,7 @@ interface IFormProps {
   t: any;
 }
 
-export const Form = ({ t }: IFormProps) => {
+const Form = ({ t }: IFormProps) => {
   const {
     register,
     formState: { errors, isSubmitting },
@@ -114,3 +114,5 @@ export const Form = ({ t }: IFormProps) => {
     </form>
   );
 };
+
+export default Form;

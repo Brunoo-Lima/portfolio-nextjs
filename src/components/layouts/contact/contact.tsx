@@ -1,7 +1,9 @@
 'use client';
 
-import { Form } from './form/form';
+import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
+
+const Form = dynamic(() => import('./form/form'), { ssr: false });
 
 export const Contact = () => {
   const t = useTranslations('Contact');

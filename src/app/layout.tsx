@@ -7,6 +7,8 @@ import { Header } from '@/components/layouts/header/header';
 import { Footer } from '@/components/layouts/footer';
 import { Toaster } from 'sonner';
 
+
+
 const roboto = Roboto({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800', '900'],

@@ -3,8 +3,8 @@ import {
   slideFromTop,
   visibleFromOpacityZero,
 } from '@/utils/motion';
-import { Reveal } from '@/utils/Reveal';
 import Image from 'next/image';
+import { Reveal } from '@/utils/Reveal';
 import { enterprise } from '../mocks/Enterprise';
 
 export function Experience() {

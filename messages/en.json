@@ -42,7 +42,7 @@
     "title": "Projects",
     "project": [
       {
-        "image": "/img/projects/coffee.webp",
+        "image": "/img/projects/coffee.WebP",
         "href": "https://coffee-blima.netlify.app/",
         "type": "Website",
         "title": "Coffee Delivery",

@@ -3,6 +3,7 @@ import { Experience } from '@/components/layouts/Experience';
 import { Knowledge } from '@/components/layouts/knowledge/Knowledge';
 import { Project } from '@/components/layouts/project/Project';
 import { Hero } from '@/components/layouts/Hero';
+import { Contact } from '@/components/layouts/contact/Contact';
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Experience />
       <Knowledge />
       <Project />
+      <Contact />
     </main>
   );
 }

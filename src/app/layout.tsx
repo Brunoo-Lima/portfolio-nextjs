@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
 import './globals.css';
+import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getUserLocale } from '@/actions/locale';

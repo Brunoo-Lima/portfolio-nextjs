@@ -3,9 +3,10 @@ import { ExternalIcon } from '@/components/icons/ExternalIcon';
 interface IButtonViewProps {
   href: string;
   textTooltip: string;
+  text: string;
 }
 
-export function ButtonView({ href, textTooltip }: IButtonViewProps) {
+export function ButtonView({ href, textTooltip, text }: IButtonViewProps) {
   return (
     <a
       href={href}
@@ -14,7 +15,7 @@ export function ButtonView({ href, textTooltip }: IButtonViewProps) {
       rel="noopener noreferrer nofollow"
       className="flex items-center justify-center gap-2 bg-primary-white py-2 px-3 w-28 rounded-md border-none hover:scale-105 transition duration-300"
     >
-      <span className="text-sm text-primary-black font-normal">Visualizar</span>
+      <span className="text-sm text-primary-black font-normal">{text}</span>
       <ExternalIcon />
     </a>
   );

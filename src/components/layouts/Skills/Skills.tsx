@@ -2,14 +2,16 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { SkillsCard } from './SkillsCard';
-import { Reveal } from '@/utils/Reveal';
+import { Card } from './card';
+import { Reveal } from '@/utils/reveal';
 import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
 import { techList } from '@/mocks/tech-list';
+import { useTranslations } from 'next-intl';
 
-export function Skills() {
+export const Skills = () => {
   const ref = useRef(null);
   const isInView = useInView(ref as any, { once: true });
+  const t = useTranslations('Knowledge');
 
   const cardVariants = {
     initial: { y: -50, opacity: 0 },
@@ -17,12 +19,15 @@ export function Skills() {
   };
 
   return (
-    <section className="md:py-20 py-8" id="Conhecimento">
+    <section
+      className="md:py-20 py-8 md:px-12 px-8 container mx-auto"
+      id="knowledge"
+    >
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex justify-center">
           <Reveal variants={slideFromLeft(0.1)}>
             <h1 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text">
-              Conhecimentos
+              {t('title')}
             </h1>
           </Reveal>
         </div>
@@ -36,7 +41,7 @@ export function Skills() {
                 transition={{ duration: 0.8, delay: index * 0.5 }}
                 key={tech.id}
               >
-                <SkillsCard tech={tech} />
+                <Card tech={tech} />
               </motion.li>
             ))}
           </ul>
@@ -44,4 +49,4 @@ export function Skills() {
       </Reveal>
     </section>
   );
-}
+};

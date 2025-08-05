@@ -6,7 +6,7 @@ interface ILinkButtonProps {
   textTooltip: string;
 }
 
-export function LinkButton({ icon, href, textTooltip }: ILinkButtonProps) {
+export const LinkButton = ({ icon, href, textTooltip }: ILinkButtonProps) => {
   return (
     <a
       href={href}
@@ -19,4 +19,4 @@ export function LinkButton({ icon, href, textTooltip }: ILinkButtonProps) {
       {icon}
     </a>
   );
-}
+};

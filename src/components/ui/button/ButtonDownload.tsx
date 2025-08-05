@@ -4,11 +4,11 @@ interface IButtonDownloadProps {
   textTooltip: string;
 }
 
-export function ButtonDownload({
+export const ButtonDownload = ({
   text,
   href,
   textTooltip,
-}: IButtonDownloadProps) {
+}: IButtonDownloadProps) => {
   return (
     <a
       href={href}
@@ -22,4 +22,4 @@ export function ButtonDownload({
       </strong>
     </a>
   );
-}
+};

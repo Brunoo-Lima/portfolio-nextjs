@@ -1,0 +1,104 @@
+{
+  "Header": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "knowledge": "Conhecimento",
+    "projects": "Projetos"
+  },
+  "Hero": {
+    "title": "Olá, eu sou",
+    "subtitle": "Tem uma ideia de app? Eu transformo em realidade."
+  },
+  "About": {
+    "title": "Bruno Lima",
+    "subtitle": "Desenvolvedor Front end",
+    "who_are": "Quem sou",
+    "description": "Me chamo Bruno, sou desenvolvedor front-end e estudante de Análise e Desenvolvimento de Sistemas na Fatec. Atualmente, atuo como estagiário na área de front-end, onde venho ganhando experiência prática, aprimorando minhas habilidades e explorando novas tecnologias. <br/>Paralelamente ao estágio, também desenvolvo projetos pessoais para consolidar meu aprendizado e expandir meu portfólio com soluções reais e criativas. <br/>Além disso, estou aberto a oportunidades como freelancer — especialmente para quem tem uma ideia de site ou aplicativo e precisa de alguém para tirar o projeto do papel. Se quiser conversar sobre seu projeto, é só me chamar!",
+    "button_download_cv": "Download CV"
+  },
+  "Experience": {
+    "title": "Experiências",
+    "area": "Estagiário - Desenvolvedor Front End",
+    "description": "Desenvolvo sites modernos e responsivos, com foco em experiência do usuário, integração de APIs, otimização de SEO e aplicação de dados estruturados para melhor visibilidade e ranqueamento nos motores de busca.",
+    "enterprise": "Mestres da web",
+    "date": "Jun 2024 - Atualmente",
+    "imgURl": "/logo/mw-logo.webp",
+    "tech": [
+      "Nextjs",
+      "React",
+      "Typescript",
+      "JavaScript",
+      "Context API",
+      "CSS",
+      "Styled Components",
+      "Sass (SCSS)",
+      "SEO"
+    ]
+  },
+  "Knowledge": {
+    "title": "Conhecimentos"
+  },
+  "Projects": {
+    "title": "Projetos",
+    "project": [
+      {
+        "image": "/img/projects/coffee.webp",
+        "href": "https://coffee-blima.netlify.app/",
+        "type": "Website",
+        "title": "Coffee Delivery",
+        "description": "Coffee Delivery é uma página web de catálogo e compra de cafés.",
+        "view": "Visualizar"
+      },
+      {
+        "image": "/img/projects/shop2.0.WebP",
+        "href": "https://shop-blima.netlify.app/",
+        "type": "Website",
+        "title": "Shop 2.0",
+        "description": "Projeto utilizando pela primeira vez a biblioteca Redux, é uma página web de catálogo de camisas, com um slide básico, adiciona o item ao carrinho e finalização de compra.",
+        "view": "Visualizar"
+      },
+      {
+        "image": "/img/projects/pokedex.WebP",
+        "href": "https://pokedexblima.netlify.app/",
+        "type": "Website",
+        "title": "Pokedex",
+        "description": "Projeto no qual trabalhei com manipulação da api pokeApi, paginação, pesquisa de pokémon por id ou nome.",
+        "view": "Visualizar"
+      },
+      {
+        "image": "/img/projects/authenticationUser.WebP",
+        "href": "https://github.com/Brunoo-Lima/authentication-user",
+        "type": "Website",
+        "title": "Sistema de Login",
+        "description": "Aplicação fullstack, baseado em criação e autenticação, faz a requisição no backend e verifica as informações.",
+        "view": "Visualizar"
+      },
+      {
+        "image": "/img/projects/bikcraft.WebP",
+        "href": "https://brunoo-lima.github.io/bikcraft/",
+        "type": "Website",
+        "title": "Bikcraft",
+        "description": "Projeto de um e-commerce de bicicletas, foi um dos primeiros projetos grandes no qual desenvolvi.",
+        "view": "Visualizar"
+      },
+      {
+        "image": "/img/projects/gow.WebP",
+        "href": "https://gow-ragnarok.netlify.app/",
+        "type": "Website",
+        "title": "God of War - Ragnarok",
+        "description": "Projeto de uma landing page de quando o jogo foi lançado.",
+        "view": "Visualizar"
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Entre em contato",
+    "name": "Nome",
+    "phone": "Telefone",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "button_send": "Enviar",
+    "success": "Email enviado com sucesso!",
+    "sending": "Enviando..."
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "Header": {
+    "about": "About",
+    "experience": "Experience",
+    "knowledge": "Knowledge",
+    "projects": "Projects"
+  },
+  "Hero": {
+    "title": "Hello, I am",
+    "subtitle": "Got an app idea? I'll make it happen."
+  },
+  "About": {
+    "title": "Bruno Lima",
+    "subtitle": "Front End Developer",
+    "who_are": "Who I am",
+    "description": "My name is Bruno, a front-end developer and Systems Analysis and Development student at Fatec. I'm currently an intern in the front-end department, where I'm gaining practical experience, honing my skills, and exploring new technologies. <br/>Alongside my internship, I also develop personal projects to consolidate my learning and expand my portfolio with real and creative solutions. <br/>I'm also open to freelance opportunities—especially for those who have a website or app idea and need someone to get it off the ground. If you'd like to discuss your project, just give me a call!",
+    "button_download_cv": "Download CV"
+  },
+  "Experience": {
+    "title": "Experience",
+    "area": "Intern - Front-End Developer",
+    "description": "I develop modern and responsive websites focused on user experience, API integration, SEO optimization, and structured data implementation for better visibility and ranking in search engines.",
+    "enterprise": "Mestres da Web",
+    "date": "Jun 2024 - Present",
+    "imgURl": "/logo/mw-logo.webp",
+    "tech": [
+      "Nextjs",
+      "React",
+      "Typescript",
+      "JavaScript",
+      "Context API",
+      "CSS",
+      "Styled Components",
+      "Sass (SCSS)",
+      "SEO"
+    ]
+  },
+  "Knowledge": {
+    "title": "Knowledge"
+  },
+  "Projects": {
+    "title": "Projects",
+    "project": [
+      {
+        "image": "/img/projects/coffee.webp",
+        "href": "https://coffee-blima.netlify.app/",
+        "type": "Website",
+        "title": "Coffee Delivery",
+        "description": "Coffee Delivery is a catalog and coffee shopping web page.",
+        "view": "View"
+      },
+      {
+        "image": "/img/projects/shop2.0.WebP",
+        "href": "https://shop-blima.netlify.app/",
+        "type": "Website",
+        "title": "Shop 2.0",
+        "description": "Project using Redux for the first time. It's a shirt catalog page, featuring a basic slider, cart functionality, and checkout.",
+        "view": "View"
+      },
+      {
+        "image": "/img/projects/pokedex.WebP",
+        "href": "https://pokedexblima.netlify.app/",
+        "type": "Website",
+        "title": "Pokedex",
+        "description": "Project involving manipulation of the PokéAPI, pagination, and Pokémon search by ID or name.",
+        "view": "View"
+      },
+      {
+        "image": "/img/projects/authenticationUser.WebP",
+        "href": "https://github.com/Brunoo-Lima/authentication-user",
+        "type": "Website",
+        "title": "Login System",
+        "description": "Fullstack application based on user creation and authentication, with backend validation.",
+        "view": "View"
+      },
+      {
+        "image": "/img/projects/bikcraft.WebP",
+        "href": "https://brunoo-lima.github.io/bikcraft/",
+        "type": "Website",
+        "title": "Bikcraft",
+        "description": "An e-commerce project for bicycles. One of the first large-scale projects I developed.",
+        "view": "View"
+      },
+      {
+        "image": "/img/projects/gow.WebP",
+        "href": "https://gow-ragnarok.netlify.app/",
+        "type": "Website",
+        "title": "God of War - Ragnarok",
+        "description": "Landing page project created at the time of the game’s launch.",
+        "view": "View"
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Get in touch",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Message",
+    "button_send": "Send",
+    "success": "Email sent successfully!",
+    "sending": "Sending..."
+  }
+}

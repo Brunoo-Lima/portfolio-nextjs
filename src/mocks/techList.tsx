@@ -1,19 +1,19 @@
 import { ITech } from '@/@types/ITech';
-import { HtmlIcon } from '../components/icons/HtmlIcon';
-import { CssIcon } from '../components/icons/CssIcon';
-import { ReactIcon } from '../components/icons/ReactIcon';
-import { JavascriptIcon } from '../components/icons/JavascriptIcon';
-import { TypescriptIcon } from '../components/icons/TypescriptIcon';
-import { NextIcon } from '../components/icons/NextIcon';
-import { SassIcon } from '../components/icons/SassIcon';
-import { StyledComponentsIcon } from '../components/icons/StyledComponentsIcon';
-import { BootstrapIcon } from '../components/icons/BootstrapIcon';
-import { TailwindIcon } from '../components/icons/TailwindIcon';
-import { NodeIcon } from '../components/icons/NodeIcon';
-import { JestIcon } from '../components/icons/JestIcon';
-import { FigmaIcon } from '../components/icons/FigmaIcon';
+import { CssIcon } from '@/components/icons/CssIcon';
+import { ReactIcon } from '@/components/icons/ReactIcon';
+import { JavascriptIcon } from '@/components/icons/JavascriptIcon';
+import { TypescriptIcon } from '@/components/icons/TypescriptIcon';
+import { NextIcon } from '@/components/icons/NextIcon';
+import { SassIcon } from '@/components/icons/SassIcon';
+import { StyledComponentsIcon } from '@/components/icons/StyledComponentsIcon';
+import { BootstrapIcon } from '@/components/icons/BootstrapIcon';
+import { TailwindIcon } from '@/components/icons/TailwindIcon';
+import { NodeIcon } from '@/components/icons/NodeIcon';
+import { JestIcon } from '@/components/icons/JestIcon';
+import { FigmaIcon } from '@/components/icons/FigmaIcon';
+import { HtmlIcon } from '@/components/icons/HtmlIcon';
 
-export const skillsList: ITech[] = [
+export const techList: ITech[] = [
   {
     id: 1,
     name: 'HTML',

@@ -1,7 +1,7 @@
 import { About } from '@/components/layouts/About';
 import { Experience } from '@/components/layouts/Experience';
 import { Knowledge } from '@/components/layouts/knowledge/Knowledge';
-import { Projects } from '@/components/layouts/project/Projects';
+import { Project } from '@/components/layouts/project/Project';
 import { Hero } from '@/components/layouts/Hero';
 
 export default function HomePage() {
@@ -11,7 +11,7 @@ export default function HomePage() {
       <About />
       <Experience />
       <Knowledge />
-      <Projects />
+      <Project />
     </main>
   );
 }

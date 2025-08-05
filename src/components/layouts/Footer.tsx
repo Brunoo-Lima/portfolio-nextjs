@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-export function Footer() {
+export const Footer = () => {
   const year = new Date().getFullYear();
 
   const scrollTopTop = () => {
@@ -26,8 +26,10 @@ export function Footer() {
           >
             <p className="md:hidden block">Voltar ao topo</p>
             <Image
-              src={'/assets/arrow-up.svg'}
+              src="/assets/upArrow.svg"
               alt="Icone para voltar ao topo"
+              width={36}
+              height={36}
               className="w-9 h-9 animate-bounce transition duration-300 bg-primary-black border border-gray-800 rounded-full p-1"
             />
           </button>
@@ -35,4 +37,4 @@ export function Footer() {
       </div>
     </div>
   );
-}
+};

@@ -4,7 +4,7 @@ interface IButtonProps {
   textTooltip: string;
 }
 
-export function Button({ text, href, textTooltip }: IButtonProps) {
+export const Button = ({ text, href, textTooltip }: IButtonProps) => {
   return (
     <a
       href={href}
@@ -18,4 +18,4 @@ export function Button({ text, href, textTooltip }: IButtonProps) {
       </strong>
     </a>
   );
-}
+};

@@ -7,16 +7,19 @@ import {
 import { slideFromTop } from '../../utils/motion';
 
 import { Reveal } from '@/utils/Reveal';
-import { LinkButton } from '../ui/button/LinkButton';
 import { LinkedinIcon } from '../icons/LinkedinIcon';
 import { GithubIcon } from '../icons/GithubIcon';
 import { TitleAnimation } from '../ui/Title/Title';
+import { getTranslations } from 'next-intl/server';
+import { LinkButton } from '../ui/button/LinkButton';
 
-export function Hero() {
+export const Hero = async () => {
+  const t = await getTranslations('Hero');
+
   return (
     <section
       className="md:mt-9 md:mb-36 pt-20 pb-24 sm:overflow-hidden container mx-auto md:px-12 px-8"
-      id="Início"
+      id="home"
     >
       <Reveal variants={visibleFromOpacityZero}>
         <div className="relative flex items-center md:justify-between justify-center">
@@ -28,7 +31,7 @@ export function Hero() {
 
               <Reveal variants={slideFromLeft(0.8)}>
                 <p className="md:text-3xl text-xl md:text-start text-center leading-tight mb-8 text-second-gray">
-                  Um apaixonado pela área de desenvolvimento.
+                  {t('subtitle')}
                 </p>
               </Reveal>
 
@@ -52,7 +55,7 @@ export function Hero() {
 
           <Image
             src={'/assets/background.webp'}
-            alt="Imagem para efeito na parte direita da introdução"
+            alt=""
             className="md:hidden absolute lg:right-20 right-0 md:-top-20 -top-10 block rounded-section_hero max-w-full md:w-[500px] md:h-[500px] w-[140px] h-[120px] animate-spin-slow md:blur-xxxl blur-2xl md:opacity-25 opacity-65 "
             width={500}
             height={500}
@@ -61,7 +64,7 @@ export function Hero() {
           <Reveal variants={slideFromRight(0.8)}>
             <Image
               src={'/assets/main.webp'}
-              alt="Imagem de background na direita da introdução"
+              alt="Tecnologias"
               className="md:block hidden max-w-full lg:w-[500px] lg:h-[500px] max-h-fit "
               width={400}
               height={400}
@@ -72,4 +75,4 @@ export function Hero() {
       </Reveal>
     </section>
   );
-}
+};

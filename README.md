@@ -9,3 +9,5 @@ Projeto de um novo portfólio para apresentar meus projetos. Utilizei de novas f
 - Nextjs
 - Tailwind CSS
 - Framer-motion
+- NextIntl
+- Nodemailer

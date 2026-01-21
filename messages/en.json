@@ -58,14 +58,6 @@
         "view": "View"
       },
       {
-        "image": "/img/projects/pokedex.WebP",
-        "href": "https://pokedexblima.netlify.app/",
-        "type": "Website",
-        "title": "Pokedex",
-        "description": "Project involving manipulation of the PokéAPI, pagination, and Pokémon search by ID or name.",
-        "view": "View"
-      },
-      {
         "image": "/img/projects/authenticationUser.WebP",
         "href": "https://github.com/Brunoo-Lima/authentication-user",
         "type": "Website",

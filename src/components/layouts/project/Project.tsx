@@ -2,6 +2,7 @@ import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
 import { Reveal } from '@/utils/Reveal';
 import { getTranslations } from 'next-intl/server';
 import { ProjectsList } from './ProjectsList';
+
 export const Project = async () => {
   const t = await getTranslations('Projects');
 

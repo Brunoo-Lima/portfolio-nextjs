@@ -2,7 +2,9 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+
 import { IProject } from '@/@types/IProject';
+
 import { Card } from './Card';
 
 interface IProjectsListProps {

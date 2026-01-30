@@ -1,9 +1,10 @@
 'use client';
 
-import { setUserLocale } from '@/actions/locale';
-import { Locale } from '@/i18n/config';
 import Image from 'next/image';
 import { useTransition } from 'react';
+
+import { setUserLocale } from '@/actions/locale';
+import { Locale } from '@/i18n/config';
 
 interface ISwitcherLanguageProps {
   defaultValue?: string;

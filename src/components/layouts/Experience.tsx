@@ -1,11 +1,12 @@
+import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
+
 import {
   slideFromLeft,
   slideFromTop,
   visibleFromOpacityZero,
 } from '@/utils/motion';
 import { Reveal } from '@/utils/Reveal';
-import { getTranslations } from 'next-intl/server';
-import Image from 'next/image';
 
 export const Experience = async () => {
   const t = await getTranslations('Experience');

@@ -1,6 +1,8 @@
+import { getTranslations } from 'next-intl/server';
+
 import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
 import { Reveal } from '@/utils/Reveal';
-import { getTranslations } from 'next-intl/server';
+
 import { ProjectsList } from './ProjectsList';
 
 export const Project = async () => {

@@ -1,11 +1,13 @@
+import './globals.css';
+
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
-import './globals.css';
-import { Header } from '@/components/layouts/header/Header';
-import { Footer } from '@/components/layouts/Footer';
 import { NextIntlClientProvider } from 'next-intl';
-import { getUserLocale } from '@/actions/locale';
 import { Toaster } from 'sonner';
+
+import { getUserLocale } from '@/actions/locale';
+import { Footer } from '@/components/layouts/Footer';
+import { Header } from '@/components/layouts/header/Header';
 
 const roboto = Roboto({
   subsets: ['latin'],

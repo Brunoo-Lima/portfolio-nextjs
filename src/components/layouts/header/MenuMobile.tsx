@@ -1,4 +1,5 @@
 import { useLocale } from 'next-intl';
+
 import { NavLinksProps } from './Header';
 import { NavLink } from './NavLink';
 import { SwitcherLanguage } from './SwitcherLanguage';

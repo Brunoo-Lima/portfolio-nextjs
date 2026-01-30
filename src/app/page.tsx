@@ -1,9 +1,9 @@
 import { About } from '@/components/layouts/About';
+import { Contact } from '@/components/layouts/contact/Contact';
 import { Experience } from '@/components/layouts/Experience';
+import { Hero } from '@/components/layouts/Hero';
 import { Knowledge } from '@/components/layouts/knowledge/Knowledge';
 import { Project } from '@/components/layouts/project/Project';
-import { Hero } from '@/components/layouts/Hero';
-import { Contact } from '@/components/layouts/contact/Contact';
 
 export default function HomePage() {
   return (

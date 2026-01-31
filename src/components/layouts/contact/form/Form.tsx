@@ -8,7 +8,10 @@ import { IContact } from '@/@types/IContact';
 import { Input } from '@/components/ui/input/input';
 import { Textarea } from '@/components/ui/textarea/textarea';
 import { formatPhone } from '@/utils/format-phone';
-import { EmailSchema,emailSchema } from '@/validations/email-schema';
+import {
+  formContactSchema,
+  IFormContactSchema,
+} from '@/validations/form-contact-schema';
 
 interface IFormProps {
   t: any;
@@ -21,8 +24,8 @@ const Form = ({ t }: IFormProps) => {
     handleSubmit,
     control,
     reset,
-  } = useForm<EmailSchema>({
-    resolver: zodResolver(emailSchema),
+  } = useForm<IFormContactSchema>({
+    resolver: zodResolver(formContactSchema),
     defaultValues: {
       name: '',
       email: '',
@@ -31,7 +34,7 @@ const Form = ({ t }: IFormProps) => {
     },
   });
 
-  const onSubmit = async (data: EmailSchema) => {
+  const onSubmit = async (data: IFormContactSchema) => {
     const allData: IContact = {
       name: data.name,
       email: data.email,

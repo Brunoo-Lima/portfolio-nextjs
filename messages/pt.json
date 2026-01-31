@@ -18,21 +18,45 @@
   },
   "Experience": {
     "title": "Experiências",
-    "area": "Estagiário - Desenvolvedor Front End",
-    "description": "Desenvolvo sites modernos e responsivos, com foco em experiência do usuário, integração de APIs, otimização de SEO e aplicação de dados estruturados para melhor visibilidade e ranqueamento nos motores de busca.",
-    "enterprise": "Mestres da web",
-    "date": "Jun 2024 - Atualmente",
-    "imgURl": "/logo/mw-logo.webp",
-    "tech": [
-      "Nextjs",
-      "React",
-      "Typescript",
-      "JavaScript",
-      "Context API",
-      "CSS",
-      "Styled Components",
-      "Sass (SCSS)",
-      "SEO"
+    "companies": [
+      {
+        "area": "Estagiário - Desenvolvedor Front End",
+        "description": "Desenvolvimento de sites e aplicações front-end modernas e responsivas, com foco em UI/UX, performance, SEO técnico, integração de APIs e otimização para mecanismos de busca.",
+        "enterprise": "Mestres da web",
+        "date": "Jun 2024 - Dez 2025",
+        "imgURl": "/logo/mw-logo.webp",
+        "tech": [
+          "Nextjs",
+          "React",
+          "Typescript",
+          "JavaScript",
+          "Context API",
+          "CSS",
+          "Styled Components",
+          "Sass (SCSS)",
+          "SEO"
+        ]
+      },
+      {
+        "area": "Desenvolvedor Front End Jr",
+        "description": "Desenvolvimento de sites e aplicações front-end modernas e responsivas, com foco em UI/UX, performance, SEO técnico, integração de APIs e otimização para mecanismos de busca.",
+        "enterprise": "Mestres da web",
+        "date": "Dez 2025 - Atualmente",
+        "imgURl": "/logo/mw-logo.webp",
+        "tech": [
+          "Nextjs",
+          "React",
+          "Typescript",
+          "JavaScript",
+          "Context API",
+          "CSS",
+          "Styled Components",
+          "Sass (SCSS)",
+          "SEO",
+          "GTM",
+          "Wordpress"
+        ]
+      }
     ]
   },
   "Knowledge": {

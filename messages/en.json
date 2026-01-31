@@ -18,21 +18,45 @@
   },
   "Experience": {
     "title": "Experience",
-    "area": "Intern - Front-End Developer",
-    "description": "I develop modern and responsive websites focused on user experience, API integration, SEO optimization, and structured data implementation for better visibility and ranking in search engines.",
-    "enterprise": "Mestres da Web",
-    "date": "Jun 2024 - Present",
-    "imgURl": "/logo/mw-logo.webp",
-    "tech": [
-      "Nextjs",
-      "React",
-      "Typescript",
-      "JavaScript",
-      "Context API",
-      "CSS",
-      "Styled Components",
-      "Sass (SCSS)",
-      "SEO"
+    "companies": [
+      {
+        "area": "Intern - Front-End Developer",
+        "description": "I develop modern and responsive websites focused on user experience, API integration, SEO optimization, and structured data implementation for better visibility and ranking in search engines.",
+        "enterprise": "Mestres da Web",
+        "date": "Jun 2024 - Dec 2025",
+        "imgURl": "/logo/mw-logo.webp",
+        "tech": [
+          "Nextjs",
+          "React",
+          "Typescript",
+          "JavaScript",
+          "Context API",
+          "CSS",
+          "Styled Components",
+          "Sass (SCSS)",
+          "SEO"
+        ]
+      },
+      {
+        "area": "Front-End Developer Jr",
+        "description": "I develop modern and responsive websites focused on user experience, API integration, SEO optimization, and structured data implementation for better visibility and ranking in search engines.",
+        "enterprise": "Mestres da Web",
+        "date": "Dec 2025 - Present",
+        "imgURl": "/logo/mw-logo.webp",
+        "tech": [
+          "Nextjs",
+          "React",
+          "Typescript",
+          "JavaScript",
+          "Context API",
+          "CSS",
+          "Styled Components",
+          "Sass (SCSS)",
+          "SEO",
+          "GTM",
+          "Wordpress"
+        ]
+      }
     ]
   },
   "Knowledge": {

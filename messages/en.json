@@ -74,7 +74,7 @@
         "view": "View"
       },
       {
-        "image": "/img/projects/coffee.WebP",
+        "image": "/img/projects/coffee.webp",
         "href": "https://coffee-blima.netlify.app/",
         "type": "Website",
         "title": "Coffee Delivery",
@@ -82,7 +82,7 @@
         "view": "View"
       },
       {
-        "image": "/img/projects/shop2.0.WebP",
+        "image": "/img/projects/shop2.0.webp",
         "href": "https://shop-blima.netlify.app/",
         "type": "Website",
         "title": "Shop 2.0",
@@ -90,7 +90,7 @@
         "view": "View"
       },
       {
-        "image": "/img/projects/authenticationUser.WebP",
+        "image": "/img/projects/authenticationUser.webp",
         "href": "https://github.com/Brunoo-Lima/authentication-user",
         "type": "Website",
         "title": "Login System",
@@ -98,7 +98,7 @@
         "view": "View"
       },
       {
-        "image": "/img/projects/bikcraft.WebP",
+        "image": "/img/projects/bikcraft.webp",
         "href": "https://brunoo-lima.github.io/bikcraft/",
         "type": "Website",
         "title": "Bikcraft",
@@ -106,7 +106,7 @@
         "view": "View"
       },
       {
-        "image": "/img/projects/gow.WebP",
+        "image": "/img/projects/gow.webp",
         "href": "https://gow-ragnarok.netlify.app/",
         "type": "Website",
         "title": "God of War - Ragnarok",

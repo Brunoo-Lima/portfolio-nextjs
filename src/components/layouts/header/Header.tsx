@@ -24,6 +24,7 @@ const navLinks: NavLinksProps[] = [
   { id: 2, title: 'experience' },
   { id: 3, title: 'knowledge' },
   { id: 4, title: 'projects' },
+  { id: 5, title: 'contact' },
 ];
 
 export const Header = () => {

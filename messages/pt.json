@@ -13,7 +13,7 @@
     "title": "Bruno Lima",
     "subtitle": "Desenvolvedor Front end",
     "who_are": "Quem sou",
-    "description": "Me chamo Bruno, sou desenvolvedor front-end e estudante de Análise e Desenvolvimento de Sistemas na Fatec. Atualmente, atuo como estagiário na área de front-end, onde venho ganhando experiência prática, aprimorando minhas habilidades e explorando novas tecnologias. <br/>Paralelamente ao estágio, também desenvolvo projetos pessoais para consolidar meu aprendizado e expandir meu portfólio com soluções reais e criativas. <br/>Além disso, estou aberto a oportunidades como freelancer — especialmente para quem tem uma ideia de site ou aplicativo e precisa de alguém para tirar o projeto do papel. Se quiser conversar sobre seu projeto, é só me chamar!",
+    "description": "Me chamo Bruno, sou desenvolvedor front-end com 2 anos de experiência e formado em Análise e Desenvolvimento de Sistemas pela FATEC.<br/>Também estou aberto a oportunidades como freelancer, ajudando a transformar ideias de sites ou aplicativos em projetos reais. Se quiser conversar sobre seu projeto, é só me chamar!",
     "button_download_cv": "Download CV"
   },
   "Experience": {
@@ -52,6 +52,7 @@
           "CSS",
           "Styled Components",
           "Sass (SCSS)",
+          "Design System",
           "SEO",
           "GTM",
           "Wordpress"

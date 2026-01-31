@@ -1,5 +1,4 @@
 import { ITech } from '@/@types/ITech';
-import { BootstrapIcon } from '@/components/icons/BootstrapIcon';
 import { CssIcon } from '@/components/icons/CssIcon';
 import { FigmaIcon } from '@/components/icons/FigmaIcon';
 import { HtmlIcon } from '@/components/icons/HtmlIcon';
@@ -59,26 +58,19 @@ export const techList: ITech[] = [
     name: 'Tailwind CSS',
     icon: <TailwindIcon />,
   },
-
   {
     id: 10,
-    name: 'Bootstrap',
-    icon: <BootstrapIcon />,
-  },
-  {
-    id: 11,
     name: 'Nodejs',
     icon: <NodeIcon />,
   },
-
+  {
+    id: 11,
+    name: 'Figma',
+    icon: <FigmaIcon />,
+  },
   {
     id: 12,
     name: 'Jest',
     icon: <JestIcon />,
-  },
-  {
-    id: 13,
-    name: 'Figma',
-    icon: <FigmaIcon />,
   },
 ];

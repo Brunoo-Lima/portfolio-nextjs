@@ -42,6 +42,14 @@
     "title": "Projetos",
     "project": [
       {
+        "image": "/img/projects/mastercash.webp",
+        "href": "https://finance-app-mastercash.vercel.app/",
+        "type": "Software",
+        "title": "MasterCash",
+        "description": "Software financeiro com interface simples e intuitiva, com transações, saldos e gráficos para melhor visualização dos dados.",
+        "view": "Visualizar"
+      },
+      {
         "image": "/img/projects/coffee.WebP",
         "href": "https://coffee-blima.netlify.app/",
         "type": "Website",

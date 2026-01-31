@@ -47,6 +47,25 @@
   }
 }
 
+.container__about {
+  @media (max-width: 1290px) {
+    height: 440px !important;
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    height: max-content !important;
+  }
+
+  @media (max-width: 468px) {
+    img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

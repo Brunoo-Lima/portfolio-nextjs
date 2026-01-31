@@ -13,26 +13,50 @@
     "title": "Bruno Lima",
     "subtitle": "Front End Developer",
     "who_are": "Who I am",
-    "description": "My name is Bruno, a front-end developer and Systems Analysis and Development student at Fatec. I'm currently an intern in the front-end department, where I'm gaining practical experience, honing my skills, and exploring new technologies. <br/>Alongside my internship, I also develop personal projects to consolidate my learning and expand my portfolio with real and creative solutions. <br/>I'm also open to freelance opportunities—especially for those who have a website or app idea and need someone to get it off the ground. If you'd like to discuss your project, just give me a call!",
+    "description": "My name is Bruno, I'm a front-end developer with 2 years of experience and a degree in Systems Analysis and Development from FATEC.<br/>I'm also open to freelance opportunities, helping to transform website or app ideas into real projects. If you'd like to discuss your project, just get in touch!",
     "button_download_cv": "Download CV"
   },
   "Experience": {
     "title": "Experience",
-    "area": "Intern - Front-End Developer",
-    "description": "I develop modern and responsive websites focused on user experience, API integration, SEO optimization, and structured data implementation for better visibility and ranking in search engines.",
-    "enterprise": "Mestres da Web",
-    "date": "Jun 2024 - Present",
-    "imgURl": "/logo/mw-logo.webp",
-    "tech": [
-      "Nextjs",
-      "React",
-      "Typescript",
-      "JavaScript",
-      "Context API",
-      "CSS",
-      "Styled Components",
-      "Sass (SCSS)",
-      "SEO"
+    "companies": [
+      {
+        "area": "Intern - Front-End Developer",
+        "description": "I develop modern and responsive websites focused on user experience, API integration, SEO optimization, and structured data implementation for better visibility and ranking in search engines.",
+        "enterprise": "Mestres da Web",
+        "date": "Jun 2024 - Dec 2025",
+        "imgURl": "/logo/mw-logo.webp",
+        "tech": [
+          "Nextjs",
+          "React",
+          "Typescript",
+          "JavaScript",
+          "Context API",
+          "CSS",
+          "Styled Components",
+          "Sass (SCSS)",
+          "SEO"
+        ]
+      },
+      {
+        "area": "Front-End Developer Jr",
+        "description": "I develop modern and responsive websites focused on user experience, API integration, SEO optimization, and structured data implementation for better visibility and ranking in search engines.",
+        "enterprise": "Mestres da Web",
+        "date": "Dec 2025 - Present",
+        "imgURl": "/logo/mw-logo.webp",
+        "tech": [
+          "Nextjs",
+          "React",
+          "Typescript",
+          "JavaScript",
+          "Context API",
+          "CSS",
+          "Styled Components",
+          "Sass (SCSS)",
+          "SEO",
+          "GTM",
+          "Wordpress"
+        ]
+      }
     ]
   },
   "Knowledge": {
@@ -42,7 +66,15 @@
     "title": "Projects",
     "project": [
       {
-        "image": "/img/projects/coffee.WebP",
+        "image": "/img/projects/mastercash.webp",
+        "href": "https://finance-app-mastercash.vercel.app/",
+        "type": "Software",
+        "title": "MasterCash",
+        "description": "Financial software with a simple and intuitive interface, featuring transactions, balances, and graphs for better data visualization.",
+        "view": "View"
+      },
+      {
+        "image": "/img/projects/coffee.webp",
         "href": "https://coffee-blima.netlify.app/",
         "type": "Website",
         "title": "Coffee Delivery",
@@ -50,7 +82,7 @@
         "view": "View"
       },
       {
-        "image": "/img/projects/shop2.0.WebP",
+        "image": "/img/projects/shop2.0.webp",
         "href": "https://shop-blima.netlify.app/",
         "type": "Website",
         "title": "Shop 2.0",
@@ -58,15 +90,7 @@
         "view": "View"
       },
       {
-        "image": "/img/projects/pokedex.WebP",
-        "href": "https://pokedexblima.netlify.app/",
-        "type": "Website",
-        "title": "Pokedex",
-        "description": "Project involving manipulation of the PokéAPI, pagination, and Pokémon search by ID or name.",
-        "view": "View"
-      },
-      {
-        "image": "/img/projects/authenticationUser.WebP",
+        "image": "/img/projects/authenticationUser.webp",
         "href": "https://github.com/Brunoo-Lima/authentication-user",
         "type": "Website",
         "title": "Login System",
@@ -74,7 +98,7 @@
         "view": "View"
       },
       {
-        "image": "/img/projects/bikcraft.WebP",
+        "image": "/img/projects/bikcraft.webp",
         "href": "https://brunoo-lima.github.io/bikcraft/",
         "type": "Website",
         "title": "Bikcraft",
@@ -82,7 +106,7 @@
         "view": "View"
       },
       {
-        "image": "/img/projects/gow.WebP",
+        "image": "/img/projects/gow.webp",
         "href": "https://gow-ragnarok.netlify.app/",
         "type": "Website",
         "title": "God of War - Ragnarok",

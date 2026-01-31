@@ -1,9 +1,10 @@
-import Image from 'next/image';
 import parse from 'html-react-parser';
-import { slideFromLeft, slideFromTop } from '@/utils/motion';
-
+import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
+
+import { slideFromLeft, slideFromTop } from '@/utils/motion';
 import { Reveal } from '@/utils/Reveal';
+
 import { ButtonDownload } from '../ui/button/ButtonDownload';
 
 export const About = async () => {
@@ -14,23 +15,23 @@ export const About = async () => {
       className="md:py-20 py-8 md:px-12 px-8 container mx-auto"
       id="about"
     >
-      <div className="flex md:justify-around justify-center items-center md:flex-row flex-col flex-wrap sm:gap-6 gap-4 bg-second-black border border-gray-800 rounded-md md:p-6 py-4 md:max-w-[1200px] lg:h-[520px] mx-auto">
-        <div className=" mx-auto">
+      <div className="flex md:justify-around justify-start items-start md:flex-row flex-col flex-wrap sm:gap-6 gap-4 bg-second-black border border-gray-800 rounded-md md:p-6 py-4 md:max-w-[1200px] lg:h-[340px] mx-auto container__about">
+        <div className="mx-auto -mt-14">
           <Reveal variants={slideFromTop}>
             <figure>
               <Image
                 src="/assets/me.webp"
                 alt="Minha foto"
-                className="block sm:w-[383px] sm:h-[480px] w-[320px] h-[400px] rounded-lg"
-                width={600}
-                height={500}
+                className="block sm:w-[350px] sm:h-[400px] w-[320px] h-[400px] rounded-lg "
+                width={350}
+                height={400}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
               />
             </figure>
           </Reveal>
         </div>
 
-        <div className="flex flex-1 flex-col justify-center leading-relaxed lg:items-start text-center">
+        <div className="flex flex-1 flex-col justify-start leading-relaxed lg:items-start text-center">
           <Reveal variants={slideFromLeft(0.2)}>
             <span className="text-xl font-semibold mb-2 inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text">
               {t('who_are')}

@@ -1,17 +1,16 @@
 import { ITech } from '@/@types/ITech';
 import { CssIcon } from '@/components/icons/CssIcon';
-import { ReactIcon } from '@/components/icons/ReactIcon';
-import { JavascriptIcon } from '@/components/icons/JavascriptIcon';
-import { TypescriptIcon } from '@/components/icons/TypescriptIcon';
-import { NextIcon } from '@/components/icons/NextIcon';
-import { SassIcon } from '@/components/icons/SassIcon';
-import { StyledComponentsIcon } from '@/components/icons/StyledComponentsIcon';
-import { BootstrapIcon } from '@/components/icons/BootstrapIcon';
-import { TailwindIcon } from '@/components/icons/TailwindIcon';
-import { NodeIcon } from '@/components/icons/NodeIcon';
-import { JestIcon } from '@/components/icons/JestIcon';
 import { FigmaIcon } from '@/components/icons/FigmaIcon';
 import { HtmlIcon } from '@/components/icons/HtmlIcon';
+import { JavascriptIcon } from '@/components/icons/JavascriptIcon';
+import { JestIcon } from '@/components/icons/JestIcon';
+import { NextIcon } from '@/components/icons/NextIcon';
+import { NodeIcon } from '@/components/icons/NodeIcon';
+import { ReactIcon } from '@/components/icons/ReactIcon';
+import { SassIcon } from '@/components/icons/SassIcon';
+import { StyledComponentsIcon } from '@/components/icons/StyledComponentsIcon';
+import { TailwindIcon } from '@/components/icons/TailwindIcon';
+import { TypescriptIcon } from '@/components/icons/TypescriptIcon';
 
 export const techList: ITech[] = [
   {
@@ -59,26 +58,19 @@ export const techList: ITech[] = [
     name: 'Tailwind CSS',
     icon: <TailwindIcon />,
   },
-
   {
     id: 10,
-    name: 'Bootstrap',
-    icon: <BootstrapIcon />,
-  },
-  {
-    id: 11,
     name: 'Nodejs',
     icon: <NodeIcon />,
   },
-
+  {
+    id: 11,
+    name: 'Figma',
+    icon: <FigmaIcon />,
+  },
   {
     id: 12,
     name: 'Jest',
     icon: <JestIcon />,
-  },
-  {
-    id: 13,
-    name: 'Figma',
-    icon: <FigmaIcon />,
   },
 ];

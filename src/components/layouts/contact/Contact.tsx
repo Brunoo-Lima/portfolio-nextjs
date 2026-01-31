@@ -2,8 +2,9 @@
 
 import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
-import { Reveal } from '@/utils/Reveal';
+
 import { visibleFromOpacityZero } from '@/utils/motion';
+import { Reveal } from '@/utils/Reveal';
 
 const Form = dynamic(() => import('./form/Form'), { ssr: false });
 

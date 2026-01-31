@@ -1,6 +1,7 @@
+import { useState } from 'react';
+
 import { ITech } from '@/@types/ITech';
 import { Tooltip } from '@/components/ui/Tooltip/Tooltip';
-import { useState } from 'react';
 
 type ICardProps = {
   tech: ITech;

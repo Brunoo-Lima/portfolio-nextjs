@@ -1,13 +1,17 @@
 'use client';
 
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Controller, useForm } from 'react-hook-form';
+import { toast } from 'sonner';
+
 import { IContact } from '@/@types/IContact';
 import { Input } from '@/components/ui/input/input';
 import { Textarea } from '@/components/ui/textarea/textarea';
 import { formatPhone } from '@/utils/format-phone';
-import { emailSchema, EmailSchema } from '@/validations/email-schema';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { Controller, useForm } from 'react-hook-form';
-import { toast } from 'sonner';
+import {
+  formContactSchema,
+  IFormContactSchema,
+} from '@/validations/form-contact-schema';
 
 interface IFormProps {
   t: any;
@@ -20,8 +24,8 @@ const Form = ({ t }: IFormProps) => {
     handleSubmit,
     control,
     reset,
-  } = useForm<EmailSchema>({
-    resolver: zodResolver(emailSchema),
+  } = useForm<IFormContactSchema>({
+    resolver: zodResolver(formContactSchema),
     defaultValues: {
       name: '',
       email: '',
@@ -30,7 +34,7 @@ const Form = ({ t }: IFormProps) => {
     },
   });
 
-  const onSubmit = async (data: EmailSchema) => {
+  const onSubmit = async (data: IFormContactSchema) => {
     const allData: IContact = {
       name: data.name,
       email: data.email,

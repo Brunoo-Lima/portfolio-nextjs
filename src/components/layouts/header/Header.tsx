@@ -1,5 +1,6 @@
 'use client';
 
+import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
 import {
@@ -7,12 +8,11 @@ import {
   slideFromRight,
   visibleFromOpacityZero,
 } from '@/utils/motion';
-
-import { useLocale, useTranslations } from 'next-intl';
 import { Reveal } from '@/utils/Reveal';
+
+import { MenuMobile } from './MenuMobile';
 import { NavLink } from './NavLink';
 import { SwitcherLanguage } from './SwitcherLanguage';
-import { MenuMobile } from './MenuMobile';
 
 export type NavLinksProps = {
   title: string;

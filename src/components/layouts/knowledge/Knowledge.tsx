@@ -1,12 +1,14 @@
 'use client';
 
-import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Card } from './Card';
-import { Reveal } from '@/utils/Reveal';
-import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
-import { techList } from '@/mocks/techList';
 import { useTranslations } from 'next-intl';
+import { useRef } from 'react';
+
+import { techList } from '@/mocks/techList';
+import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
+import { Reveal } from '@/utils/Reveal';
+
+import { Card } from './Card';
 
 export const Knowledge = () => {
   const ref = useRef(null);

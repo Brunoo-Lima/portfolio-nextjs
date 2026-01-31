@@ -1,6 +1,7 @@
-import { IContact } from '@/@types/IContact';
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+
+import { IContact } from '@/@types/IContact';
 
 export const POST = async (request: Request) => {
   const password = process.env.EMAIL_PASSWORD;

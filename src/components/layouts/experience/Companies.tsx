@@ -7,7 +7,7 @@ interface ICompaniesProps {
   companies: any[];
 }
 export const Companies = ({ companies }: ICompaniesProps) => {
-  const [activeCompany, setActiveCompany] = useState<number>(0);
+  const [activeCompany, setActiveCompany] = useState<number>(1);
 
   return (
     <>
@@ -35,6 +35,7 @@ export const Companies = ({ companies }: ICompaniesProps) => {
       <article className="flex-grow h-full">
         {(() => {
           const company = companies[activeCompany];
+
           return (
             <>
               <h2 className="text-xl text-second-green">{company.area}</h2>

@@ -40,7 +40,7 @@
       },
       {
         "area": "Front-End Developer Jr",
-        "description": "I develop modern and responsive websites focused on user experience, API integration, SEO optimization, and structured data implementation for better visibility and ranking in search engines.",
+        "description": "Development of applications in Next.js and TypeScript, using a Design System to ensure consistency and scalability. Implementation of technical SEO (Schema.org, semantic structure and monitoring with GTM and GA4) and optimizations focused on Core Web Vitals and performance. 58% reduction in First Load JS (208kb → 88kb) via code splitting and architectural restructuring, raising the mobile score in Lighthouse from 33 to 80. Experience in API integration and dynamic data display.",
         "enterprise": "Mestres da Web",
         "date": "Dec 2025 - Present",
         "imgURl": "/logo/mw-logo.webp",

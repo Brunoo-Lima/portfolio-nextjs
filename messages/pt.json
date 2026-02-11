@@ -40,7 +40,7 @@
       },
       {
         "area": "Desenvolvedor Front End Jr",
-        "description": "Desenvolvimento de sites e aplicações front-end modernas e responsivas, com foco em UI/UX, performance, SEO técnico, integração de APIs e otimização para mecanismos de busca.",
+        "description": "Desenvolvimento de aplicações em Next.js e TypeScript, com uso de Design System para garantir consistência e escalabilidade. Implementação de SEO técnico (Schema.org, estrutura semântica e monitoramento com GTM e GA4) e otimizações focadas em Core Web Vitals e performance. Redução de 58% no First Load JS (208kb → 88kb) via code splitting e reestruturação arquitetural, elevando o score mobile no Lighthouse de 33 para 80. Experiência em integração de APIs e exibição de dados dinâmicos.",
         "enterprise": "Mestres da web",
         "date": "Dez 2025 - Atualmente",
         "imgURl": "/logo/mw-logo.webp",

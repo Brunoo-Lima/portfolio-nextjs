@@ -30,6 +30,15 @@
   transition: width 0.3s ease;
 }
 
+.link-recomendation svg {
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+}
+
+.link-recomendation:hover svg {
+  transform: translateX(10px);
+}
+
 @media screen and (max-width: 768px) {
   .link-menu::after {
     display: none;

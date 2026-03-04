@@ -118,14 +118,7 @@
       }
     ]
   },
-  "Contact": {
-    "title": "Entre em contato",
-    "name": "Nome",
-    "phone": "Telefone",
-    "email": "E-mail",
-    "message": "Mensagem",
-    "button_send": "Enviar",
-    "success": "Email enviado com sucesso!",
-    "sending": "Enviando..."
+  "Recomendations": {
+    "title": "Recomendações"
   }
 }

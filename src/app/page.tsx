@@ -7,7 +7,7 @@ import { Recomendations } from "@/components/layouts/Recomendations";
 
 export default function HomePage() {
   return (
-    <main className="mt-24 pt-4 pb-0">
+    <main className="mt-24 pt-4 pb-0 relative">
       <Hero />
       <About />
       <Experience />

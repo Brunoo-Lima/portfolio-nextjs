@@ -12,7 +12,7 @@ export const NavLink = ({ label, id }: NavLinkProps) => {
       smooth={true}
       offset={-100}
       duration={500}
-      className="block py-2 pl-3 pr-4 text-white md:text-lg rounded md:p-0 hover:text-second-green transition duration-300 hover:cursor-pointer relative link-menu"
+      className="block py-2 pl-3 pr-4 text-white md:text-base rounded md:p-0 hover:text-second-green transition duration-300 hover:cursor-pointer relative link-menu font-secondary"
     >
       {label}
     </Link>

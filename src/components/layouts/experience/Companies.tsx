@@ -23,10 +23,10 @@ export const Companies = ({ companies }: ICompaniesProps) => {
               }`}
               onClick={() => setActiveCompany(index)}
             >
-              <div className="font-medium text-primary-white">
+              <p className="font-medium text-primary-white">
                 {company.enterprise}
-              </div>
-              <div className="text-xs text-second-gray">{company.date}</div>
+              </p>
+              <small className="text-xs text-second-gray">{company.date}</small>
             </div>
           ))
           .reverse()}
@@ -37,7 +37,9 @@ export const Companies = ({ companies }: ICompaniesProps) => {
           const company = companies[activeCompany];
           return (
             <>
-              <h2 className="text-xl text-second-green">{company.area}</h2>
+              <h2 className="text-lg text-second-green font-secondary">
+                {company.area}
+              </h2>
 
               <div className="flex items-start gap-x-4 space-y-4 w-[250px]">
                 <aside className="flex flex-col gap-y-0.5 h-11 my-2">

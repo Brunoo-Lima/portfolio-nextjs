@@ -27,6 +27,10 @@ const config: Config = {
       blur: {
         xxxl: '100px',
       },
+      fontFamily: {
+        primary: ['var(--font-primary)', 'sans-serif'],
+        secondary: ['var(--font-secondary)', 'sans-serif'],
+      },
     },
   },
   plugins: [require('tailwind-scrollbar')],

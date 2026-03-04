@@ -66,6 +66,16 @@
   }
 }
 
+:root {
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'JetBrains Mono', monospace;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
 }

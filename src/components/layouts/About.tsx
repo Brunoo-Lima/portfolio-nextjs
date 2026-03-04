@@ -38,12 +38,14 @@ export const About = async () => {
             </span>
           </Reveal>
           <Reveal variants={slideFromLeft(0.4)}>
-            <h1 className="text-3xl font-medium text-primary-white mb-2">
+            <h1 className="text-3xl font-medium text-primary-white mb-2 font-secondary">
               {t('title')}
             </h1>
           </Reveal>
           <Reveal variants={slideFromLeft(0.6)}>
-            <h2 className="text-lg text-primary-white mb-4">{t('subtitle')}</h2>
+            <h2 className="text-lg text-primary-white mb-4 ">
+              {t('subtitle')}
+            </h2>
           </Reveal>
 
           <Reveal variants={slideFromLeft(0.8)}>

@@ -1,9 +1,9 @@
-import { About } from '@/components/layouts/About';
-import { Experience } from '@/components/layouts/experience/Experience';
-import { Hero } from '@/components/layouts/Hero';
-import { Knowledge } from '@/components/layouts/knowledge/Knowledge';
-import { Project } from '@/components/layouts/project/Project';
-import { Recomendations } from '@/components/layouts/recomendations/Recomendations';
+import { About } from "@/components/layouts/About";
+import { Experience } from "@/components/layouts/experience/Experience";
+import { Hero } from "@/components/layouts/Hero";
+import { Knowledge } from "@/components/layouts/knowledge/Knowledge";
+import { Project } from "@/components/layouts/project/Project";
+import { Recomendations } from "@/components/layouts/Recomendations";
 
 export default function HomePage() {
   return (

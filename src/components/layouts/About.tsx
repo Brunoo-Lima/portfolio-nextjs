@@ -1,14 +1,14 @@
-import parse from 'html-react-parser';
-import Image from 'next/image';
-import { getTranslations } from 'next-intl/server';
+import parse from "html-react-parser";
+import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
-import { slideFromLeft, slideFromTop } from '@/utils/motion';
-import { Reveal } from '@/utils/Reveal';
+import { slideFromLeft, slideFromTop } from "@/utils/motion";
+import { Reveal } from "@/utils/Reveal";
 
-import { ButtonDownload } from '../ui/button/ButtonDownload';
+import { ButtonDownload } from "../ui/button/ButtonDownload";
 
 export const About = async () => {
-  const t = await getTranslations('About');
+  const t = await getTranslations("About");
 
   return (
     <section
@@ -34,23 +34,23 @@ export const About = async () => {
         <div className="flex flex-1 flex-col justify-start leading-relaxed lg:items-start text-center">
           <Reveal variants={slideFromLeft(0.2)}>
             <span className="text-xl font-semibold mb-2 inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text">
-              {t('who_are')}
+              {t("who_are")}
             </span>
           </Reveal>
           <Reveal variants={slideFromLeft(0.4)}>
-            <h2 className="text-3xl font-medium text-primary-white mb-2 font-secondary">
-              {t('title')}
-            </h2>
+            <h3 className="text-3xl font-medium text-primary-white mb-2 font-secondary">
+              {t("title")}
+            </h3>
           </Reveal>
           <Reveal variants={slideFromLeft(0.6)}>
-            <h2 className="text-lg text-primary-white mb-4 ">
-              {t('subtitle')}
-            </h2>
+            <h4 className="text-lg font-medium text-primary-white mb-4">
+              {t("subtitle")}
+            </h4>
           </Reveal>
 
           <Reveal variants={slideFromLeft(0.8)}>
             <p className="text-base text-second-gray text-justify leading-snug mb-6 max-md:px-5">
-              {parse(t('description'))}
+              {parse(t("description"))}
             </p>
           </Reveal>
           <Reveal variants={slideFromTop}>
@@ -58,7 +58,7 @@ export const About = async () => {
               <ButtonDownload
                 href="/curriculo-dev.pdf"
                 textTooltip="Abrir currículo"
-                text={t('button_download_cv')}
+                text={t("button_download_cv")}
               />
             </div>
           </Reveal>

@@ -1,18 +1,19 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations } from "next-intl/server";
 
+import { SubtitleSection } from "@/components/ui/subtitle-section";
 import {
   slideFromLeft,
   slideFromTop,
   visibleFromOpacityZero,
-} from '@/utils/motion';
-import { Reveal } from '@/utils/Reveal';
+} from "@/utils/motion";
+import { Reveal } from "@/utils/Reveal";
 
-import { Companies } from './Companies';
+import { Companies } from "./Companies";
 
 export const Experience = async () => {
-  const t = await getTranslations('Experience');
+  const t = await getTranslations("Experience");
 
-  const companies = t.raw('companies');
+  const companies = t.raw("companies");
 
   return (
     <section
@@ -25,9 +26,7 @@ export const Experience = async () => {
             variants={slideFromLeft(0.1)}
             className="flex justify-center items-center"
           >
-            <h2 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text font-secondary">
-              {t('title')}
-            </h2>
+            <SubtitleSection>{t("title")}</SubtitleSection>
           </Reveal>
 
           <Reveal variants={slideFromTop}>

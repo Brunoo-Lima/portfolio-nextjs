@@ -1,21 +1,21 @@
-import Image from 'next/image';
-import { getTranslations } from 'next-intl/server';
+import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 import {
   slideFromLeft,
   slideFromRight,
   visibleFromOpacityZero,
-} from '@/utils/motion';
-import { Reveal } from '@/utils/Reveal';
+} from "@/utils/motion";
+import { Reveal } from "@/utils/Reveal";
 
-import { slideFromTop } from '../../utils/motion';
-import { GithubIcon } from '../icons/GithubIcon';
-import { LinkedinIcon } from '../icons/LinkedinIcon';
-import { LinkButton } from '../ui/button/LinkButton';
-import { TitleAnimation } from '../ui/Title/Title';
+import { slideFromTop } from "../../utils/motion";
+import { GithubIcon } from "../icons/GithubIcon";
+import { LinkedinIcon } from "../icons/LinkedinIcon";
+import { LinkButton } from "../ui/button/LinkButton";
+import { TitleAnimation } from "../ui/title-animation";
 
 export const Hero = async () => {
-  const t = await getTranslations('Hero');
+  const t = await getTranslations("Hero");
 
   return (
     <section
@@ -32,30 +32,32 @@ export const Hero = async () => {
 
               <Reveal variants={slideFromLeft(0.8)}>
                 <p className="md:text-3xl text-xl md:text-start text-center leading-tight mb-8 text-second-gray">
-                  {t('subtitle')}
+                  {t("subtitle")}
                 </p>
               </Reveal>
 
               <Reveal variants={slideFromTop}>
                 <div className="flex md:justify-start justify-center gap-6">
                   <LinkButton
-                    textTooltip="LinkedIn"
-                    icon={<LinkedinIcon />}
+                    title="LinkedIn"
                     href="https://www.linkedin.com/in/bruno-lima-8a2407173/"
-                  />
+                  >
+                    <LinkedinIcon />
+                  </LinkButton>
 
                   <LinkButton
-                    textTooltip="Github"
-                    icon={<GithubIcon />}
+                    title="Github"
                     href="https://github.com/Brunoo-Lima"
-                  />
+                  >
+                    <GithubIcon />
+                  </LinkButton>
                 </div>
               </Reveal>
             </div>
           </Reveal>
 
           <Image
-            src={'/assets/background.webp'}
+            src={"/assets/background.webp"}
             alt=""
             className="md:hidden absolute lg:right-20 right-0 md:-top-20 -top-10 block rounded-section_hero max-w-full md:w-[500px] md:h-[500px] w-[140px] h-[120px] animate-spin-slow md:blur-xxxl blur-2xl md:opacity-25 opacity-65 "
             width={500}
@@ -64,7 +66,7 @@ export const Hero = async () => {
 
           <Reveal variants={slideFromRight(0.8)}>
             <Image
-              src={'/assets/main.webp'}
+              src={"/assets/main.webp"}
               alt="Tecnologias"
               className="md:block hidden max-w-full lg:w-[500px] lg:h-[500px] max-h-fit "
               width={400}

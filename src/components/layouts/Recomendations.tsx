@@ -1,15 +1,16 @@
-'use client';
+"use client";
 
-import { MoveRightIcon } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { MoveRightIcon } from "lucide-react";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-import { visibleFromOpacityZero } from '@/utils/motion';
-import { Reveal } from '@/utils/Reveal';
+import { visibleFromOpacityZero } from "@/utils/motion";
+import { Reveal } from "@/utils/Reveal";
+
+import { SubtitleSection } from "../ui/subtitle-section";
 
 export const Recomendations = () => {
-  const t = useTranslations('Recomendations');
+  const t = useTranslations("Recomendations");
 
   return (
     <section className="py-20 pt-8" id="contact">
@@ -17,14 +18,12 @@ export const Recomendations = () => {
         variants={visibleFromOpacityZero}
         className="flex justify-center items-center"
       >
-        <h2 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text font-secondary">
-          {t('title')}
-        </h2>
+        <SubtitleSection>{t("title")}</SubtitleSection>
       </Reveal>
       <div className="mx-auto flex flex-col items-center justify-center gap-6 mt-12 px-6">
         <div className="max-w-[785px]">
           <Image
-            src={'/img/recomendacao.webp'}
+            src={"/img/recomendacao.webp"}
             alt="Recomendação CEO Mestres da Web"
             width={785}
             height={292}
@@ -33,7 +32,7 @@ export const Recomendations = () => {
           />
         </div>
 
-        <Link
+        <a
           href="https://www.linkedin.com/in/bruno-lima-8a2407173/"
           target="_blank"
           rel="noopener noreferrer nofollow"
@@ -41,7 +40,7 @@ export const Recomendations = () => {
         >
           Ver recomendação completa
           <MoveRightIcon size={24} />
-        </Link>
+        </a>
       </div>
     </section>
   );

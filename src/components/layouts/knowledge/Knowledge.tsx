@@ -1,19 +1,20 @@
-'use client';
+"use client";
 
-import { motion, useInView } from 'framer-motion';
-import { useTranslations } from 'next-intl';
-import { useRef } from 'react';
+import { motion, useInView } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { useRef } from "react";
 
-import { techList } from '@/mocks/techList';
-import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
-import { Reveal } from '@/utils/Reveal';
+import { SubtitleSection } from "@/components/ui/subtitle-section";
+import { techList } from "@/mocks/techList";
+import { slideFromLeft, visibleFromOpacityZero } from "@/utils/motion";
+import { Reveal } from "@/utils/Reveal";
 
-import { Card } from './Card';
+import { Card } from "./Card";
 
 export const Knowledge = () => {
   const ref = useRef(null);
   const isInView = useInView(ref as any, { once: true });
-  const t = useTranslations('Knowledge');
+  const t = useTranslations("Knowledge");
 
   const cardVariants = {
     initial: { y: -50, opacity: 0 },
@@ -28,9 +29,7 @@ export const Knowledge = () => {
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex justify-center">
           <Reveal variants={slideFromLeft(0.1)}>
-            <h2 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text font-secondary">
-              {t('title')}
-            </h2>
+            <SubtitleSection>{t("title")}</SubtitleSection>
           </Reveal>
         </div>
         <div className="lg:w-[900px] lg:mx-auto mt-12" ref={ref}>
@@ -38,7 +37,7 @@ export const Knowledge = () => {
             {techList.map((tech, index) => (
               <motion.li
                 initial="initial"
-                animate={isInView ? 'animate' : 'initial'}
+                animate={isInView ? "animate" : "initial"}
                 variants={cardVariants}
                 transition={{ duration: 0.8, delay: index * 0.5 }}
                 key={tech.id}

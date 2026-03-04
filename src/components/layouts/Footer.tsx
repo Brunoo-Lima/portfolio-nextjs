@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import { ArrowUpIcon } from 'lucide-react';
 
 export const Footer = () => {
   const year = new Date().getFullYear();
@@ -25,11 +25,12 @@ export const Footer = () => {
             onClick={scrollTopTop}
           >
             <p className="md:hidden block">Voltar ao topo</p>
-            <Image
-              src="/assets/upArrow.svg"
-              alt="Icone para voltar ao topo"
-              width={36}
-              height={36}
+            <ArrowUpIcon
+              // src="/assets/upArrow.svg"
+              // alt="Icone para voltar ao topo"
+              // width={36}
+              // height={36}
+              color="#38f8d4"
               className="w-9 h-9 animate-bounce transition duration-300 bg-primary-black border border-gray-800 rounded-full p-1"
             />
           </button>

@@ -1,12 +1,12 @@
 'use client';
 
+import { MoveRightIcon } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { visibleFromOpacityZero } from '@/utils/motion';
 import { Reveal } from '@/utils/Reveal';
-import Image from 'next/image';
-import Link from 'next/link';
-import { MoveRightIcon } from 'lucide-react';
 
 export const Recomendations = () => {
   const t = useTranslations('Recomendations');
@@ -34,7 +34,7 @@ export const Recomendations = () => {
         </div>
 
         <Link
-          href="/https://www.linkedin.com/in/bruno-lima-8a2407173/"
+          href="https://www.linkedin.com/in/bruno-lima-8a2407173/"
           target="_blank"
           rel="noopener noreferrer nofollow"
           className="md:text-base rounded-xl py-2 px-4 bg-transparent hover:bg-gray-800 text-second-green transition duration-300 cursor-pointer flex items-center gap-2 relative link-recomendation"

@@ -1,7 +1,7 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
-import { Roboto, JetBrains_Mono } from 'next/font/google';
+import { JetBrains_Mono,Roboto } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { Toaster } from 'sonner';
 
@@ -24,7 +24,7 @@ const font__secondary = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Portfólio',
+  title: 'Portfólio | Bruno Lima',
   description:
     'Desenvolvedor web especializado em criar sites modernos, responsivos e otimizados para SEO. Confira meus projetos e habilidades em front-end.',
 };

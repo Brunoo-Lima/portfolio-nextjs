@@ -102,4 +102,8 @@ html {
 body {
   font-family: var(--font-primary);
   font-weight: 400;
+
+  section {
+    scroll-margin-top: 100px;
+  }
 }

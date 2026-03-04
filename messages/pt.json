@@ -40,9 +40,9 @@
       },
       {
         "area": "Desenvolvedor Front End Jr",
-        "description": "Desenvolvimento de sites e aplicações front-end modernas e responsivas, com foco em UI/UX, performance, SEO técnico, integração de APIs e otimização para mecanismos de busca.",
+        "description": "Desenvolvimento de sites e aplicações front-end modernas e responsivas, com foco em UI/UX, performance, SEO técnico, integração de APIs e otimização para mecanismos de busca, redução de 58% no First Load JS shared by all (208kb → 88kb), aumento do score de performance mobile no Lighthouse de 33 para 80.",
         "enterprise": "Mestres da web",
-        "date": "Dez 2025 - Atualmente",
+        "date": "Dez 2025 - Mar 2026",
         "imgURl": "/logo/mw-logo.webp",
         "tech": [
           "Nextjs",

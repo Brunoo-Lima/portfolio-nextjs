@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useState } from 'react';
+import Image from "next/image";
+import { useState } from "react";
 
 interface ICompaniesProps {
   companies: any[];
 }
 export const Companies = ({ companies }: ICompaniesProps) => {
-  const [activeCompany, setActiveCompany] = useState<number>(0);
+  const [activeCompany, setActiveCompany] = useState<number>(1);
 
   return (
     <>
@@ -18,8 +18,8 @@ export const Companies = ({ companies }: ICompaniesProps) => {
               key={index}
               className={`p-3 cursor-pointer hover:bg-gray-800 transition-colors ${
                 activeCompany === index
-                  ? 'bg-gray-800 border-l-4 border-second-green'
-                  : ''
+                  ? "bg-gray-800 border-l-4 border-second-green"
+                  : ""
               }`}
               onClick={() => setActiveCompany(index)}
             >
@@ -71,7 +71,7 @@ export const Companies = ({ companies }: ICompaniesProps) => {
                     key={index}
                     className="block w-max px-2 py-0.5 rounded-lg bg-primary-green text-sm font-semibold text-primary-black"
                   >
-                    {tech.replace(',', ' ')}
+                    {tech.replace(",", " ")}
                   </span>
                 ))}
               </div>

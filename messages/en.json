@@ -40,9 +40,9 @@
       },
       {
         "area": "Front-End Developer Jr",
-        "description": "I develop modern and responsive websites focused on user experience, API integration, SEO optimization, and structured data implementation for better visibility and ranking in search engines.",
+        "description": "I develop modern and responsive websites focused on user experience, API integration, SEO optimization, and structured data implementation for better visibility and ranking in search engines, 58% reduction in First Load JS shared by all (208kb → 88kb), increase in Lighthouse mobile performance score from 33 to 80.",
         "enterprise": "Mestres da Web",
-        "date": "Dec 2025 - Present",
+        "date": "Dec 2025 - March 2026",
         "imgURl": "/logo/mw-logo.webp",
         "tech": [
           "Nextjs",

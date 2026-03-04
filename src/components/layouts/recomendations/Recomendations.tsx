@@ -17,9 +17,9 @@ export const Recomendations = () => {
         variants={visibleFromOpacityZero}
         className="flex justify-center items-center"
       >
-        <h1 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text font-secondary">
+        <h2 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text font-secondary">
           {t('title')}
-        </h1>
+        </h2>
       </Reveal>
       <div className="mx-auto flex flex-col items-center justify-center gap-6 mt-12 px-6">
         <div className="max-w-[785px]">

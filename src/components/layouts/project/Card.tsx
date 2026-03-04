@@ -22,9 +22,9 @@ export const Card = ({ project }: ICardProps) => {
           {project.type}
         </span>
 
-        <h1 className="text-lg font-bold text-primary-white mb-1 font-secondary">
+        <h3 className="text-lg font-bold text-primary-white mb-1 font-secondary">
           {project.title}
-        </h1>
+        </h3>
 
         <p className="text-sm text-primary-white mb-2">{project.description}</p>
 

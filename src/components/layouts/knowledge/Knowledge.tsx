@@ -28,9 +28,9 @@ export const Knowledge = () => {
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex justify-center">
           <Reveal variants={slideFromLeft(0.1)}>
-            <h1 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text font-secondary">
+            <h2 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text font-secondary">
               {t('title')}
-            </h1>
+            </h2>
           </Reveal>
         </div>
         <div className="lg:w-[900px] lg:mx-auto mt-12" ref={ref}>

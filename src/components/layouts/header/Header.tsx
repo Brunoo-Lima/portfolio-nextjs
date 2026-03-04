@@ -64,9 +64,9 @@ export const Header = () => {
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
           <Reveal variants={slideFromLeft(0.2)}>
-            <h1 className="cursor-default text-3xl md:text-4xl font-semibold inline-block text-transparent bg-gradient-to-r from-primary-green to-second-green bg-clip-text">
+            <strong className="cursor-default text-3xl md:text-4xl font-semibold inline-block text-transparent bg-gradient-to-r from-primary-green to-second-green bg-clip-text">
               ❮BL/❯
-            </h1>
+            </strong>
           </Reveal>
 
           <div className="block md:hidden" id="mobile-menu">

@@ -8,6 +8,7 @@ const WhatsApp = () => {
     <a
       href={url}
       target="_blank"
+      title="WhatsApp"
       rel="noopener noreferrer nofollow"
       className="fixed bottom-6 right-6 z-50 fade--in"
     >

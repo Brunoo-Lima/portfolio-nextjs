@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { ArrowUpIcon } from 'lucide-react';
+import { ArrowUpIcon } from "lucide-react";
 
 export const Footer = () => {
   const year = new Date().getFullYear();
 
   const scrollTopTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -14,7 +14,7 @@ export const Footer = () => {
       <div className="container px-12 py-8 mx-auto">
         <div className="flex justify-between items-center md:flex-row flex-col">
           <p className="md:order-none order-last md:mt-0 mt-4">
-            © {year} <strong>Bruno Lima. </strong>{' '}
+            © {year} <strong>Bruno Lima. </strong>{" "}
             <span className="text-second-gray">
               Todos os direitos reservados.
             </span>
@@ -23,13 +23,10 @@ export const Footer = () => {
           <button
             className="flex items-center gap-2 hover:cursor-pointer"
             onClick={scrollTopTop}
+            title="Voltar ao topo"
           >
             <p className="md:hidden block">Voltar ao topo</p>
             <ArrowUpIcon
-              // src="/assets/upArrow.svg"
-              // alt="Icone para voltar ao topo"
-              // width={36}
-              // height={36}
               color="#38f8d4"
               className="w-9 h-9 animate-bounce transition duration-300 bg-primary-black border border-gray-800 rounded-full p-1"
             />

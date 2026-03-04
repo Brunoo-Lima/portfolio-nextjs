@@ -1,13 +1,20 @@
-# Portfólio 2.0
+# Portfólio
 
-Projeto de um novo portfólio para apresentar meus projetos. Utilizei de novas ferramentas que estava estudando para criar ele e assim já colocando em prática. Utilizei React e Next com TypeScript para melhor desempenho e Tailwind CSS para estilização, framer-motion para animações do site e outras ferramentas para dar melhor sensação de modernidade na página.
+Repositório do meu portfólio, desenvolvido com Nextjs e variadas tecnologias.
+
+## Link para o portfólio
+
+Acesse: https://bruno-lima.vercel.app/
+
+## Recursos
+
+- Eslint e Prettier - Para manter um código limpo e consistente, seguindo as melhores práticas no desenvolvimento.
+- husky e lintstaged - Para automatizar verificações de qualidade de código no momento do commit, evitando que código problemático entre no repositório.
 
 ## Tecnologias utilizadas
 
-- React
-- TypeScript
 - Nextjs
+- TypeScript
 - Tailwind CSS
 - Framer-motion
 - NextIntl
-- Nodemailer

@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import { useLocale, useTranslations } from 'next-intl';
-import { useEffect, useState } from 'react';
+import { useLocale, useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 
 import {
   slideFromLeft,
   slideFromRight,
   visibleFromOpacityZero,
-} from '@/utils/motion';
-import { Reveal } from '@/utils/Reveal';
+} from "@/utils/motion";
+import { Reveal } from "@/utils/Reveal";
 
-import { MenuMobile } from './MenuMobile';
-import { NavLink } from './NavLink';
-import { SwitcherLanguage } from './SwitcherLanguage';
+import { MenuMobile } from "./MenuMobile";
+import { NavLink } from "./NavLink";
+import { SwitcherLanguage } from "./SwitcherLanguage";
 
 export type NavLinksProps = {
   title: string;
@@ -20,22 +20,22 @@ export type NavLinksProps = {
 };
 
 const navLinks: NavLinksProps[] = [
-  { id: 1, title: 'about' },
-  { id: 2, title: 'experience' },
-  { id: 3, title: 'knowledge' },
-  { id: 4, title: 'projects' },
-  { id: 5, title: 'contact' },
+  { id: 1, title: "about" },
+  { id: 2, title: "experience" },
+  { id: 3, title: "knowledge" },
+  { id: 4, title: "projects" },
+  { id: 5, title: "recomendations" },
 ];
 
 export const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const t = useTranslations('Header');
+  const t = useTranslations("Header");
   const locale = useLocale();
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
-      const navbar = document.getElementById('navbar');
-      const mobileMenu = document.getElementById('mobile-menu');
+      const navbar = document.getElementById("navbar");
+      const mobileMenu = document.getElementById("mobile-menu");
 
       if (
         navbarOpen &&
@@ -48,10 +48,10 @@ export const Header = () => {
       }
     }
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
 
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [navbarOpen]);
 
@@ -64,12 +64,12 @@ export const Header = () => {
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
           <Reveal variants={slideFromLeft(0.2)}>
-            <h1 className="cursor-default text-3xl md:text-4xl font-semibold inline-block text-transparent bg-gradient-to-r from-primary-green to-second-green bg-clip-text">
+            <strong className="cursor-default text-3xl md:text-4xl font-semibold inline-block text-transparent bg-gradient-to-r from-primary-green to-second-green bg-clip-text">
               ❮BL/❯
-            </h1>
+            </strong>
           </Reveal>
 
-          <div className="block md:hidden" id="mobile-menu">
+          <div className="block lg:hidden" id="mobile-menu">
             <button
               type="button"
               onClick={handleClick}
@@ -79,20 +79,20 @@ export const Header = () => {
                 <span
                   className={`block h-[1px] w-8 rounded-full bg-primary-white transition-transform ease-in-out duration-500 ${
                     !navbarOpen
-                      ? '-translate-y-1.0'
-                      : 'transition-transform ease-in-out translate-y-2 -rotate-45'
+                      ? "-translate-y-1.0"
+                      : "transition-transform ease-in-out translate-y-2 -rotate-45"
                   }`}
                 ></span>
                 <span
                   className={`block h-[1px] w-8 rounded-full bg-primary-white transition-opacity ease-in-out duration-500 ${
-                    navbarOpen ? 'opacity-0' : 'translate-y-1.0 opacity-100'
+                    navbarOpen ? "opacity-0" : "translate-y-1.0 opacity-100"
                   } `}
                 ></span>
                 <span
                   className={`block h-[1px] w-8 rounded-full bg-primary-white transition-transform ease-in-out duration-500 ${
                     !navbarOpen
-                      ? 'translate-y-1.0'
-                      : 'transition-transform ease-in-out -translate-y-2 rotate-45'
+                      ? "translate-y-1.0"
+                      : "transition-transform ease-in-out -translate-y-2 rotate-45"
                   }`}
                 ></span>
               </div>
@@ -100,7 +100,7 @@ export const Header = () => {
           </div>
 
           <div
-            className="hidden md:flex md:items-center md:space-x-6 md:w-auto"
+            className="hidden lg:flex md:items-center md:space-x-6 md:w-auto"
             id="navbar"
           >
             <Reveal variants={slideFromRight(0.2)}>

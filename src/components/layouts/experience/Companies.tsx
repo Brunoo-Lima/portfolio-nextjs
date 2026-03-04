@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useState } from 'react';
+import Image from "next/image";
+import { useState } from "react";
 
 interface ICompaniesProps {
   companies: any[];
 }
 export const Companies = ({ companies }: ICompaniesProps) => {
-  const [activeCompany, setActiveCompany] = useState<number>(0);
+  const [activeCompany, setActiveCompany] = useState<number>(1);
 
   return (
     <>
@@ -18,15 +18,15 @@ export const Companies = ({ companies }: ICompaniesProps) => {
               key={index}
               className={`p-3 cursor-pointer hover:bg-gray-800 transition-colors ${
                 activeCompany === index
-                  ? 'bg-gray-800 border-l-4 border-second-green'
-                  : ''
+                  ? "bg-gray-800 border-l-4 border-second-green"
+                  : ""
               }`}
               onClick={() => setActiveCompany(index)}
             >
-              <div className="font-medium text-primary-white">
+              <p className="font-medium text-primary-white">
                 {company.enterprise}
-              </div>
-              <div className="text-xs text-second-gray">{company.date}</div>
+              </p>
+              <small className="text-xs text-second-gray">{company.date}</small>
             </div>
           ))
           .reverse()}
@@ -37,7 +37,9 @@ export const Companies = ({ companies }: ICompaniesProps) => {
           const company = companies[activeCompany];
           return (
             <>
-              <h2 className="text-xl text-second-green">{company.area}</h2>
+              <h2 className="text-lg text-second-green font-secondary">
+                {company.area}
+              </h2>
 
               <div className="flex items-start gap-x-4 space-y-4 w-[250px]">
                 <aside className="flex flex-col gap-y-0.5 h-11 my-2">
@@ -69,7 +71,7 @@ export const Companies = ({ companies }: ICompaniesProps) => {
                     key={index}
                     className="block w-max px-2 py-0.5 rounded-lg bg-primary-green text-sm font-semibold text-primary-black"
                   >
-                    {tech.replace(',', ' ')}
+                    {tech.replace(",", " ")}
                   </span>
                 ))}
               </div>

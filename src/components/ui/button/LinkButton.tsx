@@ -1,22 +1,24 @@
-import { ReactNode } from 'react';
-
-interface ILinkButtonProps {
-  icon: ReactNode;
+interface ILinkButtonProps extends React.HTMLAttributes<HTMLAnchorElement> {
+  children: React.ReactNode;
+  classNameCustom?: string;
   href: string;
-  textTooltip: string;
 }
 
-export const LinkButton = ({ icon, href, textTooltip }: ILinkButtonProps) => {
+export const LinkButton = ({
+  children,
+  classNameCustom,
+  href,
+  ...props
+}: ILinkButtonProps) => {
   return (
     <a
-      href={href}
       rel="noopener noreferrer nofollow"
-      aria-label="Link para minhas redes"
+      href={href}
       target="_blank"
-      title={textTooltip}
-      className="px-4 py-2 w-16 min-h-full rounded-lg transition-all duration-300 border border-transparent hover:border hover:border-primary-gray hover:bg-primary-gray/45"
+      className={`${classNameCustom} px-4 py-2 w-16 min-h-full rounded-lg transition-all duration-300 border border-transparent hover:border hover:border-primary-gray hover:bg-primary-gray/45`}
+      {...props}
     >
-      {icon}
+      {children}
     </a>
   );
 };

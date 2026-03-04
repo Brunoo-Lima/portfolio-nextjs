@@ -4,7 +4,7 @@
     "experience": "Experiência",
     "knowledge": "Conhecimento",
     "projects": "Projetos",
-    "contact": "Contato"
+    "recomendations": "Recomendações"
   },
   "Hero": {
     "title": "Olá, eu sou",
@@ -14,7 +14,7 @@
     "title": "Bruno Lima",
     "subtitle": "Desenvolvedor Front end",
     "who_are": "Quem sou",
-    "description": "Me chamo Bruno, sou desenvolvedor front-end com 2 anos de experiência e formado em Análise e Desenvolvimento de Sistemas pela FATEC.<br/>Também estou aberto a oportunidades como freelancer, ajudando a transformar ideias de sites ou aplicativos em projetos reais. Se quiser conversar sobre seu projeto, é só me chamar!",
+    "description": "Me chamo Bruno, sou desenvolvedor front-end com 2 anos de experiência e formado em Análise e Desenvolvimento de Sistemas pela FATEC.<br/>Estou aberto a oportunidades como freelancer, ajudando a transformar ideias de sites ou aplicativos em projetos reais. Se quiser conversar sobre seu projeto, é só me chamar!",
     "button_download_cv": "Download CV"
   },
   "Experience": {
@@ -40,9 +40,9 @@
       },
       {
         "area": "Desenvolvedor Front End Jr",
-        "description": "Desenvolvimento de sites e aplicações front-end modernas e responsivas, com foco em UI/UX, performance, SEO técnico, integração de APIs e otimização para mecanismos de busca.",
+        "description": "Desenvolvimento de sites e aplicações front-end modernas e responsivas, com foco em UI/UX, performance, SEO técnico, integração de APIs e otimização para mecanismos de busca, redução de 58% no First Load JS shared by all (208kb → 88kb), aumento do score de performance mobile no Lighthouse de 33 para 80.",
         "enterprise": "Mestres da web",
-        "date": "Dez 2025 - Atualmente",
+        "date": "Dez 2025 - Mar 2026",
         "imgURl": "/logo/mw-logo.webp",
         "tech": [
           "Nextjs",
@@ -118,14 +118,7 @@
       }
     ]
   },
-  "Contact": {
-    "title": "Entre em contato",
-    "name": "Nome",
-    "phone": "Telefone",
-    "email": "E-mail",
-    "message": "Mensagem",
-    "button_send": "Enviar",
-    "success": "Email enviado com sucesso!",
-    "sending": "Enviando..."
+  "Recomendations": {
+    "title": "Recomendações"
   }
 }

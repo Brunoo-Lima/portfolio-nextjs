@@ -1,12 +1,13 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations } from "next-intl/server";
 
-import { slideFromLeft, visibleFromOpacityZero } from '@/utils/motion';
-import { Reveal } from '@/utils/Reveal';
+import { SubtitleSection } from "@/components/ui/subtitle-section";
+import { slideFromLeft, visibleFromOpacityZero } from "@/utils/motion";
+import { Reveal } from "@/utils/Reveal";
 
-import { ProjectsList } from './ProjectsList';
+import { ProjectsList } from "./ProjectsList";
 
 export const Project = async () => {
-  const t = await getTranslations('Projects');
+  const t = await getTranslations("Projects");
 
   return (
     <section
@@ -16,13 +17,11 @@ export const Project = async () => {
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex justify-center lg:mb-12 mb-4">
           <Reveal variants={slideFromLeft(0.1)}>
-            <h1 className="text-4xl font-bold inline-block bg-gradient-to-r from-primary-green via-second-green to-tertiary-green text-transparent bg-clip-text">
-              {t('title')}
-            </h1>
+            <SubtitleSection>{t("title")}</SubtitleSection>
           </Reveal>
         </div>
 
-        <ProjectsList projectList={t.raw('project')} />
+        <ProjectsList projectList={t.raw("project")} />
       </Reveal>
     </section>
   );

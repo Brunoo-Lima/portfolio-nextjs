@@ -1,9 +1,9 @@
 import { About } from "@/components/layouts/About";
 import { Experience } from "@/components/layouts/experience/Experience";
 import { Hero } from "@/components/layouts/Hero";
-import { Knowledge } from "@/components/layouts/knowledge/Knowledge";
 import { Project } from "@/components/layouts/project/Project";
 import { Recomendations } from "@/components/layouts/Recomendations";
+import { Techs } from "@/components/layouts/techs/Techs";
 
 export default function HomePage() {
   return (
@@ -11,7 +11,7 @@ export default function HomePage() {
       <Hero />
       <About />
       <Experience />
-      <Knowledge />
+      <Techs />
       <Project />
       <Recomendations />
     </main>

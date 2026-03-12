@@ -2,7 +2,7 @@
   "Header": {
     "about": "Sobre",
     "experience": "Experiência",
-    "knowledge": "Conhecimento",
+    "techs": "Tecnologias",
     "projects": "Projetos",
     "recomendations": "Recomendações"
   },
@@ -61,8 +61,8 @@
       }
     ]
   },
-  "Knowledge": {
-    "title": "Conhecimentos"
+  "Techs": {
+    "title": "Tecnologias"
   },
   "Projects": {
     "title": "Projetos",

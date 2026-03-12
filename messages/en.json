@@ -2,7 +2,7 @@
   "Header": {
     "about": "About",
     "experience": "Experience",
-    "knowledge": "Knowledge",
+    "techs": "Technologies",
     "projects": "Projects",
     "recomendations": "Recomendations"
   },
@@ -60,8 +60,8 @@
       }
     ]
   },
-  "Knowledge": {
-    "title": "Knowledge"
+  "Techs": {
+    "title": "Technologies"
   },
   "Projects": {
     "title": "Projects",

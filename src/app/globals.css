@@ -90,6 +90,22 @@
   }
 }
 
+.section__experience {
+  @media (max-width: 868px) {
+    height: max-content !important;
+  }
+}
+
+.grid__tech {
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 468px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 :root {
   --font-primary: 'Roboto', sans-serif;
   --font-secondary: 'JetBrains Mono', monospace;

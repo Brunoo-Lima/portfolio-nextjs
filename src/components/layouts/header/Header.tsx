@@ -22,7 +22,7 @@ export type NavLinksProps = {
 const navLinks: NavLinksProps[] = [
   { id: 1, title: "about" },
   { id: 2, title: "experience" },
-  { id: 3, title: "knowledge" },
+  { id: 3, title: "techs" },
   { id: 4, title: "projects" },
   { id: 5, title: "recomendations" },
 ];

@@ -12,19 +12,19 @@ export const About = async () => {
 
   return (
     <section
-      className="md:py-20 py-8 md:px-12 px-8 container mx-auto"
+      className="md:py-20 mb-24 py-8 md:px-12 px-8 container mx-auto"
       id="about"
     >
-      <div className="flex md:justify-around justify-start items-start md:flex-row flex-col flex-wrap sm:gap-6 gap-4 bg-second-black border border-gray-800 rounded-md md:p-6 py-4 md:max-w-[1200px] lg:h-[340px] mx-auto container__about">
-        <div className="mx-auto -mt-14">
+      <div className="flex md:justify-around justify-start items-start md:flex-row flex-col flex-wrap sm:gap-6 gap-4 bg-second-black border border-gray-800 rounded-md md:p-6 py-4 md:max-w-[1200px] lg:h-[380px] mx-auto container__about">
+        <div className="mx-auto -mt-16">
           <Reveal variants={slideFromTop}>
             <figure>
               <Image
                 src="/assets/me.webp"
                 alt="Minha foto"
-                className="block sm:w-[350px] sm:h-[400px] w-[320px] h-[400px] rounded-lg "
-                width={350}
-                height={400}
+                className="block sm:w-[360px] sm:h-[453px] rounded-lg "
+                width={360}
+                height={453}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
               />
             </figure>
@@ -49,7 +49,7 @@ export const About = async () => {
           </Reveal>
 
           <Reveal variants={slideFromLeft(0.8)}>
-            <p className="text-base text-second-gray text-justify leading-snug mb-6 max-md:px-5">
+            <p className="text-base text-second-gray text-justify leading-normal mb-6 max-md:px-5">
               {parse(t("description"))}
             </p>
           </Reveal>

@@ -36,12 +36,12 @@ export const Techs = () => {
         <div className="flex flex-col md:flex-row gap-8 mt-24 relative">
           <div className="sticky top-32 left-0 self-start lg:block hidden">
             <Image
-              src="/assets/main.webp"
+              src="/assets/dev.svg"
               alt="Tecnologias e ferramentas"
               width={600}
               height={600}
               loading="lazy"
-              className="object-contain lg:block hidden lg:w-[600px] lg:h-[600px] w-[400px] h-[400px]"
+              className="lg:block hidden lg:w-[600px] lg:h-[600px] w-[400px] h-[400px]"
             />
           </div>
 

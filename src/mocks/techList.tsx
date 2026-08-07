@@ -1,19 +1,21 @@
-import { CssIcon } from "@/components/icons/CssIcon";
-import { ExpressIcon } from "@/components/icons/ExpressIcon";
-import { FigmaIcon } from "@/components/icons/FigmaIcon";
-import { GitHubActionsIcon } from "@/components/icons/GitHubActionsIcon";
-import { GitIcon } from "@/components/icons/GitIcon";
-import { HtmlIcon } from "@/components/icons/HtmlIcon";
-import { JavascriptIcon } from "@/components/icons/JavascriptIcon";
-import { JestIcon } from "@/components/icons/JestIcon";
-import { NextIcon } from "@/components/icons/NextIcon";
-import { NodeIcon } from "@/components/icons/NodeIcon";
-import { ReactIcon } from "@/components/icons/ReactIcon";
-import { SassIcon } from "@/components/icons/SassIcon";
-import { StyledComponentsIcon } from "@/components/icons/StyledComponentsIcon";
-import { TailwindIcon } from "@/components/icons/TailwindIcon";
-import { TestingLibraryIcon } from "@/components/icons/TestingLibraryIcon";
-import { TypescriptIcon } from "@/components/icons/TypescriptIcon";
+import {
+  CssIcon,
+  ExpressIcon,
+  FigmaIcon,
+  GitHubActionsIcon,
+  GitIcon,
+  HtmlIcon,
+  JavascriptIcon,
+  JestIcon,
+  NextIcon,
+  NodeIcon,
+  ReactIcon,
+  SassIcon,
+  StyledComponentsIcon,
+  TailwindIcon,
+  TestingLibraryIcon,
+  TypescriptIcon,
+} from "@/components/icons";
 
 export const frontendList = [
   {

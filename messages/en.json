@@ -67,14 +67,6 @@
     "title": "Projects",
     "project": [
       {
-        "image": "/img/projects/em-breve.webp",
-        "href": "https://github.com/Brunoo-Lima/reading-goals-api",
-        "type": "Software",
-        "title": "Reading Journal (under construction)",
-        "description": "A reading journal that allows users to log their daily reading and set reading goals. The app is intuitive and easy to use, helping users track their reading progress and motivating them to read more.",
-        "view": "View"
-      },
-      {
         "image": "/img/projects/mastercash.webp",
         "href": "https://finance-app-mastercash.vercel.app/",
         "type": "Software",
@@ -88,6 +80,14 @@
         "type": "Software",
         "title": "Login System",
         "description": "The project covers registration, JWT authentication, email verification, session renewal using refresh tokens, password recovery, and management of the authenticated profile.",
+        "view": "View"
+      },
+      {
+        "image": "/img/projects/em-breve.webp",
+        "href": "https://github.com/Brunoo-Lima/reading-goals-api",
+        "type": "Software",
+        "title": "Reading Journal (under construction)",
+        "description": "A reading journal that allows users to log their daily reading and set reading goals. The app is intuitive and easy to use, helping users track their reading progress and motivating them to read more.",
         "view": "View"
       }
     ]

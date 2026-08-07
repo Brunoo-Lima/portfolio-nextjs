@@ -68,14 +68,6 @@
     "title": "Projetos",
     "project": [
       {
-        "image": "/img/projects/em-breve.webp",
-        "href": "https://github.com/Brunoo-Lima/reading-goals-api",
-        "type": "Software",
-        "title": "Diário de leitura (em construção)",
-        "description": "Diário de leitura que permite aos usuários registrar suas leituras diárias e estabelecer metas de leitura. A aplicação é intuitiva e fácil de usar, ajudando os usuários a acompanhar seu progresso de leitura e a motivá-los a ler mais.",
-        "view": "Visualizar"
-      },
-      {
         "image": "/img/projects/mastercash.webp",
         "href": "https://finance-app-mastercash.vercel.app/",
         "type": "Software",
@@ -89,6 +81,14 @@
         "type": "Software",
         "title": "Sistema de Login",
         "description": "O projeto cobre cadastro, autenticação com JWT, verificação de e-mail, renovação de sessão com refresh token, recuperação de senha e gerenciamento do perfil autenticado.",
+        "view": "Visualizar"
+      },
+      {
+        "image": "/img/projects/em-breve.webp",
+        "href": "https://github.com/Brunoo-Lima/reading-goals-api",
+        "type": "Software",
+        "title": "Diário de leitura (em construção)",
+        "description": "Diário de leitura que permite aos usuários registrar suas leituras diárias e estabelecer metas de leitura. A aplicação é intuitiva e fácil de usar, ajudando os usuários a acompanhar seu progresso de leitura e a motivá-los a ler mais.",
         "view": "Visualizar"
       }
     ]

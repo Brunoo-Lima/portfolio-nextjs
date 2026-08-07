@@ -67,51 +67,27 @@
     "title": "Projects",
     "project": [
       {
+        "image": "/img/projects/em-breve.webp",
+        "href": "https://github.com/Brunoo-Lima/reading-goals-api",
+        "type": "Software",
+        "title": "Reading Journal (under construction)",
+        "description": "A reading journal that allows users to log their daily reading and set reading goals. The app is intuitive and easy to use, helping users track their reading progress and motivating them to read more.",
+        "view": "View"
+      },
+      {
         "image": "/img/projects/mastercash.webp",
         "href": "https://finance-app-mastercash.vercel.app/",
         "type": "Software",
         "title": "MasterCash",
-        "description": "Financial software with a simple and intuitive interface, featuring transactions, balances, and graphs for better data visualization.",
-        "view": "View"
-      },
-      {
-        "image": "/img/projects/coffee.webp",
-        "href": "https://coffee-blima.netlify.app/",
-        "type": "Website",
-        "title": "Coffee Delivery",
-        "description": "Coffee Delivery is a catalog and coffee shopping web page.",
-        "view": "View"
-      },
-      {
-        "image": "/img/projects/shop2.0.webp",
-        "href": "https://shop-blima.netlify.app/",
-        "type": "Website",
-        "title": "Shop 2.0",
-        "description": "Project using Redux for the first time. It's a shirt catalog page, featuring a basic slider, cart functionality, and checkout.",
+        "description": "Financial software for managing finances, featuring straightforward and intuitive interfaces, transactions, and charts for data visualization.",
         "view": "View"
       },
       {
         "image": "/img/projects/authenticationUser.webp",
-        "href": "https://github.com/Brunoo-Lima/authentication-user",
-        "type": "Website",
+        "href": "https://github.com/Brunoo-Lima/identity-service",
+        "type": "Software",
         "title": "Login System",
-        "description": "Fullstack application based on user creation and authentication, with backend validation.",
-        "view": "View"
-      },
-      {
-        "image": "/img/projects/bikcraft.webp",
-        "href": "https://brunoo-lima.github.io/bikcraft/",
-        "type": "Website",
-        "title": "Bikcraft",
-        "description": "An e-commerce project for bicycles. One of the first large-scale projects I developed.",
-        "view": "View"
-      },
-      {
-        "image": "/img/projects/gow.webp",
-        "href": "https://gow-ragnarok.netlify.app/",
-        "type": "Website",
-        "title": "God of War - Ragnarok",
-        "description": "Landing page project created at the time of the game’s launch.",
+        "description": "The project covers registration, JWT authentication, email verification, session renewal using refresh tokens, password recovery, and management of the authenticated profile.",
         "view": "View"
       }
     ]

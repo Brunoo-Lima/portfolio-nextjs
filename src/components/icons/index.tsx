@@ -1,8 +1,8 @@
 export { CssIcon } from "./CssIcon";
 export { ExpressIcon } from "./ExpressIcon";
-export { ExternalIcon } from "./ExternalIcon";
 export { FigmaIcon } from "./FigmaIcon";
 export { GitHubActionsIcon } from "./GitHubActionsIcon";
+export { GithubIcon } from "./GithubIcon";
 export { GitIcon } from "./GitIcon";
 export { HtmlIcon } from "./HtmlIcon";
 export { JavascriptIcon } from "./JavascriptIcon";

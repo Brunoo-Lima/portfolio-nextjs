@@ -2,10 +2,9 @@ import parse from "html-react-parser";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
+import { ButtonDownload } from "@/components/ui/button/ButtonDownload";
 import { slideFromLeft, slideFromTop } from "@/utils/motion";
 import { Reveal } from "@/utils/Reveal";
-
-import { ButtonDownload } from "../ui/button/ButtonDownload";
 
 export const About = async () => {
   const t = await getTranslations("About");

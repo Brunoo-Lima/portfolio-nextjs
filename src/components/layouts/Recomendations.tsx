@@ -4,10 +4,9 @@ import { MoveRightIcon } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import { SubtitleSection } from "@/components/ui/subtitle-section";
 import { visibleFromOpacityZero } from "@/utils/motion";
 import { Reveal } from "@/utils/Reveal";
-
-import { SubtitleSection } from "../ui/subtitle-section";
 
 export const Recomendations = () => {
   const t = useTranslations("Recomendations");

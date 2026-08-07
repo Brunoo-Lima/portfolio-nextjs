@@ -6,6 +6,7 @@ import { useState } from "react";
 interface ICompaniesProps {
   companies: any[];
 }
+
 export const Companies = ({ companies }: ICompaniesProps) => {
   const [activeCompany, setActiveCompany] = useState<number>(1);
 

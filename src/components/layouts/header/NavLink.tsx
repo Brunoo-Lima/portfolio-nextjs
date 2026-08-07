@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 type NavLinkProps = {
   id: string;
   label: string;

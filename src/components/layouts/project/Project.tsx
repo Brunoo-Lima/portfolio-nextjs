@@ -15,7 +15,7 @@ export const Project = async () => {
       id="projects"
     >
       <Reveal variants={visibleFromOpacityZero}>
-        <div className="flex justify-center lg:mb-12 mb-4">
+        <div className="flex justify-center lg:mb-12 mb-8">
           <Reveal variants={slideFromLeft(0.1)}>
             <SubtitleSection>{t("title")}</SubtitleSection>
           </Reveal>

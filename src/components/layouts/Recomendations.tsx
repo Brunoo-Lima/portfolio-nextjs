@@ -12,7 +12,10 @@ export const Recomendations = () => {
   const t = useTranslations("Recomendations");
 
   return (
-    <section className="py-20 pt-8" id="recomendations">
+    <section
+      className="py-20 md:pt-28 pt-8 bg-second-black"
+      id="recomendations"
+    >
       <Reveal
         variants={visibleFromOpacityZero}
         className="flex justify-center items-center"

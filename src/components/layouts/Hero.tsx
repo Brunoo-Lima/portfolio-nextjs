@@ -1,18 +1,16 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
+import { GithubIcon, LinkedinIcon } from "@/components/icons";
+import { LinkButton } from "@/components/ui/button/LinkButton";
+import { TitleAnimation } from "@/components/ui/title-animation";
 import {
   slideFromLeft,
   slideFromRight,
   visibleFromOpacityZero,
 } from "@/utils/motion";
+import { slideFromTop } from "@/utils/motion";
 import { Reveal } from "@/utils/Reveal";
-
-import { slideFromTop } from "../../utils/motion";
-import { GithubIcon } from "../icons/GithubIcon";
-import { LinkedinIcon } from "../icons/LinkedinIcon";
-import { LinkButton } from "../ui/button/LinkButton";
-import { TitleAnimation } from "../ui/title-animation";
 
 export const Hero = async () => {
   const t = await getTranslations("Hero");

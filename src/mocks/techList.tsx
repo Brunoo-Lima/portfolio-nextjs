@@ -1,19 +1,27 @@
-import { CssIcon } from "@/components/icons/CssIcon";
-import { ExpressIcon } from "@/components/icons/ExpressIcon";
-import { FigmaIcon } from "@/components/icons/FigmaIcon";
-import { GitHubActionsIcon } from "@/components/icons/GitHubActionsIcon";
-import { GitIcon } from "@/components/icons/GitIcon";
-import { HtmlIcon } from "@/components/icons/HtmlIcon";
-import { JavascriptIcon } from "@/components/icons/JavascriptIcon";
-import { JestIcon } from "@/components/icons/JestIcon";
-import { NextIcon } from "@/components/icons/NextIcon";
-import { NodeIcon } from "@/components/icons/NodeIcon";
-import { ReactIcon } from "@/components/icons/ReactIcon";
-import { SassIcon } from "@/components/icons/SassIcon";
-import { StyledComponentsIcon } from "@/components/icons/StyledComponentsIcon";
-import { TailwindIcon } from "@/components/icons/TailwindIcon";
-import { TestingLibraryIcon } from "@/components/icons/TestingLibraryIcon";
-import { TypescriptIcon } from "@/components/icons/TypescriptIcon";
+import {
+  CIIcon,
+  CssIcon,
+  DockerIcon,
+  ExpressIcon,
+  FigmaIcon,
+  GitHubActionsIcon,
+  GitIcon,
+  HtmlIcon,
+  JavaIcon,
+  JavascriptIcon,
+  JestIcon,
+  NextIcon,
+  NodeIcon,
+  PostgresIcon,
+  ReactIcon,
+  SassIcon,
+  SpringBootIcon,
+  StyledComponentsIcon,
+  TailwindIcon,
+  TestingLibraryIcon,
+  TypescriptIcon,
+  VitestIcon,
+} from "@/components/icons";
 
 export const frontendList = [
   {
@@ -74,6 +82,21 @@ export const backendList = [
     name: "Express",
     icon: <ExpressIcon />,
   },
+  {
+    id: 3,
+    name: "Java",
+    icon: <JavaIcon />,
+  },
+  {
+    id: 4,
+    name: "Spring Boot",
+    icon: <SpringBootIcon />,
+  },
+  {
+    id: 5,
+    name: "PostgreSQL",
+    icon: <PostgresIcon />,
+  },
 ];
 
 export const toolsList = [
@@ -94,12 +117,27 @@ export const toolsList = [
   },
   {
     id: 4,
+    name: "Vitest",
+    icon: <VitestIcon />,
+  },
+  {
+    id: 5,
     name: "Jest",
     icon: <JestIcon />,
   },
   {
-    id: 5,
+    id: 6,
     name: "Testing Library",
     icon: <TestingLibraryIcon />,
+  },
+  {
+    id: 7,
+    name: "Docker",
+    icon: <DockerIcon />,
+  },
+  {
+    id: 8,
+    name: "CI/CD",
+    icon: <CIIcon />,
   },
 ];

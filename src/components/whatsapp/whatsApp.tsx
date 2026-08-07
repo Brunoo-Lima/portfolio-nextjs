@@ -1,4 +1,4 @@
-import { WhatsAppIcon } from "../icons/WhatsAppIcon";
+import { WhatsAppIcon } from "@/components/icons";
 
 const WhatsApp = () => {
   const message = "Olá, vim pelo site!";

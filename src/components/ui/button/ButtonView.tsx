@@ -1,4 +1,4 @@
-import { ExternalIcon } from '@/components/icons/ExternalIcon';
+import { ExternalLinkIcon } from "lucide-react";
 
 interface IButtonViewProps {
   href: string;
@@ -16,7 +16,7 @@ export const ButtonView = ({ href, textTooltip, text }: IButtonViewProps) => {
       className="flex items-center justify-center gap-2 bg-primary-white py-2 px-3 w-28 rounded-md border-none hover:scale-105 transition duration-300"
     >
       <span className="text-sm text-primary-black font-normal">{text}</span>
-      <ExternalIcon />
+      <ExternalLinkIcon color="#000000c1" className="size-4 inline-block" />
     </a>
   );
 };

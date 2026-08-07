@@ -21,7 +21,7 @@ export const Footer = () => {
           </p>
 
           <button
-            className="flex items-center gap-2 hover:cursor-pointer"
+            className="flex items-center gap-2 hover:cursor-pointer mr-6"
             onClick={scrollTopTop}
             title="Voltar ao topo"
           >

@@ -12,15 +12,15 @@ export const TitleAnimation = () => {
       <TypeAnimation
         sequence={[
           "Bruno",
-          1000,
-          "Web Developer",
-          1000,
-          "Front End Developer",
-          1000,
+          1500,
+          "FullStack Developer",
+          1500,
+          "SEO Analyst",
+          1500,
         ]}
         wrapper="span"
         repeat={Infinity}
-        className="font-secondary text-5xl"
+        className="font-secondary sm:text-5xl text-3xl"
       />
     </h1>
   );

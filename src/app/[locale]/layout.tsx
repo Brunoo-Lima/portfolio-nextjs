@@ -2,12 +2,14 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { JetBrains_Mono, Roboto } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 
-import { getUserLocale } from "@/actions/locale";
 import { Footer } from "@/components/layouts/Footer";
 import { Header } from "@/components/layouts/header/Header";
 import { WhatsAppWrapper } from "@/components/whatsapp/whatsApp-wrapper";
+import { routing } from "@/i18n/routing";
 
 const font__primary = Roboto({
   subsets: ["latin"],
@@ -29,12 +31,27 @@ export const metadata: Metadata = {
     "Desenvolvedor web especializado em criar sites modernos, responsivos e otimizados para SEO. Confira meus projetos e habilidades em front-end.",
 };
 
-interface IRootLayoutProps {
-  children: React.ReactNode;
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function RootLayout({ children }: IRootLayoutProps) {
-  const locale = await getUserLocale();
+interface ILocaleLayoutProps {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}
+
+export default async function LocaleLayout({
+  children,
+  params,
+}: ILocaleLayoutProps) {
+  const { locale } = await params;
+
+  if (!hasLocale(routing.locales, locale)) notFound();
+
+  setRequestLocale(locale);
+
+  console.log(locale);
+
   return (
     <html lang={locale}>
       <body

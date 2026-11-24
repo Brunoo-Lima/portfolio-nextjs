@@ -4,11 +4,12 @@
     "experience": "Experiência",
     "techs": "Tecnologias",
     "projects": "Projetos",
-    "recomendations": "Recomendações"
+    "services": "Serviços"
   },
   "Hero": {
     "title": "Olá, eu sou",
-    "subtitle": "Tem uma ideia de app? Eu transformo em realidade."
+    "subtitle": "Tem uma ideia de app? Eu transformo em realidade.",
+    "imageAlt": "Tecnologias"
   },
   "About": {
     "title": "Bruno Lima",

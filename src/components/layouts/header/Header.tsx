@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 import {
@@ -17,20 +17,20 @@ import { SwitcherLanguage } from "./SwitcherLanguage";
 export type NavLinksProps = {
   title: string;
   id: number;
+  href: string;
 };
 
 const navLinks: NavLinksProps[] = [
-  { id: 1, title: "about" },
-  { id: 2, title: "experience" },
-  { id: 3, title: "techs" },
-  { id: 4, title: "projects" },
-  { id: 5, title: "recomendations" },
+  { id: 1, title: "about", href: "#about" },
+  { id: 2, title: "experience", href: "#experience" },
+  { id: 3, title: "techs", href: "#techs" },
+  { id: 4, title: "projects", href: "#projects" },
+  // { id: 5, title: 'services', href: '/servicos' },
 ];
 
 export const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const t = useTranslations("Header");
-  const locale = useLocale();
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -55,7 +55,7 @@ export const Header = () => {
     };
   }, [navbarOpen]);
 
-  function handleClick() {
+  function handleOpenNavbar() {
     setNavbarOpen(!navbarOpen);
   }
 
@@ -72,7 +72,7 @@ export const Header = () => {
           <div className="block lg:hidden" id="mobile-menu">
             <button
               type="button"
-              onClick={handleClick}
+              onClick={handleOpenNavbar}
               className="group flex p-2 cursor-pointer items-center justify-center"
             >
               <div className="space-y-2">
@@ -107,18 +107,20 @@ export const Header = () => {
               <ul className="flex gap-4 items-center md:flex-row md:space-x-3 mt-0">
                 {navLinks.map((link) => (
                   <li key={link.id}>
-                    <NavLink id={link.title} label={t(link.title)} />
+                    <NavLink href={link.href} label={t(link.title)} />
                   </li>
                 ))}
               </ul>
             </Reveal>
 
-            <SwitcherLanguage defaultValue={locale} />
+            <SwitcherLanguage />
           </div>
         </div>
       </Reveal>
 
-      {navbarOpen && <MenuMobile links={navLinks} t={t} />}
+      {navbarOpen && (
+        <MenuMobile links={navLinks} t={t} onCloseNavbar={handleOpenNavbar} />
+      )}
     </header>
   );
 };

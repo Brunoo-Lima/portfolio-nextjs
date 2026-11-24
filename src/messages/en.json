@@ -4,11 +4,12 @@
     "experience": "Experience",
     "techs": "Technologies",
     "projects": "Projects",
-    "recomendations": "Recomendations"
+    "services": "services"
   },
   "Hero": {
     "title": "Hello, I am",
-    "subtitle": "Got an app idea? I'll make it happen."
+    "subtitle": "Got an app idea? I'll make it happen.",
+    "imageAlt": "Technologies"
   },
   "About": {
     "title": "Bruno Lima",

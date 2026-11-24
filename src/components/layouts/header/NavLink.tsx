@@ -1,14 +1,16 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 type NavLinkProps = {
-  id: string;
+  href: string;
   label: string;
+  onClick?: () => void;
 };
 
-export const NavLink = ({ label, id }: NavLinkProps) => {
+export const NavLink = ({ label, href, onClick }: NavLinkProps) => {
   return (
     <Link
-      href={`#${id}`}
+      href={href}
+      onClick={onClick}
       className="block py-2 pl-3 pr-4 text-white md:text-base rounded md:p-0 hover:text-second-green transition duration-300 hover:cursor-pointer relative link-menu font-secondary"
     >
       {label}

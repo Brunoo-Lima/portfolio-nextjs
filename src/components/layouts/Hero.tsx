@@ -65,7 +65,7 @@ export const Hero = async () => {
           <Reveal variants={slideFromRight(0.8)}>
             <Image
               src={"/assets/main.webp"}
-              alt="Tecnologias"
+              alt={t("imageAlt")}
               className="md:block hidden max-w-full lg:w-[500px] lg:h-[500px] max-h-fit "
               width={400}
               height={400}

@@ -1,8 +1,9 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
+import { Logo } from "@/components/ui/logo";
 import {
   slideFromLeft,
   slideFromRight,
@@ -25,12 +26,13 @@ const navLinks: NavLinksProps[] = [
   { id: 2, title: "experience", href: "#experience" },
   { id: 3, title: "techs", href: "#techs" },
   { id: 4, title: "projects", href: "#projects" },
-  // { id: 5, title: 'services', href: '/servicos' },
+  { id: 5, title: "services", href: "/servicos" },
 ];
 
 export const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const t = useTranslations("Header");
+  const locale = useLocale();
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -55,6 +57,14 @@ export const Header = () => {
     };
   }, [navbarOpen]);
 
+  const visibleNavLinks = navLinks.filter((link) => {
+    if (link.href === "/servicos" && locale === "en") {
+      return false;
+    }
+
+    return true;
+  });
+
   function handleOpenNavbar() {
     setNavbarOpen(!navbarOpen);
   }
@@ -64,9 +74,7 @@ export const Header = () => {
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
           <Reveal variants={slideFromLeft(0.2)}>
-            <strong className="cursor-default text-3xl md:text-4xl font-semibold inline-block text-transparent bg-gradient-to-r from-primary-green to-second-green bg-clip-text">
-              ❮BL/❯
-            </strong>
+            <Logo />
           </Reveal>
 
           <div className="block lg:hidden" id="mobile-menu">
@@ -105,7 +113,7 @@ export const Header = () => {
           >
             <Reveal variants={slideFromRight(0.2)}>
               <ul className="flex gap-4 items-center md:flex-row md:space-x-3 mt-0">
-                {navLinks.map((link) => (
+                {visibleNavLinks.map((link) => (
                   <li key={link.id}>
                     <NavLink href={link.href} label={t(link.title)} />
                   </li>
@@ -119,7 +127,11 @@ export const Header = () => {
       </Reveal>
 
       {navbarOpen && (
-        <MenuMobile links={navLinks} t={t} onCloseNavbar={handleOpenNavbar} />
+        <MenuMobile
+          links={visibleNavLinks}
+          t={t}
+          onCloseNavbar={handleOpenNavbar}
+        />
       )}
     </header>
   );

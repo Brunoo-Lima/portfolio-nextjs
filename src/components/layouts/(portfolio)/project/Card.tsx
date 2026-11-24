@@ -1,6 +1,6 @@
-import { IProject } from '@/@types/IProject';
-import { ButtonView } from '@/components/ui/button/ButtonView';
-import { MaskCard } from '@/components/ui/MaskCard/MaskCard';
+import { IProject } from "@/@types/IProject";
+import { ButtonView } from "@/components/ui/button/ButtonView";
+import { MaskCard } from "@/components/ui/MaskCard/MaskCard";
 
 type ICardProps = {
   project: IProject;
@@ -12,8 +12,8 @@ export const Card = ({ project }: ICardProps) => {
       className="lg:w-[450px] w-full lg:h-[350px] md:h-[400px] h-[250px] group relative rounded-lg border border-gray-800 md:mt-0 mt-4 transition-all duration-500 overflow-hidden"
       style={{
         background: `url(${project.image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'top center',
+        backgroundSize: "cover",
+        backgroundPosition: "top center",
       }}
     >
       <MaskCard />

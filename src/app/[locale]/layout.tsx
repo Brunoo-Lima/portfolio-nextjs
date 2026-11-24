@@ -6,8 +6,6 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
-import { Footer } from "@/components/layouts/Footer";
-import { Header } from "@/components/layouts/header/Header";
 import { WhatsAppWrapper } from "@/components/whatsapp/whatsApp-wrapper";
 import { routing } from "@/i18n/routing";
 
@@ -50,18 +48,12 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
-  console.log(locale);
-
   return (
     <html lang={locale}>
       <body
         className={`${font__primary.variable} ${font__secondary.variable} bg-primary-black text-primary-white antialiased scrollbar-thumb-emerald-500 scrollbar-track-primary-black scrollbar-thin`}
       >
-        <NextIntlClientProvider>
-          <Header />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
 
         <WhatsAppWrapper />
       </body>

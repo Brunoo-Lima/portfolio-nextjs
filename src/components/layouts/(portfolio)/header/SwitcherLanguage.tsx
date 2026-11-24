@@ -21,7 +21,6 @@ export const SwitcherLanguage = () => {
 
     startTransition(() => {
       router.replace(pathname, { locale: language });
-      router.refresh();
     });
   };
 

@@ -96,5 +96,9 @@
   },
   "Recomendations": {
     "title": "Recomendações"
+  },
+  "ServiceHeader": {
+    "services": "Serviços",
+    "projects": "Projetos"
   }
 }

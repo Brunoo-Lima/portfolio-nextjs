@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
-import { IProject } from '@/@types/IProject';
+import { IProject } from "@/@types/IProject";
 
-import { Card } from './Card';
+import { Card } from "./Card";
 
 interface IProjectsListProps {
   projectList: IProject[];
@@ -29,7 +29,7 @@ export const ProjectsList = ({ projectList }: IProjectsListProps) => {
         <motion.li
           key={index}
           initial="initial"
-          animate={isInView ? 'animate' : 'initial'}
+          animate={isInView ? "animate" : "initial"}
           variants={projectVariants}
           transition={{ duration: 0.8, delay: index * 0.6 }}
         >

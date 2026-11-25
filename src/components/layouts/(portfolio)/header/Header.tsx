@@ -70,7 +70,7 @@ export const Header = () => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-30 mx-auto bg-primary-black/50 border-b border-gray-800 backdrop-blur-sm backdrop-saturate-50">
+    <header className="fixed top-0 left-0 right-0 z-30 mx-auto bg-background/50 border-b border-gray-800 backdrop-blur-sm backdrop-saturate-50">
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
           <Reveal variants={slideFromLeft(0.2)}>
@@ -85,19 +85,19 @@ export const Header = () => {
             >
               <div className="space-y-2">
                 <span
-                  className={`block h-[1px] w-8 rounded-full bg-primary-white transition-transform ease-in-out duration-500 ${
+                  className={`block h-px w-8 rounded-full bg-primary-white transition-transform ease-in-out duration-500 ${
                     !navbarOpen
                       ? "-translate-y-1.0"
                       : "transition-transform ease-in-out translate-y-2 -rotate-45"
                   }`}
                 ></span>
                 <span
-                  className={`block h-[1px] w-8 rounded-full bg-primary-white transition-opacity ease-in-out duration-500 ${
+                  className={`block h-px w-8 rounded-full bg-primary-white transition-opacity ease-in-out duration-500 ${
                     navbarOpen ? "opacity-0" : "translate-y-1.0 opacity-100"
                   } `}
                 ></span>
                 <span
-                  className={`block h-[1px] w-8 rounded-full bg-primary-white transition-transform ease-in-out duration-500 ${
+                  className={`block h-px w-8 rounded-full bg-primary-white transition-transform ease-in-out duration-500 ${
                     !navbarOpen
                       ? "translate-y-1.0"
                       : "transition-transform ease-in-out -translate-y-2 rotate-45"

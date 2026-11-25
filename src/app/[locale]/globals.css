@@ -1,8 +1,104 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-.link-menu:hover::after {
+@theme {
+  /* colors → --color-* */
+  --color-background: #0a0a0a;
+  --color-second-black: #0a0908;
+  --color-primary-gray: #333533;
+  --color-second-gray: #92a5b0;
+  --color-primary-white: #ffffff;
+  --color-primary-green: #43ea80;
+  --color-second-green: #38f8d4;
+  --color-tertiary-green: #0ead69;
+
+  /* borderRadius → --radius-* */
+  --radius-section_hero: 51% 49% 45% 55% / 50% 49% 51% 50%;
+
+  /* blur → --blur-* */
+  --blur-xxxl: 100px;
+
+  /* fontFamily → --font-* */
+  --font-primary: var(--font-primary-next), sans-serif;
+  --font-secondary: var(--font-secondary-next), sans-serif;
+
+  /* animation → --animate-* */
+  --animate-spin-slow: spin 30s alternate infinite;
+}
+
+@theme inline {
+  --font-primary: var(--font-primary-next), sans-serif;
+  --font-secondary: var(--font-secondary-next), monospace;
+
+  --color-background: var(--bg);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-foreground: var(--text);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-on-primary: var(--on-primary);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+
+  --color-indigo-start: var(--indigo-from);
+  --color-indigo-end: var(--indigo-to);
+}
+:root {
+  --bg: #0a0a0a;
+  --surface: #18181b;
+  --border: #27272a;
+  --text: #fafafa;
+  --muted: #a1a1aa;
+  --primary: #818cf8;
+  --primary-hover: #a5b4fc;
+  --on-primary: #0a0a0a;
+  --accent: #34d399;
+  --on-accent: #0a0a0a;
+
+  --indigo-from: #6366f1; /* indigo-500 */
+  --indigo-to: #a5b4fc; /* indigo-300 */
+  /*   
+  --bg: #ffffff;
+  --surface: #f4f4f5;
+  --border: #e4e4e7;
+  --text: #0a0a0a;
+  --muted: #52525b;
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --on-primary: #ffffff;
+  --accent: #047857;
+  --on-accent: #ffffff; */
+
+  /* --indigo-from: #4338ca; /* indigo-700 */
+  /* --indigo-to: #6366f1; indigo-500 */
+}
+
+/* :root[data-theme='dark'] { */
+/* --bg: #0a0a0a;
+  --surface: #18181b;
+  --border: #27272a;
+  --text: #fafafa;
+  --muted: #a1a1aa;
+  --primary: #818cf8;
+  --primary-hover: #a5b4fc;
+  --on-primary: #0a0a0a;
+  --accent: #34d399;
+  --on-accent: #0a0a0a; */
+
+/* --indigo-from: #6366f1; indigo-500 */
+/* --indigo-to: #a5b4fc; indigo-300 */
+/* } */
+
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+
+  section {
+    scroll-margin-top: 100px;
+  }
+}
+
+.link-menu:hover:after {
   width: 100%;
 }
 
@@ -14,7 +110,7 @@
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #38f8d4;
+  background-color: var(--color-primary);
   transition: width 0.3s ease;
 }
 
@@ -92,23 +188,5 @@
 
   @media (max-width: 468px) {
     grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-:root {
-  --font-primary: 'Roboto', sans-serif;
-  --font-secondary: 'JetBrains Mono', monospace;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-primary);
-  font-weight: 400;
-
-  section {
-    scroll-margin-top: 100px;
   }
 }

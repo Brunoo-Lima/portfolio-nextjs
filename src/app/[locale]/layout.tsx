@@ -13,14 +13,14 @@ const font__primary = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
-  variable: "--font-primary",
+  variable: "--font-primary-next",
 });
 
 const font__secondary = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-secondary",
+  variable: "--font-secondary-next",
 });
 
 export const metadata: Metadata = {
@@ -49,9 +49,9 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className="scroll-smooth">
       <body
-        className={`${font__primary.variable} ${font__secondary.variable} bg-primary-black text-primary-white antialiased scrollbar-thumb-emerald-500 scrollbar-track-primary-black scrollbar-thin`}
+        className={`${font__primary.variable} ${font__secondary.variable} bg-background text-foreground antialiased`}
       >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
 

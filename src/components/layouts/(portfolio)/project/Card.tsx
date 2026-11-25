@@ -18,15 +18,17 @@ export const Card = ({ project }: ICardProps) => {
     >
       <MaskCard />
       <aside className="absolute bottom-0 w-full p-4 invisible group-hover:visible">
-        <span className="bg-gradient-to-r from-primary-green to-tertiary-green py-0.5 px-2 rounded-lg text-sm">
+        <span className="bg-accent font-semibold text-background py-0.5 px-2 rounded-lg text-sm">
           {project.type}
         </span>
 
-        <h3 className="text-lg font-bold text-primary-white mb-1 font-secondary">
+        <h3 className="text-lg font-bold text-foreground mb-1 mt-1 font-secondary">
           {project.title}
         </h3>
 
-        <p className="text-sm text-primary-white mb-2">{project.description}</p>
+        <p className="text-sm text-foreground mb-2 leading-normal">
+          {project.description}
+        </p>
 
         <ButtonView
           textTooltip={project.view}

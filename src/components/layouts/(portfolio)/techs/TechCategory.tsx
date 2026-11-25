@@ -26,7 +26,7 @@ export const TechCategory = ({
   return (
     <>
       <div className="flex items-center gap-x-3 pt-12 first:pt-0">
-        <Icon color="#38f8d4" />
+        <Icon color="#a5b4fc" />
         <h3 className="text-xl font-semibold">{label}</h3>
       </div>
 

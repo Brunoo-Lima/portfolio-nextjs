@@ -40,8 +40,8 @@
   --color-accent: var(--accent);
   --color-on-accent: var(--on-accent);
 
-  --color-indigo-start: var(--indigo-from);
-  --color-indigo-end: var(--indigo-to);
+  --color-primary-start: var(--primary-from);
+  --color-primary-end: var(--primary-to);
 }
 :root {
   --bg: #0a0a0a;
@@ -55,8 +55,8 @@
   --accent: #34d399;
   --on-accent: #0a0a0a;
 
-  --indigo-from: #6366f1; /* indigo-500 */
-  --indigo-to: #a5b4fc; /* indigo-300 */
+  --primary-from: #6366f1; /* primary-500 */
+  --primary-to: #a5b4fc; /* primary-300 */
   /*   
   --bg: #ffffff;
   --surface: #f4f4f5;
@@ -69,8 +69,8 @@
   --accent: #047857;
   --on-accent: #ffffff; */
 
-  /* --indigo-from: #4338ca; /* indigo-700 */
-  /* --indigo-to: #6366f1; indigo-500 */
+  /* --primary-from: #4338ca; /* primary-700 */
+  /* --primary-to: #6366f1; primary-500 */
 }
 
 /* :root[data-theme='dark'] { */
@@ -85,8 +85,8 @@
   --accent: #34d399;
   --on-accent: #0a0a0a; */
 
-/* --indigo-from: #6366f1; indigo-500 */
-/* --indigo-to: #a5b4fc; indigo-300 */
+/* --primary-from: #6366f1; primary-500 */
+/* --primary-to: #a5b4fc; primary-300 */
 /* } */
 
 body {

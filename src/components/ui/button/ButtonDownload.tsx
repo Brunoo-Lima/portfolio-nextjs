@@ -15,9 +15,9 @@ export const ButtonDownload = ({
       title={textTooltip}
       target="_blank"
       rel="noopener noreferrer nofollow"
-      className=" bg-gradient-to-br from-primary-green via-second-green to-tertiary-green   px-1 py-1 sm:w-40 w-full rounded-full transition duration-300 hover:from-tertiary-green hover:via-second-green hover:to-primary-green"
+      className=" bg-linear-to-br from-primary to-primary-end px-1 py-1 sm:w-40 w-full rounded-full transition duration-300 hover:from-primary-end hover:to-primary"
     >
-      <strong className="text-primary-white bg-primary-black text-base block px-5 py-2 rounded-full font-semibold">
+      <strong className="text-foreground bg-background text-base block px-5 py-2 rounded-full font-semibold">
         {text}
       </strong>
     </a>

@@ -70,7 +70,7 @@ export const Header = () => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-30 mx-auto bg-background/50 border-b border-gray-800 backdrop-blur-sm backdrop-saturate-50">
+    <header className="fixed top-0 left-0 right-0 z-30 mx-auto bg-background/50 border-b border-primary/40 backdrop-blur-sm backdrop-saturate-50">
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
           <Reveal variants={slideFromLeft(0.2)}>

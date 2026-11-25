@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 export const TitleAnimation = () => {
   return (
     <h1 className="md:text-6xl text-4xl md:text-start text-center leading-tight">
-      <span className="bg-linear-to-r from-indigo-start to-indigo-end bg-clip-text text-transparent font-bold">
+      <span className="bg-linear-to-r from-primary-start to-primary-end bg-clip-text text-transparent font-bold">
         Olá, eu sou{" "}
       </span>
       <br />

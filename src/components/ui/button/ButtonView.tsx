@@ -13,9 +13,9 @@ export const ButtonView = ({ href, textTooltip, text }: IButtonViewProps) => {
       target="_blank"
       title={textTooltip}
       rel="noopener noreferrer nofollow"
-      className="flex items-center justify-center gap-2 bg-primary-white py-2 px-3 w-28 rounded-md border-none hover:scale-105 transition duration-300"
+      className="flex items-center justify-center gap-2 bg-foreground py-2 px-3 w-28 rounded-md border-none hover:scale-105 transition duration-300"
     >
-      <span className="text-sm text-primary-black font-normal">{text}</span>
+      <span className="text-sm text-background font-normal">{text}</span>
       <ExternalLinkIcon color="#000000c1" className="size-4 inline-block" />
     </a>
   );

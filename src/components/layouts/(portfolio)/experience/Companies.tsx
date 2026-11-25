@@ -17,37 +17,37 @@ export const Companies = ({ companies }: ICompaniesProps) => {
           .map((company, index) => (
             <div
               key={index}
-              className={`p-3 cursor-pointer hover:bg-gray-800 transition-colors ${
+              className={`p-3 cursor-pointer hover:bg-surface transition-colors ${
                 activeCompany === index
-                  ? "bg-gray-800 border-l-4 border-second-green"
+                  ? "bg-border border-l-4 border-primary"
                   : ""
               }`}
               onClick={() => setActiveCompany(index)}
             >
-              <p className="font-medium text-primary-white">
+              <p className="font-medium text-foreground">
                 {company.enterprise}
               </p>
-              <small className="text-xs text-second-gray">{company.date}</small>
+              <small className="text-xs text-muted">{company.date}</small>
             </div>
           ))
           .reverse()}
       </div>
 
-      <article className="flex-grow h-full">
+      <article className="grow h-full">
         {(() => {
           const company = companies[activeCompany];
           return (
             <>
-              <h2 className="text-lg text-second-green font-secondary">
+              <h2 className="text-lg text-primary-end font-secondary">
                 {company.area}
               </h2>
 
-              <div className="flex items-start gap-x-4 space-y-4 w-[250px]">
+              <div className="flex items-start gap-x-4 space-y-4 w-62.5">
                 <aside className="flex flex-col gap-y-0.5 h-11 my-2">
-                  <h4 className="text-lg font-semibold text-primary-white">
+                  <h4 className="text-lg font-semibold text-foreground">
                     {company.enterprise}
                   </h4>
-                  <small className="text-xs font-light text-primary-white">
+                  <small className="text-xs  text-foreground">
                     {company.date}
                   </small>
                 </aside>
@@ -56,13 +56,13 @@ export const Companies = ({ companies }: ICompaniesProps) => {
                   <Image
                     src={company.imgURl}
                     alt={company.enterprise}
-                    width={40}
-                    height={40}
-                    className="block w-10 h-10 -mt-1"
+                    width={32}
+                    height={32}
+                    className="block size-8 mt-1"
                   />
                 </figure>
               </div>
-              <p className="text-base text-second-gray leading-snug">
+              <p className="text-base text-muted leading-[1.6]">
                 {company.description}
               </p>
 
@@ -70,7 +70,7 @@ export const Companies = ({ companies }: ICompaniesProps) => {
                 {company.tech.map((tech: string, index: number) => (
                   <span
                     key={index}
-                    className="block w-max px-2 py-0.5 rounded-lg bg-primary-green text-sm font-semibold text-primary-black"
+                    className="block w-max px-2 py-0.5 rounded-lg bg-accent text-sm font-semibold text-background"
                   >
                     {tech.replace(",", " ")}
                   </span>

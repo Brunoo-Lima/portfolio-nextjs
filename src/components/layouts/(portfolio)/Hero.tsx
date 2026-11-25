@@ -17,7 +17,7 @@ export const Hero = async () => {
   const t = await getTranslations("Hero");
 
   return (
-    <section className="md:mt-9 md:mb-36 pt-20 pb-24 sm:overflow-hidden container mx-auto md:px-12 px-8">
+    <section className="md:mt-9 md:mb-36 pt-28 md:pt-20 pb-36 md:pb-24 sm:overflow-hidden container mx-auto md:px-12 px-8">
       <Reveal variants={visibleFromOpacityZero}>
         <div className="relative flex items-center md:justify-between justify-center">
           <Reveal>

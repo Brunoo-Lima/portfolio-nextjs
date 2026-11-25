@@ -18,10 +18,10 @@ export const Experience = async () => {
   return (
     <section
       id="experience"
-      className="md:py-28 py-8 md:px-12 px-8 mx-auto bg-second-black h-[500px] section__experience"
+      className="md:py-28 py-20 md:px-12 px-8 mx-auto bg-surface h-140 section__experience"
     >
       <Reveal variants={visibleFromOpacityZero}>
-        <div className="flex flex-col gap-y-14 max-w-[1200px] mx-auto">
+        <div className="flex flex-col gap-y-14 max-w-300 mx-auto">
           <Reveal
             variants={slideFromLeft(0.1)}
             className="flex justify-center items-center"

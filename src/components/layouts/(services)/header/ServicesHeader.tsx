@@ -19,7 +19,7 @@ export type NavLinksProps = {
 };
 
 const navLinks: NavLinksProps[] = [
-  { id: 1, title: "services", href: "#" },
+  { id: 1, title: "services", href: "#servicos" },
   { id: 2, title: "projects", href: "#projects" },
 ];
 

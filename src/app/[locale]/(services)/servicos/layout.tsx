@@ -25,7 +25,7 @@ export default async function ServicesLayout({
   return (
     <>
       <ServicesHeader />
-      <main className="mt-24 pt-4 pb-0 relative">{children}</main>
+      <main className="relative pb-0 pt-20 sm:pt-24">{children}</main>
       <Footer />
     </>
   );

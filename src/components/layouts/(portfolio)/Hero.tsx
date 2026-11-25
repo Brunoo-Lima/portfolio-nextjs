@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import { LinkButton } from "@/components/ui/button/LinkButton";
 import { TitleAnimation } from "@/components/ui/title-animation";
+import { githubLink, linkedinLink } from "@/utils/links";
 import {
   slideFromLeft,
   slideFromRight,
@@ -16,10 +17,7 @@ export const Hero = async () => {
   const t = await getTranslations("Hero");
 
   return (
-    <section
-      className="md:mt-9 md:mb-36 pt-20 pb-24 sm:overflow-hidden container mx-auto md:px-12 px-8"
-      id="home"
-    >
+    <section className="md:mt-9 md:mb-36 pt-20 pb-24 sm:overflow-hidden container mx-auto md:px-12 px-8">
       <Reveal variants={visibleFromOpacityZero}>
         <div className="relative flex items-center md:justify-between justify-center">
           <Reveal>
@@ -29,24 +27,18 @@ export const Hero = async () => {
               </Reveal>
 
               <Reveal variants={slideFromLeft(0.8)}>
-                <p className="md:text-3xl text-xl md:text-start text-center leading-tight mb-8 text-second-gray">
+                <p className="md:text-3xl text-xl md:text-start text-center leading-tight mb-8 text-muted">
                   {t("subtitle")}
                 </p>
               </Reveal>
 
               <Reveal variants={slideFromTop}>
                 <div className="flex md:justify-start justify-center gap-6">
-                  <LinkButton
-                    title="LinkedIn"
-                    href="https://www.linkedin.com/in/bruno-lima-8a2407173/"
-                  >
+                  <LinkButton title="LinkedIn" href={linkedinLink}>
                     <LinkedinIcon />
                   </LinkButton>
 
-                  <LinkButton
-                    title="Github"
-                    href="https://github.com/Brunoo-Lima"
-                  >
+                  <LinkButton title="Github" href={githubLink}>
                     <GithubIcon />
                   </LinkButton>
                 </div>
@@ -54,19 +46,11 @@ export const Hero = async () => {
             </div>
           </Reveal>
 
-          <Image
-            src={"/assets/background.webp"}
-            alt=""
-            className="md:hidden absolute lg:right-20 right-0 md:-top-20 -top-10 block rounded-section_hero max-w-full md:w-[500px] md:h-[500px] w-[140px] h-[120px] animate-spin-slow md:blur-xxxl blur-2xl md:opacity-25 opacity-65 "
-            width={500}
-            height={500}
-          />
-
           <Reveal variants={slideFromRight(0.8)}>
             <Image
               src={"/assets/main.webp"}
               alt={t("imageAlt")}
-              className="md:block hidden max-w-full lg:w-[500px] lg:h-[500px] max-h-fit "
+              className="md:block hidden max-w-full lg:w-125 lg:h-125 max-h-fit "
               width={400}
               height={400}
               priority

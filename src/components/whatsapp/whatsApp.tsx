@@ -1,10 +1,14 @@
+import { usePathname } from "next/navigation";
+
 import { WhatsAppIcon } from "@/components/icons";
-import { phoneNumber, urlWhatsPortfolio } from "@/utils/whatsapp";
+import { getWhatsAppUrl } from "@/utils/whatsapp";
 
 const WhatsApp = () => {
+  const pathname = usePathname();
+
   return (
     <a
-      href={`https://wa.me/${phoneNumber}?text=${urlWhatsPortfolio}`}
+      href={getWhatsAppUrl(pathname === "/" ? "portfolio" : "budget")}
       target="_blank"
       title="WhatsApp"
       rel="noopener noreferrer nofollow"

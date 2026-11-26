@@ -38,6 +38,7 @@
   --color-on-primary: var(--on-primary);
   --color-accent: var(--accent);
   --color-on-accent: var(--on-accent);
+  --color-card: var(--card);
 
   --color-primary-start: var(--primary-from);
   --color-primary-end: var(--primary-to);
@@ -53,6 +54,7 @@
   --on-primary: #101010;
   --accent: #34d399;
   --on-accent: #0a0a0a;
+  --card: #141414;
 
   --primary-from: #6366f1; /* primary-500 */
   --primary-to: #a5b4fc; /* primary-300 */

@@ -2,30 +2,34 @@ import { faqs } from "@/mocks/faqs";
 
 export const FAQ = () => {
   return (
-    <section className="py-20 sm:overflow-hidden container mx-auto md:px-12 px-8">
-      <div className="flex flex-wrap gap-6 justify-between">
-        <h2 className="text-3xl font-secondary">Dúvidas</h2>
+    <section className="py-20 sm:overflow-hidden bg-card">
+      <div className="container mx-auto md:px-12 px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 justify-between">
+          <h2 className="text-4xl md:text-5xl leading-[1.03] font-service-secondary">
+            Dúvidas
+          </h2>
 
-        <div className="max-w-xl w-full">
-          {faqs.map((faq) => (
-            <details className="group/faq border-b border-gray-800/80">
-              <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-5 text-base">
-                <p className="">{faq.question}</p>
-
-                <span
-                  aria-hidden="true"
-                  className="grid size-5 place-items-center text-lg font-light"
-                >
-                  <span className="group-open/faq:hidden">+</span>
-                  <span className="hidden group-open/faq:block">−</span>
-                </span>
-              </summary>
-
-              <p className="mb-0 pb-5 pr-7 text-sm leading-[1.6]">
-                {faq.answer}
-              </p>
-            </details>
-          ))}
+          <div className="w-full">
+            {faqs.map((faq) => (
+              <details
+                key={faq.id}
+                className="group/faq border-b border-border first:border-t"
+              >
+                <summary className="flex min-h-19 cursor-pointer list-none items-center justify-between gap-5 text-base font-medium marker:hidden sm:text-lg [&::-webkit-details-marker]:hidden">
+                  <span>{faq.question}</span>
+                  <span
+                    aria-hidden="true"
+                    className="grid size-8 shrink-0 place-items-center rounded-full border border-foreground/15 text-lg font-light text-primary-hover transition group-open/faq:rotate-45 group-open/faq:border-primary-hover"
+                  >
+                    +
+                  </span>
+                </summary>
+                <p className="max-w-2xl pb-6 pr-10 text-sm leading-7 text-muted">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
+          </div>
         </div>
       </div>
     </section>

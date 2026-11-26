@@ -19,7 +19,7 @@ export const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 place-content-center mt-12 lg:mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(4,1fr)] gap-4 place-content-center mt-12 lg:mt-20">
           {servicesList.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}

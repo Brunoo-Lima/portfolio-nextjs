@@ -9,10 +9,7 @@ export const Recomendations = async () => {
   const t = await getTranslations("Recomendations");
 
   return (
-    <section
-      className="py-20 md:pt-28 pt-8 bg-second-black"
-      id="recomendations"
-    >
+    <section className="md:py-24 py-8 mt-8 bg-surface" id="recomendations">
       <Reveal
         variants={visibleFromOpacityZero}
         className="flex justify-center items-center"
@@ -21,7 +18,7 @@ export const Recomendations = async () => {
       </Reveal>
       <Reveal variants={visibleFromOpacityZero}>
         <div className="mx-auto flex flex-col items-center justify-center gap-6 mt-12 px-6">
-          <div className="max-w-[785px]">
+          <div className="max-w-196.25">
             <Image
               src={"/img/recomendacao.webp"}
               alt="Recomendação CEO Mestres da Web"

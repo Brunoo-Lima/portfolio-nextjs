@@ -1,12 +1,10 @@
 import { WhatsAppIcon } from "@/components/icons";
+import { phoneNumber, urlWhatsPortfolio } from "@/utils/whatsapp";
 
 const WhatsApp = () => {
-  const message = "Olá, vim pelo site!";
-  const url = `https://wa.me/5511911908708?text=${encodeURIComponent(message)}`;
-
   return (
     <a
-      href={url}
+      href={`https://wa.me/${phoneNumber}?text=${urlWhatsPortfolio}`}
       target="_blank"
       title="WhatsApp"
       rel="noopener noreferrer nofollow"

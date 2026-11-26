@@ -10,14 +10,12 @@ export const Footer = () => {
   };
 
   return (
-    <div className="border-t border-t-gray-800">
+    <div className="border-t border-t-primary/40 ">
       <div className="container px-12 py-8 mx-auto">
         <div className="flex justify-between items-center md:flex-row flex-col">
-          <p className="md:order-none order-last md:mt-0 mt-4">
+          <p className="md:order-0 order-last md:mt-0 mt-4">
             © {year} <strong>Bruno Lima. </strong>{" "}
-            <span className="text-second-gray">
-              Todos os direitos reservados.
-            </span>
+            <span className="text-muted">Todos os direitos reservados.</span>
           </p>
 
           <button
@@ -27,8 +25,8 @@ export const Footer = () => {
           >
             <p className="md:hidden block">Voltar ao topo</p>
             <ArrowUpIcon
-              color="#38f8d4"
-              className="w-9 h-9 animate-bounce transition duration-300 bg-primary-black border border-gray-800 rounded-full p-1"
+              color="#818cf8"
+              className="size-8 animate-bounce transition duration-300 bg-background border border-primary/40 rounded-full p-1"
             />
           </button>
         </div>

@@ -38,10 +38,10 @@ export const Techs = () => {
             <Image
               src="/assets/dev.svg"
               alt="Tecnologias e ferramentas"
-              width={500}
-              height={500}
+              width={600}
+              height={600}
               loading="lazy"
-              className="lg:block hidden lg:w-125 lg:h-125 w-100 h-100"
+              className="lg:block hidden lg:w-150 lg:h-150 w-100 h-100"
             />
           </div>
 

@@ -9,7 +9,7 @@ type ICardProps = {
 export const Card = ({ project }: ICardProps) => {
   return (
     <div
-      className="lg:w-[450px] w-full lg:h-[350px] md:h-[400px] h-[250px] group relative rounded-lg border border-gray-800 md:mt-0 mt-4 transition-all duration-500 overflow-hidden"
+      className="lg:w-112.5 w-full lg:h-87.5 md:h-100 h-62.5 group relative rounded-lg border border-gray-800 md:mt-0 mt-4 transition-all duration-500 overflow-hidden"
       style={{
         background: `url(${project.image})`,
         backgroundSize: "cover",

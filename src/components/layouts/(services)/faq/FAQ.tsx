@@ -1,9 +1,11 @@
 import { faqs } from "@/mocks/faqs";
 
+import { ContactCTA } from "./ContactCTA";
+
 export const FAQ = () => {
   return (
-    <section className="py-20 sm:overflow-hidden bg-card">
-      <div className="container mx-auto md:px-12 px-8">
+    <section className="py-20 mb-48 sm:overflow-hidden bg-card static  z-10">
+      <div className="container mx-auto md:px-12 px-8 md:mb-40 mb-16">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 justify-between">
           <h2 className="text-4xl md:text-5xl leading-[1.03] font-service-secondary">
             Dúvidas
@@ -32,6 +34,8 @@ export const FAQ = () => {
           </div>
         </div>
       </div>
+
+      <ContactCTA />
     </section>
   );
 };

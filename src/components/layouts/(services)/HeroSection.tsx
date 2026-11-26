@@ -2,11 +2,11 @@ import { ArrowDownIcon } from "lucide-react";
 
 import { WhatsAppIcon2 } from "@/components/icons/WhatsappIcon2";
 import { LinkButtonService } from "@/components/ui/button/LinkButtonService";
-import { phoneNumber, urlWhatsBudgetService } from "@/utils/whatsapp";
+import { getWhatsAppUrl } from "@/utils/whatsapp";
 
 export const HeroSection = () => {
   return (
-    <section className="relative w-full overflow-hidden md:mt-9 md:mb-36 pt-20 pb-24 md:px-12 px-8 mx-auto container">
+    <section className="relative w-full overflow-hidden md:mt-9 md:mb-36 pt-20 pb-24 lg:px-12 px-8 mx-auto container">
       <div className="relative grid gap-12 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-end">
         <div>
           <div className="mb-8 flex items-center gap-3 font-service text-xs uppercase tracking-[0.16em] text-foreground">
@@ -25,9 +25,7 @@ export const HeroSection = () => {
         </div>
 
         <div className="flex flex-col items-start gap-6 lg:items-end lg:pb-2">
-          <LinkButtonService
-            href={`https://wa.me/${phoneNumber}?text=${urlWhatsBudgetService}`}
-          >
+          <LinkButtonService href={getWhatsAppUrl("budget")}>
             Solicitar orçamento
             <WhatsAppIcon2 />
           </LinkButtonService>

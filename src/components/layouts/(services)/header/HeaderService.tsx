@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
+import { HeaderContainer } from "@/components/ui/header-container";
 import { Logo } from "@/components/ui/logo";
 import {
   slideFromLeft,
@@ -23,15 +24,15 @@ const navLinks: NavLinksProps[] = [
   { id: 2, title: "projects", href: "#projects" },
 ];
 
-export const ServicesHeader = () => {
+export const HeaderService = () => {
   const t = useTranslations("ServiceHeader");
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-30 mx-auto bg-primary-black/50 border-b border-gray-800 backdrop-blur-sm backdrop-saturate-50">
+    <HeaderContainer>
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
           <Reveal variants={slideFromLeft(0.2)}>
-            <Logo />
+            <Logo href="/servicos" />
           </Reveal>
 
           <div
@@ -50,6 +51,6 @@ export const ServicesHeader = () => {
           </div>
         </div>
       </Reveal>
-    </header>
+    </HeaderContainer>
   );
 };

@@ -3,6 +3,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
+import { HeaderContainer } from "@/components/ui/header-container";
 import { Logo } from "@/components/ui/logo";
 import {
   slideFromLeft,
@@ -70,11 +71,11 @@ export const Header = () => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-30 mx-auto bg-background/50 border-b border-primary/40 backdrop-blur-sm backdrop-saturate-50">
+    <HeaderContainer>
       <Reveal variants={visibleFromOpacityZero}>
         <div className="flex fle-wrap items-center justify-between mx-auto p-8 container">
           <Reveal variants={slideFromLeft(0.2)}>
-            <Logo />
+            <Logo href="/" />
           </Reveal>
 
           <div className="block lg:hidden" id="mobile-menu">
@@ -85,19 +86,19 @@ export const Header = () => {
             >
               <div className="space-y-2">
                 <span
-                  className={`block h-px w-8 rounded-full bg-primary-white transition-transform ease-in-out duration-500 ${
+                  className={`block h-px w-8 rounded-full bg-foreground transition-transform ease-in-out duration-500 ${
                     !navbarOpen
                       ? "-translate-y-1.0"
                       : "transition-transform ease-in-out translate-y-2 -rotate-45"
                   }`}
                 ></span>
                 <span
-                  className={`block h-px w-8 rounded-full bg-primary-white transition-opacity ease-in-out duration-500 ${
+                  className={`block h-px w-8 rounded-full bg-foreground transition-opacity ease-in-out duration-500 ${
                     navbarOpen ? "opacity-0" : "translate-y-1.0 opacity-100"
                   } `}
                 ></span>
                 <span
-                  className={`block h-px w-8 rounded-full bg-primary-white transition-transform ease-in-out duration-500 ${
+                  className={`block h-px w-8 rounded-full bg-foreground transition-transform ease-in-out duration-500 ${
                     !navbarOpen
                       ? "translate-y-1.0"
                       : "transition-transform ease-in-out -translate-y-2 rotate-45"
@@ -133,6 +134,6 @@ export const Header = () => {
           onCloseNavbar={handleOpenNavbar}
         />
       )}
-    </header>
+    </HeaderContainer>
   );
 };

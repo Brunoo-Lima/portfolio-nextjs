@@ -11,9 +11,6 @@
   --color-second-green: #38f8d4;
   --color-tertiary-green: #0ead69;
 
-  /* borderRadius → --radius-* */
-  --radius-section_hero: 51% 49% 45% 55% / 50% 49% 51% 50%;
-
   /* blur → --blur-* */
   --blur-xxxl: 100px;
 
@@ -28,6 +25,8 @@
 @theme inline {
   --font-primary: var(--font-primary-next), sans-serif;
   --font-secondary: var(--font-secondary-next), monospace;
+  --font-service: var(--font-service-next), sans-serif;
+  --font-service-secondary: var(--font-service-secondary-next), serif;
 
   --color-background: var(--bg);
   --color-surface: var(--surface);
@@ -57,41 +56,10 @@
 
   --primary-from: #6366f1; /* primary-500 */
   --primary-to: #a5b4fc; /* primary-300 */
-  /*   
-  --bg: #ffffff;
-  --surface: #f4f4f5;
-  --border: #e4e4e7;
-  --text: #0a0a0a;
-  --muted: #52525b;
-  --primary: #4f46e5;
-  --primary-hover: #4338ca;
-  --on-primary: #ffffff;
-  --accent: #047857;
-  --on-accent: #ffffff; */
-
-  /* --primary-from: #4338ca; /* primary-700 */
-  /* --primary-to: #6366f1; primary-500 */
 }
 
-/* :root[data-theme='dark'] { */
-/* --bg: #0a0a0a;
-  --surface: #18181b;
-  --border: #27272a;
-  --text: #fafafa;
-  --muted: #a1a1aa;
-  --primary: #818cf8;
-  --primary-hover: #a5b4fc;
-  --on-primary: #0a0a0a;
-  --accent: #34d399;
-  --on-accent: #0a0a0a; */
-
-/* --primary-from: #6366f1; primary-500 */
-/* --primary-to: #a5b4fc; primary-300 */
-/* } */
-
 body {
-  font-family: var(--font-primary);
-  font-weight: 400;
+  @apply font-primary font-normal;
 
   section {
     scroll-margin-top: 100px;

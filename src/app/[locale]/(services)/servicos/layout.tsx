@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 
 import { Footer } from "@/components/layouts/(portfolio)/Footer";
-import { ServicesHeader } from "@/components/layouts/(services)/header/ServicesHeader";
+import { HeaderService } from "@/components/layouts/(services)/header/HeaderService";
 import { routing } from "@/i18n/routing";
 
 export default async function ServicesLayout({
@@ -24,8 +24,8 @@ export default async function ServicesLayout({
 
   return (
     <>
-      <ServicesHeader />
-      <main className="mt-24 pt-4 pb-0 relative">{children}</main>
+      <HeaderService />
+      <main className="mt-24 pt-4 pb-0 relative font-service">{children}</main>
       <Footer />
     </>
   );

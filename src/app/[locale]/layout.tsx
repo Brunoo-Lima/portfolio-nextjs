@@ -1,7 +1,12 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { JetBrains_Mono, Roboto } from "next/font/google";
+import {
+  Instrument_Serif,
+  JetBrains_Mono,
+  Manrope,
+  Roboto,
+} from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -21,6 +26,20 @@ const font__secondary = JetBrains_Mono({
   weight: ["400", "500", "600", "700"],
   display: "swap",
   variable: "--font-secondary-next",
+});
+
+const font__service = Manrope({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-service-next",
+});
+
+const font__service__secondary = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--font-service-secondary-next",
 });
 
 export const metadata: Metadata = {
@@ -51,7 +70,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className="scroll-smooth">
       <body
-        className={`${font__primary.variable} ${font__secondary.variable} bg-background text-foreground antialiased`}
+        className={`${font__primary.variable} ${font__secondary.variable} ${font__service.variable} ${font__service__secondary.variable} bg-background text-foreground antialiased`}
       >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
 

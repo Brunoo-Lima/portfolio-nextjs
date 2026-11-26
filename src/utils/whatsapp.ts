@@ -1,11 +1,13 @@
-const messageBudgetService =
-  "Olá vim pelo site e quero solicitar um orçamento!";
-const messageProjectService =
-  "Olá, vim pelo site e quero conversar sobre um projeto.";
-export const urlWhatsBudgetService = encodeURIComponent(messageBudgetService);
-export const urlWhatsProjectService = encodeURIComponent(messageProjectService);
+import {
+  phoneNumber,
+  whatsappMessages,
+  type WhatsAppMessageType,
+} from "@/constants/whatsapp";
 
-const messagePortfolio = "Olá, vim pelo portfólio!";
-export const urlWhatsPortfolio = encodeURIComponent(messagePortfolio);
+export const getWhatsAppUrl = (
+  type: WhatsAppMessageType = "portfolio",
+): string => {
+  const message = encodeURIComponent(whatsappMessages[type]);
 
-export const phoneNumber = 5511911908708;
+  return `https://wa.me/${phoneNumber}?text=${message}`;
+};

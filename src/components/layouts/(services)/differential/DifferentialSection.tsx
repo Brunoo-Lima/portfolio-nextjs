@@ -1,6 +1,4 @@
-import { differentialsList } from "@/mocks/differentialsList";
-
-import { DifferentialCard } from "./DifferentialCard";
+import { DifferentialWrapper } from "./DifferentialWrapper";
 
 export const DifferentialSection = () => {
   return (
@@ -10,14 +8,7 @@ export const DifferentialSection = () => {
           Diferenciais
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-[repeat(4,1fr)] gap-4 place-content-center mt-16">
-          {differentialsList.map((differential) => (
-            <DifferentialCard
-              key={differential.id}
-              differential={differential}
-            />
-          ))}
-        </div>
+        <DifferentialWrapper />
       </div>
     </section>
   );

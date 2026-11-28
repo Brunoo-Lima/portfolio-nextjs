@@ -1,7 +1,7 @@
 "use client";
 
-import { useInView } from "framer-motion";
 import { CodeXmlIcon, ServerIcon, WrenchIcon } from "lucide-react";
+import { useInView } from "motion/react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
